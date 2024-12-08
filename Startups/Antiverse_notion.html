@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Antiverse</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1544d29a-341b-807f-9942-cba44da71be8" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/city_gray.svg"/></div><h1 class="page-title">Antiverse</h1><p class="page-description"></p></header><div class="page-body"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-811b-90f1-c1f23766fcf6"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/city_gray.svg"/></div><div style="width:100%"><strong>Company Information</strong><p id="1544d29a-341b-8174-867a-d02d0ef7ab97" class="">Antiverse uses AI-driven antibody discovery to accelerate the development of therapeutics targeting challenging proteins, such as GPCRs and ion channels, for pharmaceutical and biotechnology companies.</p></div></figure><hr id="1544d29a-341b-81ce-8301-f6b4c7d50275"/><blockquote id="1544d29a-341b-8120-bb8b-cd67a6647d29" class="">We use the Business Model Canvas (BMC), which captures what the startups offers, how it reaches its customers and how profitable it could be.</blockquote><div id="1544d29a-341b-8144-a17c-e19cec147614" class="column-list"><div id="1544d29a-341b-81c2-b3ca-d7807df40dda" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81c3-89c3-fc5f874e5822"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/sharing_gray.svg"/></div><div style="width:100%"><strong>Key Partnerships</strong><p id="1544d29a-341b-8191-8243-f309f0c77bda" class="">What strategic collaborations do they have, and how do these enhance the company’s capabilities or reduce risk, etc.</p><ul id="1544d29a-341b-8187-b0cd-d33f43c13308" class="bulleted-list"><li style="list-style-type:disc"><strong>Companies: </strong>GlobalBio, Inc.</li></ul><ul id="1544d29a-341b-81ca-aa0b-ceca68b01f07" class="bulleted-list"><li style="list-style-type:disc"><strong>Investors</strong>: Secures funding from i&amp;i Biotech Fund I, Kadmos Capital.</li></ul><ul id="1544d29a-341b-8162-a0e2-d395d8712dbb" class="bulleted-list"><li style="list-style-type:disc"><strong>Academic Institutions</strong>: Cardiff University</li></ul></div></figure><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-8133-811c-efa09fbc449f"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/gym_gray.svg"/></div><div style="width:100%"><strong>Key Activities</strong><p id="1544d29a-341b-81d7-a61c-cd7c7167fd29" class="">How are they creating value, improving relationships with customers, increasing operational efficiency, etc.</p><ul id="1544d29a-341b-812e-af2a-d1a6e4a64344" class="bulleted-list"><li style="list-style-type:disc"><strong>Value:</strong> Develops de novo antibodies for challenging targets.</li></ul><ul id="1544d29a-341b-81e3-9e03-f0150ae561b7" class="bulleted-list"><li style="list-style-type:disc"><strong>Method: </strong>Enhances the AI-driven platform for improved predictive accuracy.</li></ul><ul id="1544d29a-341b-8154-a567-c49375d6db77" class="bulleted-list"><li style="list-style-type:disc"><strong>Relationships: </strong>Collaborates with pharmaceutical and biotech companies.</li></ul></div></figure><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81ce-93c4-fa95a89bc6f8"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/pin_gray.svg"/></div><div style="width:100%"><strong>Key Resources</strong><p id="1544d29a-341b-8133-9c91-ddb2d1eaec79" class="">What resources/assets do they need to deliver value.</p><ul id="1544d29a-341b-8092-ae7f-e72a1ede461c" class="bulleted-list"><li style="list-style-type:disc"><strong>Resources:</strong> Energy, combines machine learning with cell-free protein synthesis for antibody prediction.</li></ul><ul id="1544d29a-341b-80eb-8698-df43ee3a8c29" class="bulleted-list"><li style="list-style-type:disc"><strong>Assets:</strong> Operates state-of-the-art labs in Cardiff, with additional facilities in Boston and Prague.</li></ul><ul id="1544d29a-341b-80b8-9036-ff4725be1cc8" class="bulleted-list"><li style="list-style-type:disc"><strong>Team:</strong> Specialists in structural biology, machine learning, and medicine.</li></ul></div></figure><figure class="block-color-blue_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81eb-9aea-c3b2818d7258"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/gem_gray.svg"/></div><div style="width:100%"><strong>Value Proposition</strong><p id="1544d29a-341b-813a-b80c-e2067f62d6fc" class="">What are they offering, how are they meeting customers needs, how are they differentiable from competition, etc.</p><ul id="1544d29a-341b-8120-ad12-dcea7b331b5a" class="bulleted-list"><li style="list-style-type:disc"><strong>Offer: </strong>Acceleration of antibody discovery<strong>,</strong> reduces discovery timelines to approximately six months.</li></ul><ul id="1544d29a-341b-8179-9455-dfa5378e49d1" class="bulleted-list"><li style="list-style-type:disc"><strong>Customer needs</strong>: Enhances predictive accuracy &amp; precision of antibody-antigen binding predictions.</li></ul><ul id="1544d29a-341b-81d9-bbf9-d64dda47e587" class="bulleted-list"><li style="list-style-type:disc"><strong>Differentiation: </strong>Focuses on antibodies for difficult targets like G-protein coupled receptors (GPCRs) and ion channels that is a niche in the field and relatively unmet.</li></ul></div></figure></div><div id="1544d29a-341b-8163-bd92-c8c4de021a2e" style="width:100%" class="column"><figure class="block-color-purple_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81c4-92fb-f78ae570f34d"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/heart_gray.svg"/></div><div style="width:100%"><strong>Customer relationships</strong><p id="1544d29a-341b-81cf-8e17-d0d7869e6933" class="">How will they build loyalty, maintain good relationships, what kind of relationships do we expect, etc.</p><ul id="1544d29a-341b-81f8-806b-c441ab45e5ef" class="bulleted-list"><li style="list-style-type:disc"><strong>Needs: </strong>Works closely/collaboratively with clients to tailor antibody discovery programs to specific needs.</li></ul><ul id="1544d29a-341b-811b-8eb4-debc4b4c769a" class="bulleted-list"><li style="list-style-type:disc"><strong>Support</strong>: Offers ongoing assistance throughout the drug discovery process.</li></ul><ul id="1544d29a-341b-81e6-ab0f-ffe89ae7398e" class="bulleted-list"><li style="list-style-type:disc"><strong>Opportunities</strong>: Engages in joint development projects to advance therapeutic candidates.</li></ul></div></figure><figure class="block-color-orange_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81be-afa9-d8cb9ad2d862"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/megaphone_gray.svg"/></div><div style="width:100%"><strong>Channels</strong><p id="1544d29a-341b-81f0-9c33-d81458f991e2" class="">How will they reach their customers, how is their cost efficiency, customer acquisition, and retention, how will they distribute, etc.</p><ul id="1544d29a-341b-8177-9ec0-ece8625b1186" class="bulleted-list"><li style="list-style-type:disc"><strong>Sales</strong>: Engages directly with pharmaceutical and biotech companies for partnerships and collaborations.</li></ul><ul id="1544d29a-341b-81c3-9955-f519d416b266" class="bulleted-list"><li style="list-style-type:disc"><strong>Online</strong>: Provides information and updates through the company website and digital platforms.</li></ul><ul id="1544d29a-341b-81d6-86c0-cf1c6b6b2830" class="bulleted-list"><li style="list-style-type:disc"><strong>Events</strong>: Participates in conferences and seminars to showcase technology and network with potential clients.</li></ul></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81d8-baee-e75f70989650"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/groups_gray.svg"/></div><div style="width:100%"><strong>Customer Segments</strong><p id="1544d29a-341b-81db-8f9c-d285ea9f31b1" class="">Who are they serving, what is the target market, market size, etc. </p><ul id="1544d29a-341b-818f-8f6b-d7972ae1722e" class="bulleted-list"><li style="list-style-type:disc"><strong>Targets: </strong>Pharmaceutical Companies that seek to accelerate drug discovery and development processes, biotechnology firms that <strong>n</strong>eed advanced antibody design for challenging targets, Contract Research Organizations (CROs) that offer services in antibody discovery and development.</li></ul></div></figure><p id="1544d29a-341b-8090-bd2d-e0258c9be8f0" class="">
+</p></div></div><hr id="1544d29a-341b-8124-a5c0-fe0eabf851e1"/><div id="1544d29a-341b-81d5-bb6c-ef58bc1edd0f" class="column-list"><div id="1544d29a-341b-81df-a27d-d3d642d517a4" style="width:100%" class="column"><figure class="block-color-pink_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-8174-a550-fbb36a9bfcd2"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/clipping_gray.svg"/></div><div style="width:100%"><strong>Cost Structure</strong><p id="1544d29a-341b-8144-948c-dda79d5a1eac" class="">What are the major fixed and variable costs.</p><ul id="1544d29a-341b-8182-8197-d4135149c94d" class="bulleted-list"><li style="list-style-type:disc"><strong>Variable:</strong> Materials for antibody production, consumables, energy consumption (AI-heavy), marketing.</li></ul><ul id="1544d29a-341b-8035-95a0-d83b722df67e" class="bulleted-list"><li style="list-style-type:disc"><strong>Fixed:</strong> Salaries, lease of lab facilities, subscriptions.</li></ul></div></figure></div><div id="1544d29a-341b-81fb-8ecc-ccf6c4b88be4" style="width:100%" class="column"><figure class="block-color-teal_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81fe-beb0-ded617834feb"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/cash_gray.svg"/></div><div style="width:100%"><strong>Revenue Streams</strong><p id="1544d29a-341b-810a-be85-cc8247f3539e" class="">how will they make money, what is the pricing structure, any additional/creative revenue streams, etc.</p><ul id="1544d29a-341b-81a0-ac48-f3ebdf917b92" class="bulleted-list"><li style="list-style-type:disc"><strong>Service</strong>: Charges for antibody discovery and design services.</li></ul><ul id="1544d29a-341b-813d-a612-ec27da52880f" class="bulleted-list"><li style="list-style-type:disc"><strong>Recurring: </strong>Licensing Agreements, earns revenue from licensing proprietary antibodies or technology.</li></ul><ul id="1544d29a-341b-8193-b5c0-cb04e7af8c12" class="bulleted-list"><li style="list-style-type:disc"><strong>Payments</strong>: Receives payments upon achieving specific development milestones in partnerships.</li></ul></div></figure></div></div><hr id="1544d29a-341b-8160-b45f-eccb1049b2c0"/><blockquote id="1544d29a-341b-815c-8217-eb275bce5711" class="">We use Porter’s five forces to evaluate the company’s competitive position and dynamics of the market and any external pressures</blockquote><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81df-86c6-ea6738e2c527"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/activity_gray.svg"/></div><div style="width:100%"><h3 id="1544d29a-341b-8113-af25-e7b97f7271ab" class="">1. Threat of New Entrants</h3><h3 id="1544d29a-341b-8122-bc8e-d506ee6a9ef6" class=""><mark class="highlight-teal_background">➕</mark></h3><ul id="1544d29a-341b-8102-843a-e5a2c9416b77" class="bulleted-list"><li style="list-style-type:disc">Antiverse’s AI platform requires specialised expertise in machine learning and structural biology.</li></ul><ul id="1544d29a-341b-8165-9fcd-e650e77229b5" class="bulleted-list"><li style="list-style-type:disc">Existing collaborations (GlobalBio) is positive for its reputation and may act as a barrier to entry.</li></ul><ul id="1544d29a-341b-8158-98b5-e6814fae88e2" class="bulleted-list"><li style="list-style-type:disc">IP and growing datasets reduce the risk of competitors developing similar solutions.</li></ul><p id="1544d29a-341b-8112-9384-c44cf893ace6" class=""><mark class="highlight-red_background">➖</mark></p><ul id="1544d29a-341b-818e-bc8e-f050c24f9bc8" class="bulleted-list"><li style="list-style-type:disc">Open-source AI frameworks and widely available computational resources make it easier for new startups to at least attempt entering.</li></ul><ul id="1544d29a-341b-81d5-960e-dd6f86fc4f1d" class="bulleted-list"><li style="list-style-type:disc">Young company, Antiverse has e.g. limited brand recognition.</li></ul><h3 id="1544d29a-341b-81bc-8b50-dfc56a3b6254" class="">2. Threat of Substitutes</h3><h3 id="1544d29a-341b-817d-8217-ff781d96bd38" class=""><mark class="highlight-teal_background">➕</mark></h3><ul id="1544d29a-341b-81ce-912d-c95dcdea0b6f" class="bulleted-list"><li style="list-style-type:disc">Faster and more cost-effective antibody discovery than traditional methods.</li></ul><ul id="1544d29a-341b-8167-9884-d2c4a1c3aca4" class="bulleted-list"><li style="list-style-type:disc">Unique in that they are targetting challenging proteins that traditional approaches cannot.</li></ul><p id="1544d29a-341b-8124-a4b8-e352c782fdda" class=""><mark class="highlight-red_background">➖</mark></p><ul id="1544d29a-341b-813d-9f4c-d63bbfe35032" class="bulleted-list"><li style="list-style-type:disc">There is competition from other modalities of therapeutics (e.g. RNA-based therapies or small molecules).</li></ul><ul id="1544d29a-341b-81fb-be89-c1c052191f00" class="bulleted-list"><li style="list-style-type:disc">There is always the chance that bigger AI companies (Anthropic, OpenAI etc) will produce an update that renders this obscelete.</li></ul><h3 id="1544d29a-341b-81e0-b4a4-f90890c4ecb9" class="">3. Bargaining Power of Suppliers</h3><h3 id="1544d29a-341b-8111-92e3-f8d9536ba2e9" class=""><mark class="highlight-teal_background">➕</mark></h3><ul id="1544d29a-341b-815a-b49b-c9486dc9107a" class="bulleted-list"><li style="list-style-type:disc">Has in-house expertise so probably will not need external technical resources.</li></ul><ul id="1544d29a-341b-8155-95a1-fa6f5138bac7" class="bulleted-list"><li style="list-style-type:disc">Easily adaptable platform.</li></ul><p id="1544d29a-341b-8168-ac66-eadb6d68d9e5" class=""><mark class="highlight-red_background">➖</mark></p><ul id="1544d29a-341b-815b-bb2a-c78c43e81faf" class="bulleted-list"><li style="list-style-type:disc">Access to high-quality training data is paramount, and any limitation in availability or rising costs could be a problem.</li></ul><ul id="1544d29a-341b-81bd-b741-c7578f9bb42d" class="bulleted-list"><li style="list-style-type:disc">It is becoming harder and harder to get AI and biotechnology experts as they are in high demand.</li></ul><ul id="1544d29a-341b-811d-b878-fd24e1374dc4" class="bulleted-list"><li style="list-style-type:disc">Slgiht dependence on specialised lab equipment.</li></ul><h3 id="1544d29a-341b-8126-a1dc-d2fb651edef3" class="">4. Bargaining Power of Buyers</h3><h3 id="1544d29a-341b-81ca-9d5a-fa44cd02fc13" class=""><mark class="highlight-teal_background">➕</mark></h3><ul id="1544d29a-341b-8181-89a3-fd9f7c73375d" class="bulleted-list"><li style="list-style-type:disc">Minimal competition at the moment.</li></ul><ul id="1544d29a-341b-81d2-ab6a-c701f116b37a" class="bulleted-list"><li style="list-style-type:disc">Fast/accurate approach is preferable over conventional methods.</li></ul><p id="1544d29a-341b-81e3-bcbf-f63778335763" class=""><mark class="highlight-red_background">➖</mark></p><ul id="1544d29a-341b-8195-81b2-c16782d41e85" class="bulleted-list"><li style="list-style-type:disc">Pharmaceutical companies have a lot of power in the sector.</li></ul><ul id="1544d29a-341b-811a-bda9-e34e4eba8b99" class="bulleted-list"><li style="list-style-type:disc">Customer base is small and a niche.</li></ul><h3 id="1544d29a-341b-81cc-afd7-cf65e5590787" class="">5. Intensity of Current Competition</h3><h3 id="1544d29a-341b-8141-a1f0-d52be502c5a1" class=""><mark class="highlight-teal_background">➕</mark></h3><ul id="1544d29a-341b-816b-9144-d05edb19c366" class="bulleted-list"><li style="list-style-type:disc">The focus on difficult-to-target proteins makes competition less intense.</li></ul><ul id="1544d29a-341b-8121-8294-e266d938990e" class="bulleted-list"><li style="list-style-type:disc">If they keep and increase current partnerships with investors and pharma companies they can create credibility before other competition enters.</li></ul><p id="1544d29a-341b-8169-a85b-e8dc98aa7400" class=""><mark class="highlight-red_background">➖</mark></p><ul id="1544d29a-341b-81b8-b9fb-ecc1cf2b495e" class="bulleted-list"><li style="list-style-type:disc">The overall antibody discovery market is crowded (e.g., AbCellera, Adimab)</li></ul><ul id="1544d29a-341b-816b-ac81-ee82ac966bec" class="bulleted-list"><li style="list-style-type:disc">Larger competition has the benefit of predatory pricing and can gate keep the market.</li></ul><p id="1544d29a-341b-81f3-a08e-f804175f0cd4" class="">
+</p></div></figure><hr id="1544d29a-341b-8171-a4b8-d31208e5c9da"/><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="1544d29a-341b-81f5-8209-ccee570acde7"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/book-closed_gray.svg"/></div><div style="width:100%"><strong>Resources</strong><ul id="1544d29a-341b-81de-b39c-e6a9d6caf341" class="toggle"><li><details open=""><summary>Website</summary><p id="1544d29a-341b-8129-b3c1-e72781b38f42" class=""><a href="https://www.antiverse.io/">https://www.antiverse.io/</a></p></details></li></ul><p id="1544d29a-341b-81e8-ae40-e16e2196c9ba" class="">
+</p></div></figure><p id="1544d29a-341b-8177-aceb-f3c71fd15f9f" class="">
+</p><p id="1544d29a-341b-812f-962b-d91a2857fe15" class="">
+</p><p id="1544d29a-341b-8135-985b-d3ac57c7ffda" class="">
+</p><p id="1544d29a-341b-811a-a80c-f3d1439e4288" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

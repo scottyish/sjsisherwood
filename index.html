@@ -6,41 +6,28 @@
 -->
 <html>
 	<head>
-		<title>SJS Isherwood</title>
+		<title>Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
+		/* Updated homepage image styles for better responsiveness while retaining alignment */
+		.homepage-image {
+			display: block;
+			text-align: center;
+			width: 23%; /* Retained the original width */
+			height: auto;
+			object-fit: contain;
+			margin: 0 auto; /* Centered image horizontally */
+		}
+		@media (max-width: 768px) {
 			.homepage-image {
-				width: 200px;
-				height: auto;
-				object-fit: contain;
-				text-align: center;
-				display: block;
-				margin: 0 auto
+				width: 80px; /* Reduced width for mobile screens */
+				margin-bottom: 10px; /* Added space below the image */
 			}
-			.homepage-link {
-				font-size: 1.2em;
-				text-decoration: none;
-				color: #333;
-				flex: 1;
-			}
-			.homepage-link:hover {
-				text-decoration: underline;
-			}
-			@media (max-width: 768px) {
-				.homepage-item {
-					flex-direction: column; /* Stack image and title vertically on small screens */
-					align-items: flex-start; /* Aligns items to the left on small screens */
-				}
-				.homepage-image {
-					margin-right: 0; /* Remove right margin on small screens */
-					margin-bottom: 10px; /* Space below the image */
-					width: 80px; /* Smaller image for mobile */
-				}
-			}
+		}
 		</style>
 	
 	</head>
@@ -53,53 +40,60 @@
 					<!-- Inner -->
 						<div class="inner">
 							<div class="homepage-image">
-								<a href="#" class="image fit"><img src="images/me_highres_nobackground.png" alt=""/></a>
+								<!-- <a href="#" class="image fit"><img src="images/dog1.jpg" alt=""/></a> -->
+								<img src="images/dog1.jpg" alt="" class="image fit" />
 							</div>
 							<header>
 
 								<br><br>
-								<h1><a href="index.html" id="logo">Scott Isherwood</a></h1>
+								<!-- <h1><a href="index.html" id="logo">Scott Isherwood</a></h1> -->
+								<h1 id="logo">Scott Isherwood</h1>
 								<hr />
-								<p>A neuroscientist, data scientist & investor</p>
+								<p>A neuroscientist, consultant & investing enthusiast</p>
 							</header>
 							<footer>
 								<p style="text-align: center">
 									About me<br>
 								</p>
-								<p style="text-align: justify; margin: 0 auto; max-width: 900px;">
-									I’m a problem solver, investor, and passionate advocate for advancing life sciences
-									 and healthcare research. I hold a PhD in cognitive neuroscience and have spent many years behind a keyboard pursuing coding-heavy projects, 
-									 I thrive at the intersection of science, technology, and strategy. I have worked with all things data, from financial modelling to machine learning 
-									 in image segmentation, helping organisations make informed decisions and optimise their workflows. As an investor, I’m particularly 
+								<p style="text-align: justify; margin: auto auto; max-width: 900px;">
+									 I’m a problem solver, investor, and passionate advocate for advancing life sciences and healthcare research. I hold a PhD in cognitive neuroscience and 
+									 have spent many years programming, forming and testing hypotheses, and engineering interdisciplinary solutions to help people, research lines and organisations succeed.
+									 I thrive at the intersection of science, technology, and strategy. I have worked with all things data, from financial & cognitive modelling to machine learning 
+									 approaches to image segmentation. I aim to continue to learn, grow and refine the way I approach problems, to help organisations make informed decisions and optimise their projects. As an investor, I’m particularly 
 									 interested in supporting innovative companies that are pushing boundaries in biotech and medtech. Whether it’s advising on digital 
 									 infrastructure or driving healthcare innovation, my goal is simple: to make a meaningful impact by supporting research and solutions that improve 
 									 the way we live.
 								</p>
-
 							</footer>
 
-							
 				</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="Blog.html">Blog</a></li>
-								<li><a href="Portfolio.html">Portfolio</a></li>
-								<li><a href="Publications.html">Publications</a></li>
-								<li><a href="Projects.html">Projects</a></li>
-							</ul>
-						</nav>
-
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Blog</a>
+								<ul>
+									<li><a href="Papers.html">Papers</a></li>
+									<li><a href="Startups.html">Startups</a></li>
+									<!-- <li><a href="Investing.html">Investing</a></li> -->
+								</ul>
+							</li>
+							<li><a href="Portfolio.html">Portfolio</a></li>
+							<li><a href="Publications.html">Publications</a></li>
+							<li><a href="Projects.html">Projects</a></li>
+						</ul>
+					</nav>
 				</div>
 
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
-						<div class="row">
+						<!-- <div class="row">
 
-						</div>
+						</div> -->
+						<div style="height: 10em;"></div>
 						<hr />
 						<div class="row">
 							<div class="col-12">
@@ -111,8 +105,10 @@
 										</header>
 										<p>Feel free to reach out through one of the mediums below.</p>
 										<ul class="icons">
-											<li><a href="https://github.com/scottyish" class="icon brands fa-github"><span class="label">Dribbble</span></a></li>
-											<li><a href="https://www.linkedin.com/in/sjsisherwood/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+											<li><a href="https://github.com/scottyish" target="_blank" class="fa-brands fa-github"><span class="label"></span></a></li>
+											<li><a href="https://www.linkedin.com/in/sjsisherwood/" target="_blank" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
+											<li><a href="mailto:scott@leeclan.net" target="_blank" class="fa-regular fa-envelope"><span class="label"></span></a></li>
+											<li><a href="https://scholar.google.co.uk/citations?user=zhc9ijsAAAAJ&hl=en&oi=ao" target="_blank" class="fa-brands fa-google-scholar"><span class="label"></span></a></li>
 										</ul>
 									</section>
 
@@ -124,7 +120,7 @@
 									</figure>
 							</div>
 						</div>
-					</div>
+						</div>
 				</div>
 		</div>
 
