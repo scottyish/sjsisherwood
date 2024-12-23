@@ -3847,8 +3847,8 @@ nav-divider:before, nav-divider:after { /* Defines the hr property for this elem
 .homepage-image {
     position: absolute; /* Position relative to the viewport */
     top: 7%; /* Move down 20px from the top of the viewport */
-    right: 245px; /* Move 30px from the right of the viewport */
-    width: 18%;
+    right: 14.5%; /* Move 30px from the right of the viewport */
+    width: 19%;
     height: auto;
     object-fit: contain;
 	justify-content: flex-end;
@@ -3865,8 +3865,10 @@ nav-divider:before, nav-divider:after { /* Defines the hr property for this elem
 	display: flex;
     text-align: justify; /* Justifies the paragraph text */
     max-width: 46%; /* Restricts paragraph width for readability */
-    margin: 0 31em 0 12.9em; /* Removes default margins */ 
-	margin-top: 5%; /* Moves the text higher */
+	margin-top: 5.5%; /* 5% of the parent container's width */
+    margin-right: 30%; /* 10% of the parent container's width */
+    margin-bottom: 0; /* 15% of the parent container's width */
+    margin-left: 14.5%; /* 20% of the parent container's width */
 	flex-direction: column;
 }
 
