@@ -1,138 +1,89 @@
 <!DOCTYPE HTML>
-<!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<style>
-		/* Updated homepage image styles for better responsiveness while retaining alignment */
-		.homepage-image {
-			display: block;
-			text-align: center;
-			width: 23%; /* Retained the original width */
-			height: auto;
-			object-fit: contain;
-			margin: 0 auto; /* Centered image horizontally */
+<head>
+	<title>Home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		strong {
+			display: inline;
+			/* Keeps the bold text inline */
+			font-weight: bold;
+			/* Ensures bold styling */
+			margin: 0;
+			/* Prevents extra spacing */
 		}
-		@media (max-width: 768px) {
-			.homepage-image {
-				width: 80px; /* Reduced width for mobile screens */
-				margin-bottom: 10px; /* Added space below the image */
-			}
-		}
-		</style>
-	
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+	</style>
 
-			<!-- Header -->
-			<div id="header">
+</head>
 
-					<!-- Inner -->
-						<div class="inner">
-							<div class="homepage-image">
-								<!-- <a href="#" class="image fit"><img src="images/dog1.jpg" alt=""/></a> -->
-								<img src="images/dog1.jpg" alt="" class="image fit" />
-							</div>
-							<header>
+<body class="homepage is-preload">
+	<!-- Prevents animations and transitions loading at the start -->
 
-								<br><br>
-								<!-- <h1><a href="index.html" id="logo">Scott Isherwood</a></h1> -->
-								<h1 id="logo">Scott Isherwood</h1>
-								<hr />
-								<p>A neuroscientist, consultant & investing enthusiast</p>
-							</header>
-							<footer>
-								<p style="text-align: center">
-									About me<br>
-								</p>
-								<p style="text-align: justify; margin: auto auto; max-width: 900px;">
-									 I’m a problem solver, investor, and passionate advocate for advancing life sciences and healthcare research. I hold a PhD in cognitive neuroscience and 
-									 have spent many years programming, forming and testing hypotheses, and engineering interdisciplinary solutions to help people, research lines and organisations succeed.
-									 I thrive at the intersection of science, technology, and strategy. I have worked with all things data, from financial & cognitive modelling to machine learning 
-									 approaches to image segmentation. I aim to continue to learn, grow and refine the way I approach problems, to help organisations make informed decisions and optimise their projects. As an investor, I’m particularly 
-									 interested in supporting innovative companies that are pushing boundaries in biotech and medtech. Whether it’s advising on digital 
-									 infrastructure or driving healthcare innovation, my goal is simple: to make a meaningful impact by supporting research and solutions that improve 
-									 the way we live.
-								</p>
-							</footer>
+	<!-- Load nav -->
+	<div id="nav-placeholder"></div>
 
-				</div>
+	<!-- <div id="page-wrapper"> -->
+	<!-- Header -->
+	<div id="header">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Blog</a>
-								<ul>
-									<li><a href="Papers.html">Papers</a></li>
-									<li><a href="Startups.html">Startups</a></li>
-									<!-- <li><a href="Investing.html">Investing</a></li> -->
-								</ul>
-							</li>
-							<li><a href="Portfolio.html">Portfolio</a></li>
-							<li><a href="Publications.html">Publications</a></li>
-							<li><a href="Projects.html">Projects</a></li>
-						</ul>
-					</nav>
-				</div>
+		<!-- Inner -->
+		<div class="inner">
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<!-- <div class="row">
-
-						</div> -->
-						<div style="height: 10em;"></div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Want to get in touch?</h3>
-										</header>
-										<p>Feel free to reach out through one of the mediums below.</p>
-										<ul class="icons">
-											<li><a href="https://github.com/scottyish" target="_blank" class="fa-brands fa-github"><span class="label"></span></a></li>
-											<li><a href="https://www.linkedin.com/in/sjsisherwood/" target="_blank" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-											<li><a href="mailto:scott@leeclan.net" target="_blank" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-											<li><a href="https://scholar.google.co.uk/citations?user=zhc9ijsAAAAJ&hl=en&oi=ao" target="_blank" class="fa-brands fa-google-scholar"><span class="label"></span></a></li>
-										</ul>
-									</section>
-
-								<!-- Copyright -->
-									<figure class="copyright">
-										<ul class="menu">
-											<li>2024 &copy; Scott Isherwood. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</figure>
-							</div>
-						</div>
-						</div>
-				</div>
+			<p class="about-paragraph">
+				I’m a problem solver, investor, and passionate advocate for advancing life sciences and healthcare
+				research. I hold a PhD in cognitive neuroscience and have
+				spent many years programming, forming and testing hypotheses, and engineering interdisciplinary
+				solutions to help people, research lines and organisations
+				succeed. I thrive at the intersection of science, technology, and strategy. I have worked with all
+				things data, from financial & cognitive modelling to
+				machine learning approaches to image segmentation. I aim to continue to learn, grow and refine the way I
+				approach problems, to help organisations make
+				informed decisions and optimise their projects. As an investor, I’m particularly interested in
+				supporting innovative companies that are pushing boundaries
+				in biotech and medtech. Whether it’s advising on digital infrastructure or driving healthcare
+				innovation, my goal is simple: to make a meaningful impact
+				by supporting research and solutions that improve the way we live.
+				<br><br>
+				Educational background <br><br>
+				<strong>University of Amsterdam</strong>
+				<i>PhD Cognitive Neuroscience (2019-2023)</i>
+				Integrative Model-based Cognitive Neuroscience Research unit <br><br>
+				<strong>University of Amsterdam</strong>
+				<i>MSc Brain and Cognitive sciences (2016-2018)</i><br>
+				<strong>King's College London</strong>
+				<i>BSc Biochemistry (2013-2016)</i>
+			</p>
+			<!-- Image -->
+			<div class="homepage-image">
+				<img src="images/dog1.jpg" alt="" class="image fit" />
+				<div style="height: 1em;"></div>
+			</div>
 		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Load footer -->
+	<div id="footer-placeholder"></div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/loadNav.js"></script>
+	<script src="assets/js/loadFooter.js"></script>
+	<script src="assets/js/fillBlankSpace.js"></script>
+</body>
+
 </html>

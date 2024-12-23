@@ -1,96 +1,34 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Papers</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.publication-item {
-				display: flex;
-				align-items: center;
-				justify-content: flex-start; /* Ensures items align starting from the left */
-				margin-bottom: 30px; /* Space between each publication */
-			}
-			.publication-image {
-				width: 100px;
-				height: auto;
-				object-fit: contain;
-				margin-right: 20px; /* Space between the image and the title */
-			}
-			.publication-description {
-				font-size: 0.9em; /* Smaller font for the description */
-				color: #555; /* Lighter color for distinction */
-				margin-top: 5px; /* Space between title and description */
-				line-height: 1.4; /* Improve readability */
-			}
-			.publication-link {
-				font-size: 1.2em;
-				text-decoration: none;
-				color: #333;
-				flex: 1;
-			}
-			.publication-link:hover {
-				text-decoration: underline;
-			}
-			@media (max-width: 768px) {
-				.publication-item {
-					flex-direction: column; /* Stack image and title vertically on small screens */
-					align-items: flex-start; /* Aligns items to the left on small screens */
-				}
-				.publication-image {
-					margin-right: 0; /* Remove right margin on small screens */
-					margin-bottom: 10px; /* Space below the image */
-					width: 80px; /* Smaller image for mobile */
-				}
-			}
-			/* Define styles for different HR classes */
-			.no-padding {
-				margin: 0; /* Removes top and bottom spacing */
-				padding: 0; /* Ensures no extra space (not common for <hr>) */
-				height: 2px; /* Optional: set a custom height */
-				position: relative;
-				display: block;
-				border: 0;
-				top: 2em;
-				margin-bottom: 2em;
-				height: 6px;
-				border-top: solid 1px rgba(128, 128, 128, 0.2);
-				border-bottom: solid 1px rgba(128, 128, 128, 0.2);
-			}
-		</style>
-	</head>
-	<body class="Papers is-preload">
-		<div id="page-wrapper">
-			<!-- Header -->
-			<div id="header">
-				<div class="inner">
-					<header>
-						<h1><a href="Papers.html" id="logo">Papers</a></h1>
-					</header>
-				</div>
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Blog</a>
-								<ul>
-									<!-- <li><a href="Articles.html">Articles</a></li> -->
-									<li><a href="Papers.html">Papers</a></li>
-									<li><a href="Startups.html">Startups</a></li>
-									<!-- <li><a href="Investing.html">Investing</a></li> -->
-									<!-- <li><a href="#">Veroeros feugiat</a></li> -->
-								</ul>
-							</li>
-							<!-- <li><a href="Blog.html">Blog</a></li> -->
-							<li><a href="Portfolio.html">Portfolio</a></li>
-							<li><a href="Publications.html">Publications</a></li>
-							<li><a href="Projects.html">Projects</a></li>
-						</ul>
-					</nav>
+
+<head>
+	<title>Papers</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+
+
+	</style>
+</head>
+
+<body class="Papers is-preload">
+
+	<!-- Load nav -->
+	<div id="nav-placeholder"></div>
+
+	<div id="page-wrapper">
+		<!-- Header -->
+		<div id="header">
+			<div class="inner">
+				<header>
+					<h1>Papers</h1>
+				</header>
 			</div>
+
 
 			<!-- Main -->
 			<div class="wrapper style1">
@@ -99,211 +37,313 @@
 						<article id="main">
 							<header>
 								<!-- <h2><a href="#"></a></h2> -->
-								<p style="text-align: center">
+								<p style="text-align: center; color: black">
 									This is a constantly updated list of papers that I've found interesting
 								</p>
-								<!-- <hr class="no-padding"> -->
+								<div style="height: 2em;"></div>
 							</header>
 							<!-- <p>
 								Here is a monthly collection of research papers that I find interesting
 							</p> -->
 
-							<div class="publication-item">
-								<a href=https://www.nature.com/articles/s41598-024-71244-2" class="publication-link" target="_blank">
-								<img src="paperImages/Oct2024.webp" alt="Publication 6 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>October 2024</h4>
-								<a href="https://www.nature.com/articles/s41598-024-71244-2" class="publication-link" target="_blank">
-									Leveraging AI and patient metadata to develop a novel risk score for skin cancer detection
+							<div class="papers-item">
+								<a href=Content/Oct2024_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Oct2024.webp" alt="Publication 6 Image"
+										class="papers-image" />
 								</a>
-								<p class="publication-description">
-									Researchers in the East of England have developed an AI-based tool for skin cancer detection that significantly outperforms existing methods. 
-									Using data from over 53,000 skin lesions, the team identified seven key clinical features—such as recent changes in lesion size, color, and shape, 
-									and patient hair color at age 15—integrated into the new C4C Risk Score. This model achieved 69% accuracy, surpassing traditional methods like 7PCL 
-									and Williams score, which focus primarily on melanoma. By combining the C4C Risk Score with lesion images, the AI tool promises faster diagnoses, fewer 
-									unnecessary biopsies, and improved outcomes for all skin cancer types, including basal and squamous cell carcinomas. Expected to gain regulatory approval 
-									by 2025, this innovation presents an opportunity for startups to enhance AI-driven diagnostic tools, addressing healthcare bottlenecks and improving early 
-									cancer detection, particularly in overburdened systems like the NHS.
-								</p>
-							</div>
-						</div>
-
-							<div class="publication-item">
-								<a href="https://www.nature.com/articles/s41531-024-00785-0" class="publication-link" target="_blank">
-								<img src="paperImages/Sept2024.webp" alt="Publication 6 Image" class="publication-image" />
-							</a>
 								<div>
-								<h4>September 2024</h4>
-								<a href="https://www.nature.com/articles/s41531-024-00785-0" class="publication-link" target="_blank">
-									Uric acid and alterations of purine recycling disorders in Parkinson’s disease: a cross-sectional study
-								</a>
-								<p class="publication-description">
-									A study from Fujita Health University, published in NPJ Parkinson’s Disease, uncovers critical disruptions in purine metabolism 
-									and ATP recycling in Parkinson’s disease (PD), highlighting energy deficits as a key factor in the disease’s progression. Researchers 
-									found that PD patients exhibit significantly lower levels of uric acid and hypoxanthine in both serum and cerebrospinal fluid (CSF), 
-									independent of upstream xanthine concentrations, challenging previous assumptions about purine metabolism. Reduced inosine levels in 
-									the CSF point to impaired nucleotide production in the brain, further implicating a dysfunctional energy system. These findings suggest 
-									that the hallmark energy metabolism disruption in PD could exacerbate symptoms, and targeting ATP recycling rather than simply elevating 
-									uric acid may offer more effective treatment strategies. This research provides a foundation for novel interventions, including metabolic 
-									therapies, exercise, and nutritional approaches, with potential to slow disease progression and improve patient outcomes. Such discoveries 
-									open avenues for startups to innovate in energy metabolism-targeted therapies and diagnostic tools for neurodegenerative diseases.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://www.science.org/doi/10.1126/science.abm6131" class="publication-link" target="_blank">
-								<img src="paperImages/Aug2024.jpg" alt="Publication 8 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>August 2024</h4>
-								<a href="https://www.science.org/doi/10.1126/science.abm6131" class="publication-link" target="_blank">
-									Restoring hippocampal glucose metabolism rescues cognition across Alzheimer’s disease pathologies
-								</a>
-								<p class="publication-description">
-									Another study displaying the potential of businesses like *** to use already clincally trialed pharmacologicals to treat 
-									diseases they were not initially desgined for. The study demonstrates that IDO1 inhibitors, originally 
-									developed for cancer treatment, could offer a novel approach for combating neurodegenerative diseases like Alzheimer’s. 
-									Researchers from Penn State, Stanford, and collaborators showed that suppressing the enzyme indoleamine-2,3-dioxygenase 1 
-									(IDO1) restored healthy glucose metabolism in astrocytes—key brain cells supporting neurons—thereby reversing memory and 
-									cognitive decline in Alzheimer’s models. By targeting the upstream metabolic dysfunction leading to amyloid and tau plaque 
-									formation, IDO1 inhibition offers potential beyond symptom management, addressing disease onset. The protective effects were 
-									consistent across amyloid and tau pathologies, with implications for other disorders such as Parkinson’s disease dementia and 
-									tauopathies. This breakthrough highlights metabolic intervention as a promising frontier in neurodegeneration research, offering 
-									startups opportunities to repurpose existing cancer drugs for precision therapies targeting brain metabolism and early-stage 
-									neurodegenerative conditions.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://www.nature.com/articles/s41586-024-07627-2" class="publication-link" target="_blank">
-								<img src="paperImages/July2024.png" alt="Publication 9 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>July 2024</h4>
-								<a href="https://www.nature.com/articles/s41586-024-07627-2" class="publication-link" target="_blank">
-									Interferon subverts an AHR–JUN axis to promote CXCL13+ T cells in lupus
-								</a>
-								<p class="publication-description">
-									A recent study published in Nature presents the development of multi-heterojunctioned plastic materials exhibiting a high thermoelectric 
-									figure of merit. These advanced plastics are engineered to efficiently convert temperature differences into electrical energy, offering 
-									potential applications in energy harvesting and thermal management technologies. This innovation represents a significant advancement in 
-									the field of thermoelectric materials, traditionally dominated by inorganic compounds. The introduction of high-performance, flexible, and 
-									lightweight plastic-based thermoelectric materials opens new avenues for integrating energy conversion systems into wearable electronics, 
-									portable devices, and other applications where traditional materials are less practical. For the startup ecosystem, this breakthrough provides 
-									opportunities to develop novel products that leverage these materials for efficient energy harvesting and management, potentially leading to more 
-									sustainable and versatile electronic devices.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://www.nature.com/articles/s41586-024-07500-2" class="publication-link" target="_blank">
-								<img src="paperImages/June2024.webp" alt="Publication 7 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>June 2024</h4>
-								<a href="https://www.nature.com/articles/s41586-024-07500-2" class="publication-link" target="_blank">
-									Hybrid working from home improves retention without damaging performance
-								</a>
-								<p class="publication-description">
-									A randomized controlled trial conducted by Nicholas Bloom and colleagues, published in Nature, reveals that hybrid work schedules, where employees work 
-									from home two days per week, benefit both individuals and organizations. The study, involving 1,600 employees at Trip.com, showed no negative impact on 
-									productivity or career advancement compared to full-time office work, while reducing resignation rates by 33%. Women, non-managers, and employees with long 
-									commutes benefited most from reduced attrition, saving the company millions in turnover costs. The findings dispel misconceptions equating hybrid with fully 
-									remote work and challenge managerial concerns about its potential drawbacks. Hybrid work preserves essential elements of mentoring, innovation, and company culture, 
-									presenting a rare “win-win-win” scenario for employees, employers, and economic policy. This evidence supports wider adoption of hybrid models, which can inspire startups 
-									to develop tools and strategies to optimize hybrid work environments, fostering retention and performance in competitive industries.
-								</p>
-							</div>
+									<h4 class="papers-title">October 2024</h4>
+									<a href="Content/Oct2024_1.pdf" class="papers-link" target="_blank">
+										Leveraging AI and patient metadata to develop a novel risk score for skin cancer
+										detection
+									</a>
+									<p class="papers-description">
+										The WHO estimates between 2-3 million new cases of skin cancer (melanoma &
+										non-melanoma types) each year. The human eye is innately poor at detecting tiny
+										differences
+										in pigmentation, size or texture. Image segmentation, detection, categorisation
+										is something AI is especially good at.
+										By analysing data from over 53,000 skin lesions and integrating key features,
+										such as size, colour and shape, the C4C Risk Score achieved a 69% accuracy rate,
+										significantly higher than existing techniques. While the rapid improvement in AI
+										tech has slowed considerably since ChatGPT-3 and equivalent models hit the
+										market,
+										methods such as these display how the uses for AI in the medical field are
+										constantly on the rise. Expected to gain regulatory approval
+										by 2025, this finding presents an opportunity for startups to enhance AI-driven
+										diagnostic tools, addressing bottlenecks in healthcare and improving early
+										cancer detection, particularly in overburdened systems like our NHS.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://academic.oup.com/cardiovascres/advance-article/doi/10.1093/cvr/cvae070/7658539" class="publication-link" target="_blank">
-								<img src="paperImages/May2024.jpeg" alt="Publication 5 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>May 2024</h4>
-								<a href="https://academic.oup.com/cardiovascres/advance-article/doi/10.1093/cvr/cvae070/7658539" class="publication-link" target="_blank">
-									Differential sex-dependent susceptibility to diastolic dysfunction and arrhythmia in cardiomyocytes from obese diabetic heart failure with preserved ejection fraction model
+							<div class="papers-item">
+								<a href="Content/Sept2024_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Sept2024.webp" alt="Publication 6 Image"
+										class="papers-image" />
 								</a>
-								<p class="publication-description">
-									A study by the UC Davis School of Medicine reveals sex-specific cellular mechanisms underlying heart failure with preserved ejection fraction (HFpEF) in mice, with 
-									significant implications for tailored treatments. Male mice with HFpEF exhibited diastolic dysfunction due to slower calcium removal, leading to incomplete relaxation 
-									between heartbeats and higher arrhythmia risks. In contrast, female mice had normal calcium dynamics but showed increased stiffness from altered forms of the heart filament 
-									protein titin and troponin I phosphorylation. These findings suggest distinct therapeutic targets: reducing cardiac stiffness for women and enhancing calcium removal for men. 
-									Using a “two-hit” mouse model incorporating obesity, diabetes, and aldosterone infusion, the study underscores the critical need for sex-specific approaches in HFpEF research 
-									and treatment, potentially inspiring new precision medicine innovations for startups focusing on cardiovascular health. Such findings provide more backing for the formation of
-									personalised healthcare.
-								</p>
-							</div>
+								<div>
+									<h4 class="papers-title">September 2024</h4>
+									<a href="Content/Sept2024_1.pdf" class="papers-link" target="_blank">
+										Uric acid and alterations of purine recycling disorders in Parkinson’s disease:
+										a cross-sectional study
+									</a>
+									<p class="papers-description">
+										A study from Fujita Health University, published in NPJ Parkinson’s Disease,
+										uncovers critical disruptions in purine metabolism
+										and ATP recycling in Parkinson’s disease (PD), highlighting energy deficits as a
+										key factor in the disease’s progression. Researchers
+										found that PD patients exhibit significantly lower levels of uric acid and
+										hypoxanthine in both serum and cerebrospinal fluid (CSF),
+										independent of upstream xanthine concentrations, challenging previous
+										assumptions about purine metabolism. Reduced inosine levels in
+										the CSF point to impaired nucleotide production in the brain, further
+										implicating a dysfunctional energy system. These findings suggest
+										that the hallmark energy metabolism disruption in PD could exacerbate symptoms,
+										and targeting ATP recycling rather than simply elevating
+										uric acid may offer more effective treatment strategies. This research provides
+										a foundation for novel interventions, including metabolic
+										therapies, exercise, and nutritional approaches, with potential to slow disease
+										progression and improve patient outcomes. Such discoveries
+										open avenues for startups to innovate in energy metabolism-targeted therapies
+										and diagnostic tools for neurodegenerative diseases.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.science.org/doi/10.1126/science.adh7954" class="publication-link" target="_blank">
-								<img src="paperImages/April2024.png" alt="Publication 3 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>April 2024</h4>
-								<a href="https://www.science.org/doi/10.1126/science.adh7954" class="publication-link" target="_blank">
-									Vitamin D regulates microbiome-dependent cancer immunity
+							<div class="papers-item">
+								<a href="https://www.science.org/doi/10.1126/science.abm6131" class="papers-link"
+									target="_blank">
+									<img src="paperImages/Aug2024.jpg" alt="Publication 8 Image" class="papers-image" />
 								</a>
-								<p class="publication-description">
-									A study published in Science provides more evidence for the role of vitamin D in cancer immunity. The work reveals that vitamin D enhances cancer 
-									immunity in mice by promoting the growth of a gut bacterium, 
-									Bacteroides fragilis, which suppresses tumor growth. Researchers from the Francis Crick Institute and collaborators found that vitamin D 
-									acts on intestinal epithelial cells to increase this bacteria, improving resistance to transplanted tumors and boosting responses to immunotherapy. 
-									Mice with a vitamin D-rich diet or supplemented with Bacteroides fragilis exhibited better tumor suppression, though the effect was absent in vitamin 
-									D-deficient conditions. Analysis of Danish population data further supported an association between low vitamin D levels and higher cancer risk, while 
-									cancer patients with higher vitamin D showed better immunotherapy outcomes. Although these findings underscore vitamin D’s potential in modulating the 
-									microbiome for cancer immunity, the exact mechanisms remain unclear, necessitating further investigation. These insights open avenues for startups to 
-									explore microbiome-targeted therapies and dietary interventions to enhance immunotherapy effectiveness in cancer treatment.
-								</p>
-							</div>
+								<div>
+									<h4 class="papers-title">August 2024</h4>
+									<a href="https://www.science.org/doi/10.1126/science.abm6131" class="papers-link"
+										target="_blank">
+										Restoring hippocampal glucose metabolism rescues cognition across Alzheimer’s
+										disease pathologies
+									</a>
+									<p class="papers-description">
+										Another study displaying the potential of businesses like *** to use already
+										clincally trialed pharmacologicals to treat
+										diseases they were not initially desgined for. The study demonstrates that IDO1
+										inhibitors, originally
+										developed for cancer treatment, could offer a novel approach for combating
+										neurodegenerative diseases like Alzheimer’s.
+										Researchers from Penn State, Stanford, and collaborators showed that suppressing
+										the enzyme indoleamine-2,3-dioxygenase 1
+										(IDO1) restored healthy glucose metabolism in astrocytes—key brain cells
+										supporting neurons—thereby reversing memory and
+										cognitive decline in Alzheimer’s models. By targeting the upstream metabolic
+										dysfunction leading to amyloid and tau plaque
+										formation, IDO1 inhibition offers potential beyond symptom management,
+										addressing disease onset. The protective effects were
+										consistent across amyloid and tau pathologies, with implications for other
+										disorders such as Parkinson’s disease dementia and
+										tauopathies. This breakthrough highlights metabolic intervention as a promising
+										frontier in neurodegeneration research, offering
+										startups opportunities to repurpose existing cancer drugs for precision
+										therapies targeting brain metabolism and early-stage
+										neurodegenerative conditions.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(23)00684-9/fulltext" class="publication-link" target="_blank">
-								<img src="paperImages/March2024.jpg" alt="Publication 4 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>March 2024</h4>
-								<a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(23)00684-9/fulltext" class="publication-link" target="_blank">
-									Long-term outcomes following hospital admission for COVID-19 versus seasonal influenza: a cohort study
+							<div class="papers-item">
+								<a href="https://www.nature.com/articles/s41586-024-07627-2" class="papers-link"
+									target="_blank">
+									<img src="paperImages/July2024.png" alt="Publication 9 Image"
+										class="papers-image" />
 								</a>
-								<p class="publication-description">
-									A study published in The Lancet Infectious Diseases in 2024 investigates the long-term outcomes of patients hospitalized for COVID-19 
-									compared to those admitted for seasonal influenza. The research reveals that individuals hospitalized with COVID-19 experience higher rates 
-									of long-term complications, including respiratory and cardiovascular issues, than those hospitalized with influenza. These findings underscore 
-									the severe and lasting health impacts of COVID-19, highlighting the necessity for ongoing monitoring and tailored post-discharge care for affected patients.
-									This study contributes to the understanding of COVID-19’s long-term health consequences, emphasizing the importance of comprehensive patient management 
-									strategies. In the startup ecosystem, these insights could drive the development of innovative healthcare solutions, such as remote monitoring technologies 
-									and personalized rehabilitation programs, to support the recovery and well-being of individuals affected by COVID-19.
-								</p>
-							</div>
+								<div>
+									<h4 class="papers-title">July 2024</h4>
+									<a href="https://www.nature.com/articles/s41586-024-07627-2" class="papers-link"
+										target="_blank">
+										Interferon subverts an AHR–JUN axis to promote CXCL13+ T cells in lupus
+									</a>
+									<p class="papers-description">
+										A recent study published in Nature presents the development of
+										multi-heterojunctioned plastic materials exhibiting a high thermoelectric
+										figure of merit. These advanced plastics are engineered to efficiently convert
+										temperature differences into electrical energy, offering
+										potential applications in energy harvesting and thermal management technologies.
+										This innovation represents a significant advancement in
+										the field of thermoelectric materials, traditionally dominated by inorganic
+										compounds. The introduction of high-performance, flexible, and
+										lightweight plastic-based thermoelectric materials opens new avenues for
+										integrating energy conversion systems into wearable electronics,
+										portable devices, and other applications where traditional materials are less
+										practical. For the startup ecosystem, this breakthrough provides
+										opportunities to develop novel products that leverage these materials for
+										efficient energy harvesting and management, potentially leading to more
+										sustainable and versatile electronic devices.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.neurology.org/doi/10.1212/WNL.0000000000209162" class="publication-link" target="_blank">
-								<img src="paperImages/Feb2024.png" alt="Publication 2 Image" class="publication-image" />
-							</a>
-								<div>
-								<h4>February 2024</h4>
-								<a href="https://www.neurology.org/doi/10.1212/WNL.0000000000209162" class="publication-link" target="_blank">
-									Association of PM2.5 Exposure and Alzheimer Disease Pathology in Brain Bank Donors—Effect Modification by APOE Genotype
+							<div class="papers-item">
+								<a href="Content/June2024_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/June2024.webp" alt="Publication 7 Image"
+										class="papers-image" />
 								</a>
-								<p class="publication-description">
-									A study published in Neurology links traffic-related air pollution exposure to higher levels of amyloid plaques, a hallmark of Alzheimer’s disease, 
-									in post-mortem brain analyses. Examining brain tissue from 224 individuals with an average age of 76, researchers found that exposure to fine particulate matter 
-									(PM2.5) in the year and three years prior to death significantly increased the likelihood of amyloid plaque accumulation. Notably, individuals without the APOE 
-									e4 gene variant exhibited the strongest correlation, highlighting the potential role of environmental factors in non-genetic Alzheimer’s cases. While the findings 
-									strengthen the evidence linking air pollution to neurodegeneration, limitations such as reliance on final home addresses and a homogenous study population warrant 
-									further investigation. These insights not only advance scientific understanding of environmental contributors to dementia but also suggest potential pathways for 
-									startups to innovate air quality monitoring and mitigation technologies aimed at urban health challenges.
-							</p>
-						</div>
+								<div>
+									<h4 class="papers-title">June 2024</h4>
+									<a href="Content/June2024_1.pdf" class="papers-link" target="_blank">
+										Hybrid working from home improves retention without damaging performance
+									</a>
+									<p class="papers-description">
+										A randomised controlled trial conducted by Nicholas Bloom and colleagues,
+										published in Nature, reveals that hybrid work schedules, where employees work
+										from home two days per week, benefit both individuals and organisations. The
+										study, involving 1,600 employees at Trip.com, showed no negative impact on
+										productivity or career advancement compared to full-time office work, while
+										reducing resignation rates by 33%. Women, non-managers, and employees with long
+										commutes benefited most from reduced attrition, saving the company millions in
+										turnover costs. The findings dispel misconceptions equating hybrid with fully
+										remote work and challenge managerial concerns about its potential drawbacks.
+										Hybrid work preserves essential elements of mentoring, innovation, and company
+										culture,
+										presenting a rare “win-win-win” scenario for employees, employers, and economic
+										policy. This evidence supports wider adoption of hybrid models, which can
+										inspire startups
+										to develop tools and strategies to optimise hybrid work environments, fostering
+										retention and performance in competitive industries.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/May2024_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/May2024.jpeg" alt="Publication 5 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">May 2024</h4>
+									<a href="Content/May2024_1.pdf" class="papers-link" target="_blank">
+										Differential sex-dependent susceptibility to diastolic dysfunction and
+										arrhythmia in cardiomyocytes from obese diabetic heart failure with preserved
+										ejection fraction model
+									</a>
+									<p class="papers-description">
+										A study by the UC Davis School of Medicine reveals sex-specific cellular
+										mechanisms underlying heart failure with preserved ejection fraction (HFpEF) in
+										mice, with
+										significant implications for tailored treatments. Male mice with HFpEF exhibited
+										diastolic dysfunction due to slower calcium removal, leading to incomplete
+										relaxation
+										between heartbeats and higher arrhythmia risks. In contrast, female mice had
+										normal calcium dynamics but showed increased stiffness from altered forms of the
+										heart filament
+										protein titin and troponin I phosphorylation. These findings suggest distinct
+										therapeutic targets: reducing cardiac stiffness for women and enhancing calcium
+										removal for men.
+										Using a “two-hit” mouse model incorporating obesity, diabetes, and aldosterone
+										infusion, the study underscores the critical need for sex-specific approaches in
+										HFpEF research
+										and treatment, potentially inspiring new precision medicine innovations for
+										startups focusing on cardiovascular health. Such findings provide more backing
+										for the formation of
+										personalised healthcare.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="https://www.science.org/doi/10.1126/science.adh7954" class="papers-link"
+									target="_blank">
+									<img src="paperImages/April2024.png" alt="Publication 3 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">April 2024</h4>
+									<a href="https://www.science.org/doi/10.1126/science.adh7954" class="papers-link"
+										target="_blank">
+										Vitamin D regulates microbiome-dependent cancer immunity
+									</a>
+									<p class="papers-description">
+										A study published in Science provides more evidence for the role of vitamin D in
+										cancer immunity. The work reveals that vitamin D enhances cancer
+										immunity in mice by promoting the growth of a gut bacterium,
+										Bacteroides fragilis, which suppresses tumor growth. Researchers from the
+										Francis Crick Institute and collaborators found that vitamin D
+										acts on intestinal epithelial cells to increase this bacteria, improving
+										resistance to transplanted tumors and boosting responses to immunotherapy.
+										Mice with a vitamin D-rich diet or supplemented with Bacteroides fragilis
+										exhibited better tumor suppression, though the effect was absent in vitamin
+										D-deficient conditions. Analysis of Danish population data further supported an
+										association between low vitamin D levels and higher cancer risk, while
+										cancer patients with higher vitamin D showed better immunotherapy outcomes.
+										Although these findings underscore vitamin D’s potential in modulating the
+										microbiome for cancer immunity, the exact mechanisms remain unclear,
+										necessitating further investigation. These insights open avenues for startups to
+										explore microbiome-targeted therapies and dietary interventions to enhance
+										immunotherapy effectiveness in cancer treatment.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/March2024_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/March2024.jpg" alt="Publication 4 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">March 2024</h4>
+									<a href="Content/March2024_1.pdf" class="papers-link" target="_blank">
+										Long-term outcomes following hospital admission for COVID-19 versus seasonal
+										influenza: a cohort study
+									</a>
+									<p class="papers-description">
+										A study published in The Lancet Infectious Diseases in 2024 investigates the
+										long-term outcomes of patients hospitalised for COVID-19
+										compared to those admitted for seasonal influenza. The research reveals that
+										individuals hospitalised with COVID-19 experience higher rates
+										of long-term complications, including respiratory and cardiovascular issues,
+										than those hospitalised with influenza. These findings underscore
+										the severe and lasting health impacts of COVID-19, highlighting the necessity
+										for ongoing monitoring and tailored post-discharge care for affected patients.
+										This study contributes to the understanding of COVID-19’s long-term health
+										consequences, emphasising the importance of comprehensive patient management
+										strategies. In the startup ecosystem, these insights could drive the development
+										of innovative healthcare solutions, such as remote monitoring technologies
+										and personalised rehabilitation programs, to support the recovery and well-being
+										of individuals affected by COVID-19.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="https://www.neurology.org/doi/10.1212/WNL.0000000000209162" class="papers-link"
+									target="_blank">
+									<img src="paperImages/Feb2024.png" alt="Publication 2 Image" class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">February 2024</h4>
+									<a href="https://www.neurology.org/doi/10.1212/WNL.0000000000209162"
+										class="papers-link" target="_blank">
+										Association of PM2.5 Exposure and Alzheimer Disease Pathology in Brain Bank
+										Donors—Effect Modification by APOE Genotype
+									</a>
+									<p class="papers-description">
+										A study published in Neurology links traffic-related air pollution exposure to
+										higher levels of amyloid plaques, a hallmark of Alzheimer’s disease,
+										in post-mortem brain analyses. Examining brain tissue from 224 individuals with
+										an average age of 76, researchers found that exposure to fine particulate matter
+										(PM2.5) in the year and three years prior to death significantly increased the
+										likelihood of amyloid plaque accumulation. Notably, individuals without the APOE
+										e4 gene variant exhibited the strongest correlation, highlighting the potential
+										role of environmental factors in non-genetic Alzheimer’s cases. While the
+										findings
+										strengthen the evidence linking air pollution to neurodegeneration, limitations
+										such as reliance on final home addresses and a homogenous study population
+										warrant
+										further investigation. These insights not only advance scientific understanding
+										of environmental contributors to dementia but also suggest potential pathways
+										for
+										startups to innovate air quality monitoring and mitigation technologies aimed at
+										urban health challenges.
+									</p>
+								</div>
 							</div>
 
 							<!-- <div class="publication-item">
@@ -328,323 +368,400 @@
 								</div>
 							</div> -->
 
-									<div class="publication-item">
-										<a href="https://www.pnas.org/doi/10.1073/pnas.2311019120" class="publication-link" target="_blank">
-											<img src="paperImages/Dec2023.jpg" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>December 2023</h4>
-											<a href="https://www.pnas.org/doi/10.1073/pnas.2311019120" class="publication-link" target="_blank">
-												 Late-life shift in caloric intake affects fly metabolism and longevity
-											</a>
-											<p class="publication-description">
-												With the influx of personalised healthcare companies, and the huge rise in consumption of supplements, could there be more natural, simple methods 
-												to increase longevity? A recent study looked into the effects of caloric intake  
-												on metabolism and longevity in fruit flies. The researchers found that transitioning from a high-calorie 
-												to a low-calorie diet, even later in life, significantly reduced mortality rates and extended lifespan. Conversely, switching from 
-												a low-calorie to a high-calorie diet increased mortality and shortened lifespan. Diet has always been known to be important, across the sciences, 
-												but the timeline by at which such a change can effect the human body has been less studied. These findings suggest that dietary changes can 
-												rapidly influence aging processes, highlighting the potential for caloric restriction interventions to mitigate the adverse effects 
-												of high-calorie diets and promote longevity. 
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41598-023-45072-9" class="publication-link" target="_blank">
-											<img src="paperImages/Nov2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>November 2023</h4>
-											<a href="https://www.nature.com/articles/s41598-023-45072-9" class="publication-link" target="_blank">
-												Treatment of 95 post-Covid patients with SSRIs
-											</a>
-											<p class="publication-description">
-												One method of drug discovery, is simply to attempt to discover new uses for the current pharmacologicals we already have. Here, 
-												the authors looked at how SSRIs, a common set of antidepressants, could be used to treat post-COVID. The research focuses on the presence of hypometabolic areas in the pons—a region of 
-												the brainstem—and its potential link to vagus nerve dysfunction, which may contribute to dysautonomia in post-COVID syndrome. This study 
-												sheds some light on the neurological underpinnings of post-COVID-19 symptoms and suggests that SSRIs could aid in this case. The findings highlight the 
-												importance of exploring targeted treatments for post-COVID-19 patients, particularly those experiencing neurological complications.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41598-023-41980-y" class="publication-link" target="_blank">
-											<img src="paperImages/Oct2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>October 2023</h4>
-											<a href="https://www.nature.com/articles/s41598-023-41980-y" class="publication-link" target="_blank">
-												The impact of founder personalities on startup success
-											</a>
-											<p class="publication-description">
-												Founders are obviously paramount when attempting to predict the success of a startup. This variability of this factor alone, makes normal methods 
-												of company valuation (DCF etc) useless in this space. So can we quantify what makes a good founder? Are the specfic traits that we can select for,
-												to increase our odds of picking a winner? According to this paper, yes. They found that traits such as openness to experience, conscientiousness, and 
-												emotional stability are positively associated with startup performance. On the other side, high levels of neuroticism were linked to lower success rates. 
-												The findings suggest that the personality traits of founders play a significant role in the trajectory of a startup. While psychological facotrs are always
-												evaluated when deciding whether to invest in a startup, this is done in a qualitative heuristic way by humans, could a framework involving more quantitative 
-												measuremnts of founders traits be more effective?
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41598-023-40858-3" class="publication-link" target="_blank">
-											<img src="paperImages/Sept2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>September 2023</h4>
-											<a href="https://www.nature.com/articles/s41598-023-40858-3" class="publication-link" target="_blank">
-												Best humans still outperform artificial intelligence in a creative divergent thinking task
-											</a>
-											<p class="publication-description">
-												This study investigates the comparative performance of humans and 
-												AI in creative tasks. The researchers evaluated ChatGPT-3, ChatGPT-4, and Copy.Ai against human participants using the Alternative Uses Task (AUT), which measures 
-												divergent thinking by asking individuals to list as many uses as possible for a common object. Results indicated that human participants generated more original and 
-												varied responses than the AI models, highlighting the current limitations of AI in replicating human creativity. This research underscores the unique aspects of human 
-												creative cognition that AI has yet to fully emulate. It suggests that, despite how far in AI language models have come in recent years, human creativity remains superior in tasks requiring 
-												divergent thinking. Such findings have implications for the next steps in the development of AI systems, emphasizing the need to further explore and integrate the nuances of human 
-												creativity into AI algorithms.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.221451" class="publication-link" target="_blank">
-											<img src="paperImages/Aug2023.jpg" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>August 2023</h4>
-											<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.221451" class="publication-link" target="_blank">
-												Estimating the association between Facebook adoption and well-being in 72 countries
-											</a>
-											<p class="publication-description">
-												How social media (i.e., Facebook, Instagram, Twitter) effects cognitive, psychological and social development is still unclear.
-												I think most of us have an implicit feeling that many aspects of the platforms must be detrimental for users, especially in adolescents. 
-												But how true is this? We are inundated with negative associations between social media use and health, but how much of this is based on real, 
-												tractable data? The findings of this paper indicate that the impact of social media on well-being is minimal, with effect sizes explaining less than 1% of the variation 
-												in mental health outcomes. This suggests that other factors, such as family environment and offline social interactions, play a more substantial 
-												role in adolescents’ mental health. This insight encourages a shift in focus from solely targeting social media usage to addressing broader environmental 
-												and personal factors that contribute to adolescents’ mental health. The results of this paper came as a suprise to me, as governments around the world rush 
-												to limit access to the platforms to minors. 
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41591-023-02419-z" class="publication-link" target="_blank">
-											<img src="paperImages/July2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>July 2023</h4>
-											<a href="https://www.nature.com/articles/s41591-023-02419-z" class="publication-link" target="_blank">
-												Heat-related mortality in Europe during the summer of 2022
-											</a>
-											<p class="publication-description">
-												This study looked into mortality rates across Europe during the summer of 2022. 
-												The researchers analyzed temperature and mortality data from 35 countries, estimating that over 61,000 heat-related deaths occurred during this period. The findings 
-												highlight the significant public health threat posed by rising temperatures and underscore the urgent need for effective heat adaptation strategies and policies to 
-												mitigate the adverse effects of climate change on human health. 
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.science.org/doi/10.1126/science.abn9257" class="publication-link" target="_blank">
-											<img src="paperImages/June2023.jpg" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>June 2023</h4>
-											<a href="https://www.science.org/doi/10.1126/science.abn9257" class="publication-link" target="_blank">
-												Taurine deficiency as a driver of aging
-											</a>
-											<p class="publication-description">
-												This group investigated the role of taurine deficiency in aging. Researchers observed that taurine levels 
-												decline with age in various species, including us. Supplementing taurine in middle-aged animals, such as mice and monkeys, 
-												led to increased lifespan and improved health markers, including enhanced muscle strength, coordination, and immune function. 
-												These findings suggest that taurine deficiency may be a driver of aging, and that taurine supplementation could be a potential 
-												strategy to promote healthy aging. This research provides valuable insights into the biological mechanisms of aging, highlighting 
-												taurine as a significant factor in the aging process. The study’s implications extend to developing dietary or pharmacological 
-												interventions aimed at increasing taurine levels to enhance healthspan and longevity. With the rise of tailored healthcare and 
-												huge number of companies selling supplements, this paper will likely give rise to additional avenues in this space.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41586-023-06098-1" class="publication-link" target="_blank">
-											<img src="paperImages/May2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>May 2023</h4>
-											<a href="https://www.nature.com/articles/s41586-023-06098-1" class="publication-link" target="_blank">
-												Geometric constraints on human brain function
-											</a>
-											<p class="publication-description">
-												We can all agree that the anatomy and architectural properties of the brain constrain its function. 
-												The exact mechanism, or mechanisms, that allow the relatively static neuroanatomy of the brain to 
-												give rise to the complex and dynamic spatiotemporal signalling cascades from which consciousness
-												emerges, is unclear. 
-												Much of the field has based their research on the idea of more domain-specifc functions of brain areas, where 
-												differing functions can be ascribed to regions based on the properties of their neuronal subpopulations, and their connectivty
-												to other regions. Less focus has looked at the geometry of the brain, which defines the path of least resistance and aspects of
-												proximity and diffusion. 
-												This work challenges the classical paradigm of functionally specialized, connectivity-driven brain activity, instead 
-												identifying geometry as a central determinant of neuronal dynamics. By introducing a unifying, physically principled 
-												model of brain-wide activity, the findings redefine how large-scale dynamics are conceptualized, with significant implications 
-												for neuroimaging, computational modeling, and the study of structure-function relationships. This paradigm shift not only enhances 
-												our understanding of brain organization but also provides a framework for exploring neurodevelopmental and pathological processes 
-												through the lens of geometry and wave dynamics.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.science.org/doi/10.1126/science.add7631" class="publication-link" target="_blank">
-											<img src="paperImages/April2023.png" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>April 2023</h4>
-											<a href="https://www.science.org/doi/10.1126/science.add7631" class="publication-link" target="_blank">
-												Engineering longevity—design of a synthetic gene oscillator to slow cellular aging
-											</a>
-											<p class="publication-description">
-												The research group behind this study developed a soft electronic skin (e-skin) that has similar physical properties of skin (flexibility & stretchability), 
-												and has integrated ciruits to 'sense' pressure changes, strain and temperature. The e-skin uses nanotech and appears to be very accurate in its readings of
-												pressure & strain detection, and temperature.
-												Its self-healing properties and ability to interface with human skin make it a promising tool 
-												for applications in healthcare monitoring, robotics, and human-machine interactions. The research advances the field of bioelectronics by 
-												addressing durability and functionality challenges in wearable devices. Such tech could be the basis of many breakthroughs 
-												in personalized health diagnostics, prosthetics, and interactive robotics, opening new avenues for commercial exploitation in healthtech and 
-												assistive technologies.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.12404" class="publication-link" target="_blank">
-											<img src="paperImages/March2023.jpg" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>March 2023</h4>
-											<a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.12404" class="publication-link" target="_blank">
-												Vitamin D supplementation and incident dementia: Effects of sex, APOE, and baseline cognitive status
-											</a>
-											<p class="publication-description">
-												The study examined the relationship between 
-												vitamin D supplementation and the incidence of dementia. Using data from over 12,000 dementia-free individuals, the group 
-												found a 40% lower incidence of dementia in those that took vitamin D supplements than those who didn't. The protective effect of vitamin D
-												appears to be more pronounced in women and individuals without the APOE ε4 gene, which is associated with a higher risk of Alzheimer’s disease.
-												These findings suggest that vitamin D supplementation could be a viable strategy for reducing dementia risk, particularly in specific 
-												populations. This research contributes to the understanding of modifiable risk factors for dementia and may influence public health 
-												recommendations regarding vitamin D intake. For the startup ecosystem, these insights could lead to the development of new preventive health 
-												products or services aimed at cognitive health maintenance, potentially benefiting aging populations.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41598-022-22841-6" class="publication-link" target="_blank">
-											<img src="paperImages/Feb2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>February 2023</h4>
-											<a href="https://www.nature.com/articles/s41598-022-22841-6" class="publication-link" target="_blank">
-												Association between cannabis use and blood pressure levels according to comorbidities and socioeconomic status
-											</a>
-											<p class="publication-description">
-												The study investigated the relationship between cannabis consumption 
-												and blood pressure in adults in the US. Using data from the National Health and Nutrition Examination Survey (NHANES) between 2005 and 2012, the group 
-												analysed the blood pressure of people with varying histories of cannabis use, adjusting for confounding factors such as age, sex, 
-												body mass index, and tobacco use. The findings indicate that current cannabis users had higher systolic 
-												and diastolic blood pressure levels compared to non-users. These results suggest a potential link between cannabis use and elevated blood pressure, highlighting the need for further research 
-												to understand the underlying mechanisms and long-term cardiovascular implications. With the relatively laxed outlook on cannabis use across many developed and underdeveloped countries, 
-												and uncertain understanding of the short or long-term effects of cannabis use, more work elucidating other potential risk factors is needed.
-											</p>
-										</div>
-									</div>
-									
-									<div class="publication-item">
-										<a href="https://www.nature.com/articles/s41598-022-26845-0" class="publication-link" target="_blank">
-											<img src="paperImages/Jan2023.webp" alt="Publication 1 Image" class="publication-image" />
-										</a>
-										<div>
-											<h4>January 2023</h4>
-											<a href="https://www.nature.com/articles/s41598-022-26845-0" class="publication-link" target="_blank">
-												Genome-wide association study of school grades identifies genetic overlap between language ability, psychopathology and creativity
-											</a>
-											<p class="publication-description">
-												The study looked into the genetic factors influencing academic performance and their connections 
-												to language skills, mental health, and creativity. They analysed the genomes of 30,982 individuals, and found 
-												that genetic variants associated with better lanugage ability also correlate with an increased risk for 
-												certain psychiatric disorders, notably schizophrenia. Such variants were also more prevalent in people in creative industries. 
-												Overall, these findings suggest that language ability, creativity, and susceptibility to certain mental 
-												health conditions may share common genetic roots. Understanding these connections could inform future educational strategies and mental health interventions, 
-												aiding the sector-wide focus on personalised healthcare
-											</p>
-										</div>
-									</div>
-
-
-
+							<div class="papers-item">
+								<a href="Content/Dec2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Dec2023.jpg" alt="Publication 1 Image" class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">December 2023</h4>
+									<a href="Content/Dec2023_1.pdf" class="papers-link" target="_blank">
+										Late-life shift in caloric intake affects fly metabolism and longevity
+									</a>
+									<p class="papers-description">
+										With the influx of personalised healthcare companies, and the huge rise in
+										consumption of supplements, could there be more natural, simple methods
+										to increase longevity? A recent study looked into the effects of caloric intake
+										on metabolism and longevity in fruit flies. The researchers found that
+										transitioning from a high-calorie
+										to a low-calorie diet, even later in life, significantly reduced mortality rates
+										and extended lifespan. Conversely, switching from
+										a low-calorie to a high-calorie diet increased mortality and shortened lifespan.
+										Diet has always been known to be important, across the sciences,
+										but the timeline by at which such a change can effect the human body has been
+										less studied. These findings suggest that dietary changes can
+										rapidly influence aging processes, highlighting the potential for caloric
+										restriction interventions to mitigate the adverse effects
+										of high-calorie diets and promote longevity.
+									</p>
+								</div>
 							</div>
 
-						</div>
-					</article>
+							<div class="papers-item">
+								<a href="Content/Nov2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Nov2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">November 2023</h4>
+									<a href="Content/Nov2023_1.pdf" class="papers-link" target="_blank">
+										Treatment of 95 post-Covid patients with SSRIs
+									</a>
+									<p class="papers-description">
+										One method of drug discovery, is simply to attempt to discover new uses for the
+										current pharmacologicals we already have. Here,
+										the authors looked at how SSRIs, a common set of antidepressants, could be used
+										to treat post-COVID. The research focuses on the presence of hypometabolic areas
+										in the pons—a region of
+										the brainstem—and its potential link to vagus nerve dysfunction, which may
+										contribute to dysautonomia in post-COVID syndrome. This study
+										sheds some light on the neurological underpinnings of post-COVID-19 symptoms and
+										suggests that SSRIs could aid in this case. The findings highlight the
+										importance of exploring targeted treatments for post-COVID-19 patients,
+										particularly those experiencing neurological complications.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/Oct2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Oct2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">October 2023</h4>
+									<a href="Content/Oct2023_1.pdf" class="papers-link" target="_blank">
+										The impact of founder personalities on startup success
+									</a>
+									<p class="papers-description">
+										Founders are obviously paramount when attempting to predict the success of a
+										startup. This variability of this factor alone, makes normal methods
+										of company valuation (DCF etc) useless in this space. So can we quantify what
+										makes a good founder? Are the specfic traits that we can select for,
+										to increase our odds of picking a winner? According to this paper, yes. They
+										found that traits such as openness to experience, conscientiousness, and
+										emotional stability are positively associated with startup performance. On the
+										other side, high levels of neuroticism were linked to lower success rates.
+										The findings suggest that the personality traits of founders play a significant
+										role in the trajectory of a startup. While psychological facotrs are always
+										evaluated when deciding whether to invest in a startup, this is done in a
+										qualitative heuristic way by humans, could a framework involving more
+										quantitative
+										measuremnts of founders traits be more effective?
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="https://www.nature.com/articles/s41598-023-40858-3" class="papers-link"
+									target="_blank">
+									<img src="paperImages/Sept2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">September 2023</h4>
+									<a href="https://www.nature.com/articles/s41598-023-40858-3" class="papers-link"
+										target="_blank">
+										Best humans still outperform artificial intelligence in a creative divergent
+										thinking task
+									</a>
+									<p class="papers-description">
+										This study investigates the comparative performance of humans and
+										AI in creative tasks. The researchers evaluated ChatGPT-3, ChatGPT-4, and
+										Copy.Ai against human participants using the Alternative Uses Task (AUT), which
+										measures
+										divergent thinking by asking individuals to list as many uses as possible for a
+										common object. Results indicated that human participants generated more original
+										and
+										varied responses than the AI models, highlighting the current limitations of AI
+										in replicating human creativity. This research underscores the unique aspects of
+										human
+										creative cognition that AI has yet to fully emulate. It suggests that, despite
+										how far in AI language models have come in recent years, human creativity
+										remains superior in tasks requiring
+										divergent thinking. Such findings have implications for the next steps in the
+										development of AI systems, emphasising the need to further explore and integrate
+										the nuances of human
+										creativity into AI algorithms.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/Sug2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Aug2023.jpg" alt="Publication 1 Image" class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">August 2023</h4>
+									<a href="Content/Aug2023_1.pdf" class="papers-link" target="_blank">
+										Estimating the association between Facebook adoption and well-being in 72
+										countries
+									</a>
+									<p class="papers-description">
+										How social media (i.e., Facebook, Instagram, Twitter) effects cognitive,
+										psychological and social development is still unclear.
+										I think most of us have an implicit feeling that many aspects of the platforms
+										must be detrimental for users, especially in adolescents.
+										But how true is this? We are inundated with negative associations between social
+										media use and health, but how much of this is based on real,
+										tractable data? The findings of this paper indicate that the impact of social
+										media on well-being is minimal, with effect sizes explaining less than 1% of the
+										variation
+										in mental health outcomes. This suggests that other factors, such as family
+										environment and offline social interactions, play a more substantial
+										role in adolescents’ mental health. This insight encourages a shift in focus
+										from solely targeting social media usage to addressing broader environmental
+										and personal factors that contribute to adolescents’ mental health. The results
+										of this paper came as a suprise to me, as governments around the world rush
+										to limit access to the platforms to minors.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/July2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/July2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">July 2023</h4>
+									<a href="Content/July2023_1.pdf" class="papers-link" target="_blank">
+										Heat-related mortality in Europe during the summer of 2022
+									</a>
+									<p class="papers-description">
+										This study looked into mortality rates across Europe during the summer of 2022.
+										The researchers analysed temperature and mortality data from 35 countries,
+										estimating that over 61,000 heat-related deaths occurred during this period. The
+										findings
+										highlight the significant public health threat posed by rising temperatures and
+										underscore the urgent need for effective heat adaptation strategies and policies
+										to
+										mitigate the adverse effects of climate change on human health.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="https://www.science.org/doi/10.1126/science.abn9257" class="papers-link"
+									target="_blank">
+									<img src="paperImages/June2023.jpg" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">June 2023</h4>
+									<a href="https://www.science.org/doi/10.1126/science.abn9257" class="papers-link"
+										target="_blank">
+										Taurine deficiency as a driver of aging
+									</a>
+									<p class="papers-description">
+										This group investigated the role of taurine deficiency in aging. Researchers
+										observed that taurine levels
+										decline with age in various species, including us. Supplementing taurine in
+										middle-aged animals, such as mice and monkeys,
+										led to increased lifespan and improved health markers, including enhanced muscle
+										strength, coordination, and immune function.
+										These findings suggest that taurine deficiency may be a driver of aging, and
+										that taurine supplementation could be a potential
+										strategy to promote healthy aging. This research provides valuable insights into
+										the biological mechanisms of aging, highlighting
+										taurine as a significant factor in the aging process. The study’s implications
+										extend to developing dietary or pharmacological
+										interventions aimed at increasing taurine levels to enhance healthspan and
+										longevity. With the rise of tailored healthcare and
+										huge number of companies selling supplements, this paper will likely give rise
+										to additional avenues in this space.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/May2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/May2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">May 2023</h4>
+									<a href="Content/May2023_1.pdf" class="papers-link" target="_blank">
+										Geometric constraints on human brain function
+									</a>
+									<p class="papers-description">
+										We can all agree that the anatomy and architectural properties of the brain
+										constrain its function.
+										The exact mechanism, or mechanisms, that allow the relatively static
+										neuroanatomy of the brain to
+										give rise to the complex and dynamic spatiotemporal signalling cascades from
+										which consciousness
+										emerges, is unclear.
+										Much of the field has based their research on the idea of more domain-specifc
+										functions of brain areas, where
+										differing functions can be ascribed to regions based on the properties of their
+										neuronal subpopulations, and their connectivty
+										to other regions. Less focus has looked at the geometry of the brain, which
+										defines the path of least resistance and aspects of
+										proximity and diffusion.
+										This work challenges the classical paradigm of functionally specialised,
+										connectivity-driven brain activity, instead
+										identifying geometry as a central determinant of neuronal dynamics. By
+										introducing a unifying, physically principled
+										model of brain-wide activity, the findings redefine how large-scale dynamics are
+										conceptualised, with significant implications
+										for neuroimaging, computational modeling, and the study of structure-function
+										relationships. This paradigm shift not only enhances
+										our understanding of brain organisation but also provides a framework for
+										exploring neurodevelopmental and pathological processes
+										through the lens of geometry and wave dynamics.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="https://www.science.org/doi/10.1126/science.add7631" class="papers-link"
+									target="_blank">
+									<img src="paperImages/April2023.png" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">April 2023</h4>
+									<a href="https://www.science.org/doi/10.1126/science.add7631" class="papers-link"
+										target="_blank">
+										Engineering longevity—design of a synthetic gene oscillator to slow cellular
+										aging
+									</a>
+									<p class="papers-description">
+										The research group behind this study developed a soft electronic skin (e-skin)
+										that has similar physical properties of skin (flexibility & stretchability),
+										and has integrated ciruits to 'sense' pressure changes, strain and temperature.
+										The e-skin uses nanotech and appears to be very accurate in its readings of
+										pressure & strain detection, and temperature.
+										Its self-healing properties and ability to interface with human skin make it a
+										promising tool
+										for applications in healthcare monitoring, robotics, and human-machine
+										interactions. The research advances the field of bioelectronics by
+										addressing durability and functionality challenges in wearable devices. Such
+										tech could be the basis of many breakthroughs
+										in personalised health diagnostics, prosthetics, and interactive robotics,
+										opening new avenues for commercial exploitation in healthtech and
+										assistive technologies.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/March2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/March2023.jpg" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">March 2023</h4>
+									<a href="Content/March2023_1.pdf" class="papers-link" target="_blank">
+										Vitamin D supplementation and incident dementia: Effects of sex, APOE, and
+										baseline cognitive status
+									</a>
+									<p class="papers-description">
+										The study examined the relationship between
+										vitamin D supplementation and the incidence of dementia. Using data from over
+										12,000 dementia-free individuals, the group
+										found a 40% lower incidence of dementia in those that took vitamin D supplements
+										than those who didn't. The protective effect of vitamin D
+										appears to be more pronounced in women and individuals without the APOE ε4 gene,
+										which is associated with a higher risk of Alzheimer’s disease.
+										These findings suggest that vitamin D supplementation could be a viable strategy
+										for reducing dementia risk, particularly in specific
+										populations. This research contributes to the understanding of modifiable risk
+										factors for dementia and may influence public health
+										recommendations regarding vitamin D intake. For the startup ecosystem, these
+										insights could lead to the development of new preventive health
+										products or services aimed at cognitive health maintenance, potentially
+										benefiting aging populations.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/Feb2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Feb2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">February 2023</h4>
+									<a href="Content/Feb2023_1.pdf" class="papers-link" target="_blank">
+										Association between cannabis use and blood pressure levels according to
+										comorbidities and socioeconomic status
+									</a>
+									<p class="papers-description">
+										The study investigated the relationship between cannabis consumption
+										and blood pressure in adults in the US. Using data from the National Health and
+										Nutrition Examination Survey (NHANES) between 2005 and 2012, the group
+										analysed the blood pressure of people with varying histories of cannabis use,
+										adjusting for confounding factors such as age, sex,
+										body mass index, and tobacco use. The findings indicate that current cannabis
+										users had higher systolic
+										and diastolic blood pressure levels compared to non-users. These results suggest
+										a potential link between cannabis use and elevated blood pressure, highlighting
+										the need for further research
+										to understand the underlying mechanisms and long-term cardiovascular
+										implications. With the relatively laxed outlook on cannabis use across many
+										developed and underdeveloped countries,
+										and uncertain understanding of the short or long-term effects of cannabis use,
+										more work elucidating other potential risk factors is needed.
+									</p>
+								</div>
+							</div>
+
+							<div class="papers-item">
+								<a href="Content/Jan2023_1.pdf" class="papers-link" target="_blank">
+									<img src="paperImages/Jan2023.webp" alt="Publication 1 Image"
+										class="papers-image" />
+								</a>
+								<div>
+									<h4 class="papers-title">January 2023</h4>
+									<a href="Content/Jan2023_1.pdf" class="papers-link" target="_blank">
+										Genome-wide association study of school grades identifies genetic overlap
+										between language ability, psychopathology and creativity
+									</a>
+									<p class="papers-description">
+										The study looked into the genetic factors influencing academic performance and
+										their connections
+										to language skills, mental health, and creativity. They analysed the genomes of
+										30,982 individuals, and found
+										that genetic variants associated with better lanugage ability also correlate
+										with an increased risk for
+										certain psychiatric disorders, notably schizophrenia. Such variants were also
+										more prevalent in people in creative industries.
+										Overall, these findings suggest that language ability, creativity, and
+										susceptibility to certain mental
+										health conditions may share common genetic roots. Understanding these
+										connections could inform future educational strategies and mental health
+										interventions,
+										aiding the sector-wide focus on personalised healthcare
+									</p>
+								</div>
+							</div>
+
+
+
+					</div>
+
 				</div>
+				</article>
 			</div>
 		</div>
-		</div>
+	</div>
 
-				<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
+	<!-- Load footer -->
+	<div id="footer-placeholder"></div>
 
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Want to get in touch?</h3>
-										</header>
-										<p>Feel free to reach out through one of the mediums below.</p>
-										<ul class="icons">
-											<li><a href="https://github.com/scottyish" target="_blank" class="fa-brands fa-github"><span class="label"></span></a></li>
-											<li><a href="https://www.linkedin.com/in/sjsisherwood/" target="_blank" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-											<li><a href="mailto:scott@leeclan.net" target="_blank" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-											<li><a href="https://scholar.google.co.uk/citations?user=zhc9ijsAAAAJ&hl=en&oi=ao" target="_blank" class="fa-brands fa-google-scholar"><span class="label"></span></a></li>
-										</ul>
-									</section>
-
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-											<li>2024 &copy; Scott Isherwood. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-		</div>
 	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/loadNav.js"></script>
+	<script src="assets/js/loadFooter.js"></script>
 
-	</body>
+</body>
+
 </html>

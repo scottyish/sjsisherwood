@@ -1,82 +1,31 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Publications</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.publication-item {
-				display: flex;
-				align-items: center;
-				justify-content: flex-start; /* Ensures items align starting from the left */
-				margin-bottom: 30px; /* Space between each publication */
-			}
-			.publication-image {
-				width: 100px;
-				height: auto;
-				object-fit: contain;
-				margin-right: 20px; /* Space between the image and the title */
-			}
-			.publication-description {
-				font-size: 0.9em; /* Smaller font for the description */
-				color: #555; /* Lighter color for distinction */
-				margin-top: 5px; /* Space between title and description */
-				line-height: 1.4; /* Improve readability */
-			}
-			.publication-link {
-				font-size: 1.2em;
-				text-decoration: none;
-				color: #333;
-				flex: 1;
-			}
-			.publication-link:hover {
-				text-decoration: underline;
-			}
-			@media (max-width: 768px) {
-				.publication-item {
-					flex-direction: column; /* Stack image and title vertically on small screens */
-					align-items: flex-start; /* Aligns items to the left on small screens */
-				}
-				.publication-image {
-					margin-right: 0; /* Remove right margin on small screens */
-					margin-bottom: 10px; /* Space below the image */
-					width: 80px; /* Smaller image for mobile */
-				}
-			}
-		</style>
-	</head>
-	<body class="Publications is-preload">
-		<div id="page-wrapper">
-			<!-- Header -->
-			<div id="header">
-				<div class="inner">
-					<header>
-						<h1><a href="Publications.html" id="logo">Publications</a></h1>
-					</header>
-				</div>
 
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Blog</a>
-								<ul>
-									<!-- <li><a href="Articles.html">Articles</a></li> -->
-									<li><a href="Papers.html">Papers</a></li>
-									<li><a href="Startups.html">Startups</a></li>
-									<!-- <li><a href="Investing.html">Investing</a></li> -->
-									<!-- <li><a href="#">Veroeros feugiat</a></li> -->
-								</ul>
-							</li>
-							<!-- <li><a href="Blog.html">Blog</a></li> -->
-							<li><a href="Portfolio.html">Portfolio</a></li>
-							<li><a href="Publications.html">Publications</a></li>
-							<li><a href="Projects.html">Projects</a></li>
-						</ul>
-					</nav>
+<head>
+	<title>Publications</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+
+	</style>
+</head>
+
+<body class="Publications is-preload">
+
+	<!-- Load nav -->
+	<div id="nav-placeholder"></div>
+
+	<div id="page-wrapper">
+		<!-- Header -->
+		<div id="header">
+			<div class="inner">
+				<header>
+					<h1>Publications</h1>
+				</header>
 			</div>
 
 			<!-- Main -->
@@ -86,183 +35,253 @@
 						<article id="main">
 							<header>
 								<!-- <h2><a href="#"></a></h2> -->
-								<p style="text-align: center">
+								<p style="text-align: center; color: black">
 									Here's an overview of my publications
 								</p>
+								<div style="height: 2em;"></div>
 							</header>
 
-							<div class="publication-item">
-								<a href="https://www.biorxiv.org/content/10.1101/2023.06.06.543900v3" class="publication-link" target="_blank">
-								<img src="pubImages/eLife.jpg" alt="Publication 6 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.biorxiv.org/content/10.1101/2023.06.06.543900v3" class="publication-link" target="_blank">
-									Multi-study fMRI outlooks on subcortical BOLD responses in the stop-signal paradigm (under review)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.biorxiv.org/content/10.1101/2023.06.06.543900v3"
+									class="publication-link" target="_blank">
+									<img src="pubImages/eLife.jpg" alt="Publication 6 Image"
+										class="publication-image" />
 								</a>
-								<p class="publication-description">
-									This study uses a novel meta-analytical approach to merge raw fMRI data from five stop-signal task datasets, 
-									investigating response inhibition and the role of basal ganglia pathways. While it finds large subcortical 
-									activity in failed stop trials, it questions the involvement of cortico-basal-ganglia pathways in successful 
-									inhibition and highlights the potential of open-access data sharing for advancing meta-analytical research.
-								</p>
-							</div>
-						</div>
-
-							<div class="publication-item">
-								<a href="https://link.springer.com/article/10.1007/s42113-023-00192-3" class="publication-link" target="_blank">
-								<img src="pubImages/Pub6.webp" alt="Publication 6 Image" class="publication-image" />
-							</a>
 								<div>
-								<a href="https://link.springer.com/article/10.1007/s42113-023-00192-3" class="publication-link" target="_blank">
-									Joint Modelling of Latent Cognitive Mechanisms Shared Across Decision-Making Domains (2024)
-								</a>
-								<p class="publication-description">
-									This study used a novel joint modeling approach to explore the relationships between evidence accumulation 
-									model (EAM) parameters across four decision-making domains and different time points. Results showed 
-									consistency in EAM parameters across time for most tasks, with a two-factor model revealing shared 
-									information processing ability across domains, while constructs like response caution and urgency were 
-									only partially comparable.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S2352340924006358" class="publication-link" target="_blank">
-								<img src="pubImages/Pub8.gif" alt="Publication 8 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.sciencedirect.com/science/article/pii/S2352340924006358" class="publication-link" target="_blank">
-									A high-resolution 7 Tesla resting-state fMRI dataset optimized for studying the subcortex (2024)
-								</a>
-								<p class="publication-description">
-									This study presents advanced whole-brain resting-state fMRI data acquired at 7 Tesla with 1.5 mm isotropic 
-									resolution from 56 healthy adults, optimized for subcortical BOLD sensitivity. High-resolution structural 
-									and functional data, formatted to BIDS and preprocessed with fMRIPrep, provide a valuable resource for 
-									studying intrinsic brain activity across cortical and subcortical regions.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://europepmc.org/article/ppr/ppr822249" class="publication-link" target="_blank">
-								<img src="pubImages/Pub9.jpeg" alt="Publication 9 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://europepmc.org/article/ppr/ppr822249" class="publication-link" target="_blank">
-									Investigating working memory updating processes of the human subcortex using 7T MRI (2024)
-								</a>
-								<p class="publication-description">
-									This study used 7 Tesla fMRI to examine subcortical involvement in working memory updating, 
-									finding no evidence of striatal activation during gate opening but significant subcortical 
-									engagement during gate closing and general updating processes. Substitution of new information 
-									into working memory activated dopamine-producing midbrain regions, basal ganglia, thalamus, 
-									and prefrontal cortex, suggesting a basal ganglia-thalamo-cortical loop driven by dopaminergic 
-									activity.
-								</p>
-							</div>
-							</div>
-							
-							<div class="publication-item">
-								<a href="https://www.jneurosci.org/content/43/39/6609?utm_source=TrendMD&utm_medium=cpc&utm_campaign=JNeurosci_TrendMD_0" class="publication-link" target="_blank">
-								<img src="pubImages/Pub7.jpg" alt="Publication 7 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.jneurosci.org/content/43/39/6609?utm_source=TrendMD&utm_medium=cpc&utm_campaign=JNeurosci_TrendMD_0" class="publication-link" target="_blank">
-									Echoes from Intrinsic Connectivity Networks in the Subcortex (2023)
-								</a>
-								<p class="publication-description">
-									This study used ultra-high field imaging to investigate the functional architecture of 14 subcortical structures, revealing that their spontaneous neural 
-									activity “echoes” cortical network activity. Distinct subregions demonstrated varied integration with cortical networks, highlighting a heterogeneous 
-									organization for functional integration, while other regions exhibited homogeneous topography or lacked cortical network resemblance, shedding light on 
-									subcortical roles in cognitive dynamics.
-								</p>
-							</div>
+									<a href="https://www.biorxiv.org/content/10.1101/2023.06.06.543900v3"
+										class="publication-link" target="_blank">
+										Multi-study fMRI outlooks on subcortical BOLD responses in the stop-signal
+										paradigm (under review)
+									</a>
+									<p class="publication-description">
+										This study uses a novel meta-analytical approach to merge raw fMRI data from
+										five stop-signal task datasets,
+										investigating response inhibition and the role of basal ganglia pathways. While
+										it finds large subcortical
+										activity in failed stop trials, it questions the involvement of
+										cortico-basal-ganglia pathways in successful
+										inhibition and highlights the potential of open-access data sharing for
+										advancing meta-analytical research.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S1053811923001349" class="publication-link" target="_blank">
-								<img src="pubImages/Pub5.gif" alt="Publication 5 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.sciencedirect.com/science/article/pii/S1053811923001349" class="publication-link" target="_blank">
-									Investigating Intra-Individual Networks of Response Inhibition and Interference Resolution using 7T MRI (2023)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://link.springer.com/article/10.1007/s42113-023-00192-3"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub6.webp" alt="Publication 6 Image"
+										class="publication-image" />
 								</a>
-								<p class="publication-description">
-									This study used ultra-high field MRI and cognitive modeling to investigate response inhibition and interference 
-									resolution within subjects, revealing that these constructs are rooted in distinct brain areas with minimal spatial 
-									overlap. While response inhibition was associated with orbitofrontal cortex activation, interference resolution 
-									relied more on subcortical components and regions such as the anterior cingulate cortex, emphasizing the value of 
-									UHF-MRI for precise functional mapping.
-								</p>
-							</div>
+								<div>
+									<a href="https://link.springer.com/article/10.1007/s42113-023-00192-3"
+										class="publication-link" target="_blank">
+										Joint Modelling of Latent Cognitive Mechanisms Shared Across Decision-Making
+										Domains (2024)
+									</a>
+									<p class="publication-description">
+										This study used a novel joint modeling approach to explore the relationships
+										between evidence accumulation
+										model (EAM) parameters across four decision-making domains and different time
+										points. Results showed
+										consistency in EAM parameters across time for most tasks, with a two-factor
+										model revealing shared
+										information processing ability across domains, while constructs like response
+										caution and urgency were
+										only partially comparable.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S2352340922002979" class="publication-link" target="_blank">
-								<img src="pubImages/Pub10.jpg" alt="Publication 3 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.sciencedirect.com/science/article/pii/S2352340922002979" class="publication-link" target="_blank">
-									A high-resolution multi-shell 3T diffusion magnetic resonance imaging dataset as part of the Amsterdam Ultra-high field adult lifespan database (2022)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S2352340924006358"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub8.gif" alt="Publication 8 Image" class="publication-image" />
 								</a>
-								<p class="publication-description">
-									The study introduces the high-resolution 3T DWI AHEAD dataset, part of the Amsterdam Ultra-high field adult lifespan database, featuring isotropic 
-									whole-brain diffusion-weighted imaging data from 49 healthy adults aged 18–90. This freely available dataset has been preprocessed for distortions 
-									and artefacts, enabling advanced exploration of brain networks with multi-shell, multi-directional DWI data across various b-values.
-								</p>
-							</div>
+								<div>
+									<a href="https://www.sciencedirect.com/science/article/pii/S2352340924006358"
+										class="publication-link" target="_blank">
+										A high-resolution 7 Tesla resting-state fMRI dataset optimized for studying the
+										subcortex (2024)
+									</a>
+									<p class="publication-description">
+										This study presents advanced whole-brain resting-state fMRI data acquired at 7
+										Tesla with 1.5 mm isotropic
+										resolution from 56 healthy adults, optimized for subcortical BOLD sensitivity.
+										High-resolution structural
+										and functional data, formatted to BIDS and preprocessed with fMRIPrep, provide a
+										valuable resource for
+										studying intrinsic brain activity across cortical and subcortical regions.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S1053811922000027" class="publication-link" target="_blank">
-								<img src="pubImages/Pub3.gif" alt="Publication 3 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.sciencedirect.com/science/article/pii/S1053811922000027" class="publication-link" target="_blank">
-									Charting human subcortical maturation across the adult lifespan with in vivo 7 T MRI (2022)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://europepmc.org/article/ppr/ppr822249" class="publication-link"
+									target="_blank">
+									<img src="pubImages/Pub9.jpeg" alt="Publication 9 Image"
+										class="publication-image" />
 								</a>
-								<p class="publication-description">
-									This study examines 17 prominent subcortical structures, highlighting their iron and myelin content, morphometry, 
-									and age-related changes across the adult lifespan. The findings reveal structural heterogeneity, shifts in location 
-									with age, and insights into normal aging processes, offering valuable implications for neuroimaging and understanding 
-									neurodegeneration.
-								</p>
-							</div>
+								<div>
+									<a href="https://europepmc.org/article/ppr/ppr822249" class="publication-link"
+										target="_blank">
+										Investigating working memory updating processes of the human subcortex using 7T
+										MRI (2024)
+									</a>
+									<p class="publication-description">
+										This study used 7 Tesla fMRI to examine subcortical involvement in working
+										memory updating,
+										finding no evidence of striatal activation during gate opening but significant
+										subcortical
+										engagement during gate closing and general updating processes. Substitution of
+										new information
+										into working memory activated dopamine-producing midbrain regions, basal
+										ganglia, thalamus,
+										and prefrontal cortex, suggesting a basal ganglia-thalamo-cortical loop driven
+										by dopaminergic
+										activity.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248341" class="publication-link" target="_blank">
-								<img src="pubImages/Pub4.png" alt="Publication 4 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248341" class="publication-link" target="_blank">
-									Quantity and quality: Normative open-access neuroimaging databases (2021)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.jneurosci.org/content/43/39/6609?utm_source=TrendMD&utm_medium=cpc&utm_campaign=JNeurosci_TrendMD_0"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub7.jpg" alt="Publication 7 Image" class="publication-image" />
 								</a>
-								<p class="publication-description">
-									This article compares 20 normative neuroimaging databases based on image quality metrics like signal-to-noise ratio (SNR)
-									 and contrast-to-noise ratio (CNR), focusing on their utility for studying subcortical regions. The analysis reveals 
-									 age-related declines in SNR and CNR in brain regions such as the caudate nuclei and corpus callosum, highlights the 
-									 trade-offs between scan time and spatial resolution, and underscores the importance of database selection for structural 
-									 data reuse.
-								</p>
-							</div>
+								<div>
+									<a href="https://www.jneurosci.org/content/43/39/6609?utm_source=TrendMD&utm_medium=cpc&utm_campaign=JNeurosci_TrendMD_0"
+										class="publication-link" target="_blank">
+										Echoes from Intrinsic Connectivity Networks in the Subcortex (2023)
+									</a>
+									<p class="publication-description">
+										This study used ultra-high field imaging to investigate the functional
+										architecture of 14 subcortical structures, revealing that their spontaneous
+										neural
+										activity “echoes” cortical network activity. Distinct subregions demonstrated
+										varied integration with cortical networks, highlighting a heterogeneous
+										organization for functional integration, while other regions exhibited
+										homogeneous topography or lacked cortical network resemblance, shedding light on
+										subcortical roles in cognitive dynamics.
+									</p>
+								</div>
 							</div>
 
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S0149763421003201" class="publication-link" target="_blank">
-								<img src="pubImages/Pub2.gif" alt="Publication 2 Image" class="publication-image" />
-							</a>
-								<div>
-								<a href="https://www.sciencedirect.com/science/article/pii/S0149763421003201" class="publication-link" target="_blank">
-									Cortical and subcortical contributions to interference resolution and inhibition – An fMRI ALE meta-analysis (2021)
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S1053811923001349"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub5.gif" alt="Publication 5 Image" class="publication-image" />
 								</a>
-								<p class="publication-description">
-								This meta-analysis of 57 studies examined the brain areas involved in interference resolution and global inhibition, 
-								revealing shared activation in the bilateral insula and supplementary motor areas. Subtraction analyses highlighted 
-								distinct recruitment in cortical regions but found minimal subcortical involvement, suggesting a systematic gap in 
-								functional neuroimaging research.
-							</p>
-						</div>
+								<div>
+									<a href="https://www.sciencedirect.com/science/article/pii/S1053811923001349"
+										class="publication-link" target="_blank">
+										Investigating Intra-Individual Networks of Response Inhibition and Interference
+										Resolution using 7T MRI (2023)
+									</a>
+									<p class="publication-description">
+										This study used ultra-high field MRI and cognitive modeling to investigate
+										response inhibition and interference
+										resolution within subjects, revealing that these constructs are rooted in
+										distinct brain areas with minimal spatial
+										overlap. While response inhibition was associated with orbitofrontal cortex
+										activation, interference resolution
+										relied more on subcortical components and regions such as the anterior cingulate
+										cortex, emphasizing the value of
+										UHF-MRI for precise functional mapping.
+									</p>
+								</div>
+							</div>
+
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S2352340922002979"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub10.jpg" alt="Publication 3 Image"
+										class="publication-image" />
+								</a>
+								<div>
+									<a href="https://www.sciencedirect.com/science/article/pii/S2352340922002979"
+										class="publication-link" target="_blank">
+										A high-resolution multi-shell 3T diffusion magnetic resonance imaging dataset as
+										part of the Amsterdam Ultra-high field adult lifespan database (2022)
+									</a>
+									<p class="publication-description">
+										The study introduces the high-resolution 3T DWI AHEAD dataset, part of the
+										Amsterdam Ultra-high field adult lifespan database, featuring isotropic
+										whole-brain diffusion-weighted imaging data from 49 healthy adults aged 18–90.
+										This freely available dataset has been preprocessed for distortions
+										and artefacts, enabling advanced exploration of brain networks with multi-shell,
+										multi-directional DWI data across various b-values.
+									</p>
+								</div>
+							</div>
+
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S1053811922000027"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub3.gif" alt="Publication 3 Image" class="publication-image" />
+								</a>
+								<div>
+									<a href="https://www.sciencedirect.com/science/article/pii/S1053811922000027"
+										class="publication-link" target="_blank">
+										Charting human subcortical maturation across the adult lifespan with in vivo 7 T
+										MRI (2022)
+									</a>
+									<p class="publication-description">
+										This study examines 17 prominent subcortical structures, highlighting their iron
+										and myelin content, morphometry,
+										and age-related changes across the adult lifespan. The findings reveal
+										structural heterogeneity, shifts in location
+										with age, and insights into normal aging processes, offering valuable
+										implications for neuroimaging and understanding
+										neurodegeneration.
+									</p>
+								</div>
+							</div>
+
+							<div class="publication-item" style="text-align: left">
+								<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248341"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub4.png" alt="Publication 4 Image" class="publication-image" />
+								</a>
+								<div>
+									<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248341"
+										class="publication-link" target="_blank">
+										Quantity and quality: Normative open-access neuroimaging databases (2021)
+									</a>
+									<p class="publication-description">
+										This article compares 20 normative neuroimaging databases based on image quality
+										metrics like signal-to-noise ratio (SNR)
+										and contrast-to-noise ratio (CNR), focusing on their utility for studying
+										subcortical regions. The analysis reveals
+										age-related declines in SNR and CNR in brain regions such as the caudate nuclei
+										and corpus callosum, highlights the
+										trade-offs between scan time and spatial resolution, and underscores the
+										importance of database selection for structural
+										data reuse.
+									</p>
+								</div>
+							</div>
+
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S0149763421003201"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub2.gif" alt="Publication 2 Image" class="publication-image" />
+								</a>
+								<div>
+									<a href="https://www.sciencedirect.com/science/article/pii/S0149763421003201"
+										class="publication-link" target="_blank">
+										Cortical and subcortical contributions to interference resolution and inhibition
+										– An fMRI ALE meta-analysis (2021)
+									</a>
+									<p class="publication-description">
+										This meta-analysis of 57 studies examined the brain areas involved in
+										interference resolution and global inhibition,
+										revealing shared activation in the bilateral insula and supplementary motor
+										areas. Subtraction analyses highlighted
+										distinct recruitment in cortical regions but found minimal subcortical
+										involvement, suggesting a systematic gap in
+										functional neuroimaging research.
+									</p>
+								</div>
 							</div>
 
 							<!-- <div class="publication-item">
@@ -277,77 +296,51 @@
 									quantitative MRI maps and probability maps of basal ganglia structures, freely available for further research.
 								</p>
 							</div> -->
-							<div class="publication-item">
-								<a href="https://www.sciencedirect.com/science/article/pii/S1053811920306868" class="publication-link" target="_blank">
-								<img src="pubImages/Pub1.gif" alt="Publication 1 Image" class="publication-image" />
-							</a>
+							<div class="publication-item" style="text-align: left">
+								<a href="https://www.sciencedirect.com/science/article/pii/S1053811920306868"
+									class="publication-link" target="_blank">
+									<img src="pubImages/Pub1.gif" alt="Publication 1 Image" class="publication-image" />
+								</a>
 								<div>
-									<a href="https://www.sciencedirect.com/science/article/pii/S1053811920306868" class="publication-link" target="_blank">
-										The Amsterdam Ultra-high field adult lifespan database (AHEAD): A freely available multimodal 7 Tesla submillimeter 
+									<a href="https://www.sciencedirect.com/science/article/pii/S1053811920306868"
+										class="publication-link" target="_blank">
+										The Amsterdam Ultra-high field adult lifespan database (AHEAD): A freely
+										available multimodal 7 Tesla submillimeter
 										magnetic resonance imaging database (2020)
 									</a>
 									<p class="publication-description">
-										The Amsterdam Ultra-high field adult lifespan database (AHEAD) provides 105 7 Tesla whole-brain structural MRI scans, 
-										optimized for imaging subcortical structures across the adult lifespan (18–80 years). It includes high-resolution 
-										quantitative MRI maps and probability maps of basal ganglia structures, freely available for further research.
+										The Amsterdam Ultra-high field adult lifespan database (AHEAD) provides 105 7
+										Tesla whole-brain structural MRI scans,
+										optimized for imaging subcortical structures across the adult lifespan (18–80
+										years). It includes high-resolution
+										quantitative MRI maps and probability maps of basal ganglia structures, freely
+										available for further research.
 									</p>
 								</div>
 							</div>
 
-						</div>
+					</div>
 					</article>
 				</div>
 			</div>
 		</div>
-		</div>
+	</div>
 
-				<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
+	<!-- Load footer -->
+	<div id="footer-placeholder"></div>
 
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Want to get in touch?</h3>
-										</header>
-										<p>Feel free to reach out through one of the mediums below.</p>
-										<ul class="icons">
-											<li><a href="https://github.com/scottyish" target="_blank" class="fa-brands fa-github"><span class="label"></span></a></li>
-											<li><a href="https://www.linkedin.com/in/sjsisherwood/" target="_blank" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-											<li><a href="mailto:scott@leeclan.net" target="_blank" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-											<li><a href="https://scholar.google.co.uk/citations?user=zhc9ijsAAAAJ&hl=en&oi=ao" target="_blank" class="fa-brands fa-google-scholar"><span class="label"></span></a></li>
-										</ul>
-									</section>
-
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-											<li>2024 &copy; Scott Isherwood. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-		</div>
 	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/loadNav.js"></script>
+	<script src="assets/js/loadFooter.js"></script>
 
-	</body>
+</body>
+
 </html>

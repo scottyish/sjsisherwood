@@ -20,1727 +20,2084 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+margin: 0; /* Defines the margin property for this element. */
+padding: 0; /* Defines the padding property for this element. */
+border: 0; /* Defines the border property for this element. */
+font-size: 100%; /* Defines the font-size property for this element. */
+font: inherit; /* Defines the font property for this element. */
+vertical-align: baseline;
+} /* Defines the vertical-align property for this element. */
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+display: block;} /* Defines the display property for this element. */
 
 body {
-	line-height: 1;
+line-height: 1; /* Defines the line-height property for this element. */
 }
 
 ol, ul {
-	list-style: none;
+list-style: none; /* Defines the list-style property for this element. */
 }
 
 blockquote, q {
-	quotes: none;
+quotes: none; /* Defines the quotes property for this element. */
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
+blockquote:before, blockquote:after, q:before, q:after { /* Defines the blockquote property for this element. */
+content: ''; /* Defines the content property for this element. */
+content: none; /* Defines the content property for this element. */
 	}
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse; /* Defines the border-collapse property for this element. */
+border-spacing: 0; /* Defines the border-spacing property for this element. */
 }
 
 body {
-	-webkit-text-size-adjust: none;
+-webkit-text-size-adjust: none; /* Defines the -webkit-text-size-adjust property for this element. */
 }
 
 mark {
-	background-color: transparent;
-	color: inherit;
+background-color: transparent; /* Defines the background-color property for this element. */
+color: inherit; /* Defines the color property for this element. */
 }
 
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+input::-moz-focus-inner { /* Defines the input property for this element. */
+border: 0; /* Defines the border property for this element. */
+padding: 0; /* Defines the padding property for this element. */
 }
 
 input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
+-moz-appearance: none; /* Defines the -moz-appearance property for this element. */
+-webkit-appearance: none; /* Defines the -webkit-appearance property for this element. */
+-ms-appearance: none; /* Defines the -ms-appearance property for this element. */
+appearance: none; /* Defines the appearance property for this element. */
 }
 
 /* Basic */
 
 	html {
-		box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 	}
 
-	*, *:before, *:after {
-		box-sizing: inherit;
+*, *:before, *:after { /* Defines the *, * property for this element. */
+box-sizing: inherit; /* Defines the box-sizing property for this element. */
 	}
 
 	body {
-		background: #f0f4f4;
-		color: #5b5b5b;
-		font-size: 15pt;
-		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
+background: #f0f4f4; /* Defines the background property for this element. */
+color: #5b5b5b; /* Defines the color property for this element. */
+font-size: 15pt; /* Defines the font-size property for this element. */
+line-height: 1.85em; /* Defines the line-height property for this element. */
+font-family: 'Source Sans Pro', sans-serif; /* Defines the font-family property for this element. */
+font-weight: 300; /* Defines the font-weight property for this element. */
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
+body.is-preload *, body.is-preload *:before, body.is-preload *:after { /* Defines the body.is-preload *, body.is-preload * property for this element. */
+-moz-animation: none !important; /* Defines the -moz-animation property for this element. */
+-webkit-animation: none !important; /* Defines the -webkit-animation property for this element. */
+-ms-animation: none !important; /* Defines the -ms-animation property for this element. */
+animation: none !important; /* Defines the animation property for this element. */
+-moz-transition: none !important; /* Defines the -moz-transition property for this element. */
+-webkit-transition: none !important; /* Defines the -webkit-transition property for this element. */
+-ms-transition: none !important; /* Defines the -ms-transition property for this element. */
+transition: none !important; /* Defines the transition property for this element. */
 		}
 
 	input, textarea, select {
-		font-size: 15pt;
-		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
+font-size: 15pt; /* Defines the font-size property for this element. */
+line-height: 1.85em; /* Defines the line-height property for this element. */
+font-family: 'Source Sans Pro', sans-serif; /* Defines the font-family property for this element. */
+font-weight: 300; /* Defines the font-weight property for this element. */
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #483949;
-		line-height: 1.25em;
+font-weight: 400; /* Defines the font-weight property for this element. */
+color: #483949; /* Defines the color property for this element. */
+line-height: 1.25em; /* Defines the line-height property for this element. */
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
-		text-decoration: none;
-		border-bottom-color: transparent;
+color: inherit; /* Defines the color property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
+border-bottom-color: transparent; /* Defines the border-bottom-color property for this element. */
 	}
 
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
-		font-weight: 600;
+font-weight: 600; /* Defines the font-weight property for this element. */
 	}
 
 	h2 {
-		font-size: 2.85em;
+font-size: 2.85em; /* Defines the font-size property for this element. */
 	}
 
 	h3 {
-		font-size: 1.25em;
+font-size: 1.25em; /* Defines the font-size property for this element. */
 	}
 
 	h4 {
-		font-size: 1em;
-		margin: 0 0 0.25em 0;
+font-size: 1em; /* Defines the font-size property for this element. */
+margin: 0 0 0.25em 0; /* Defines the margin property for this element. */
 	}
 
 	strong, b {
-		font-weight: 400;
-		color: #483949;
+font-weight: 400; /* Defines the font-weight property for this element. */
+color: #ffffff; /* Defines the color property for this element. */
+
 	}
 
 	em, i {
-		font-style: italic;
+font-style: italic; /* Defines the font-style property for this element. */
 	}
+	
 
 	a {
-		color: inherit;
-		border-bottom: none;
-		text-decoration: none;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+color: inherit; /* Defines the color property for this element. */
+border-bottom: none; /* Defines the border-bottom property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
+-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the transition property for this element. */
 	}
 
-		a:hover {
-			color: #ef8376;
-			border-bottom-color: transparent;
+a:hover { /* Defines the a property for this element. */
+color: #ef8376; /* Defines the color property for this element. */
+border-bottom-color: transparent; /* Defines the border-bottom-color property for this element. */
 		}
 
 	sub {
-		position: relative;
-		top: 0.5em;
-		font-size: 0.8em;
+position: relative; /* Defines the position property for this element. */
+top: 0.5em; /* Defines the top property for this element. */
+font-size: 0.8em; /* Defines the font-size property for this element. */
 	}
 
 	sup {
-		position: relative;
-		top: -0.5em;
-		font-size: 0.8em;
+position: relative; /* Defines the position property for this element. */
+top: -0.5em; /* Defines the top property for this element. */
+font-size: 0.8em; /* Defines the font-size property for this element. */
 	}
 
 	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
+border-left: solid 0.5em #ddd; /* Defines the border-left property for this element. */
+padding: 1em 0 1em 2em; /* Defines the padding property for this element. */
+font-style: italic; /* Defines the font-style property for this element. */
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1em;
+margin-bottom: 1em; /* Defines the margin-bottom property for this element. */
 	}
 
 	p {
-		text-align: justify;
+text-align: justify; /* Defines the text-align property for this element. */
 	}
 
 	br.clear {
-		clear: both;
+clear: both; /* Defines the clear property for this element. */
 	}
 
 	hr {
-		position: relative;
-		display: block;
-		border: 0;
-		top: 4.5em;
-		margin-bottom: 9em;
-		height: 6px;
-		border-top: solid 1px rgba(128, 128, 128, 0.2);
-		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
+position: relative; /* Defines the position property for this element. */
+display: block; /* Defines the display property for this element. */
+border: 0; /* Defines the border property for this element. */
+top: 4.5em; /* Defines the top property for this element. */
+margin-bottom: 9em; /* Defines the margin-bottom property for this element. */
+height: 6px; /* Defines the height property for this element. */
+border-top: solid 1px rgb(255, 255, 255); /* Defines the border-top property for this element. */
+border-bottom: solid 1px rgb(255, 255, 255); /* Defines the border-bottom property for this element. */
 	}
 
-		hr:before, hr:after {
-			content: '';
-			position: absolute;
-			top: -8px;
-			display: block;
-			width: 1px;
-			height: 21px;
-			background: rgba(128, 128, 128, 0.2);
+hr:before, hr:after { /* Defines the hr property for this element. */
+content: ''; /* Defines the content property for this element. */
+position: absolute; /* Defines the position property for this element. */
+top: -8px; /* Defines the top property for this element. */
+display: block; /* Defines the display property for this element. */
+width: 1px; /* Defines the width property for this element. */
+height: 21px; /* Defines the height property for this element. */
+background: rgb(255, 255, 255); /* Defines the background property for this element. */
 		}
 
-		hr:before {
-			left: -1px;
+hr:before { /* Defines the hr property for this element. */
+left: -1px; /* Defines the left property for this element. */
 		}
 
-		hr:after {
-			right: -1px;
+hr:after { /* Defines the hr property for this element. */
+right: -1px; /* Defines the right property for this element. */
 		}
 
 	.timestamp {
-		color: rgba(128, 128, 128, 0.75);
-		font-size: 0.8em;
+color: rgba(128, 128, 128, 0.75); /* Defines the color property for this element. */
+font-size: 0.8em; /* Defines the font-size property for this element. */
 	}
 	
 
 /* Container */
 
+/* Sets a consistent width and centering for content blocks. */
 	.container {
-		margin: 0 auto;
-		max-width: 100%;
-		width: 90%;
+margin: 0 auto; /* Defines the margin property for this element. */
+max-width: 90%; /* Defines the max-width property for this element. */
+width: 80%; /* Defines the width property for this element. */
 	}
 
-		@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Sets a consistent width and centering for content blocks. */
 			.container {
-				width: 1200px;
+width: 1200px; /* Defines the width property for this element. */
 			}
 
 		}
 
-		@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Sets a consistent width and centering for content blocks. */
 			.container {
-				width: 100%;
+width: 90%; /* Defines the width property for this element. */
 			}
 
 		}
 
-		@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Sets a consistent width and centering for content blocks. */
 			.container {
-				width: 100%;
+width: 90%; /* Defines the width property for this element. */
 			}
 
 		}
 
-		@media screen and (max-width: 840px) {
+@media screen and (max-width: 840px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Sets a consistent width and centering for content blocks. */
 			.container {
-				width: 100%;
+width: 90%; /* Defines the width property for this element. */
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Sets a consistent width and centering for content blocks. */
 			.container {
-				width: 100%;
+width: 90%; /* Defines the width property for this element. */
 			}
 
 		}
 
 /* Row */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 	.row {
-		display: flex;
-		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 	}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > * {
-			box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 		}
 
-		.row.gtr-uniform > * > :last-child {
-			margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-left {
-			justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-center {
-			justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-right {
-			justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-top {
-			align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-middle {
-			align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.aln-bottom {
-			align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .imp {
-			order: -1;
+order: -1; /* Defines the order property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-1 {
-			width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-1 {
-			margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-2 {
-			width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-2 {
-			margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-3 {
-			width: 25%;
+width: 25%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-3 {
-			margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-4 {
-			width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-4 {
-			margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-5 {
-			width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-5 {
-			margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-6 {
-			width: 50%;
+width: 50%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-6 {
-			margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-7 {
-			width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-7 {
-			margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-8 {
-			width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-8 {
-			margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-9 {
-			width: 75%;
+width: 75%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-9 {
-			margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-10 {
-			width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-10 {
-			margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-11 {
-			width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-11 {
-			margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .col-12 {
-			width: 100%;
+width: 100%; /* Defines the width property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row > .off-12 {
-			margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.gtr-0 {
-			margin-top: 0px;
-			margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-0 > * {
-				padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-0.gtr-uniform {
-				margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0.gtr-uniform > * {
-					padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.gtr-25 {
-			margin-top: -10px;
-			margin-left: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
+margin-left: -10px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-25 > * {
-				padding: 10px 0 0 10px;
+padding: 10px 0 0 10px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-25.gtr-uniform {
-				margin-top: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25.gtr-uniform > * {
-					padding-top: 10px;
+padding-top: 10px; /* Defines the padding-top property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.gtr-50 {
-			margin-top: -20px;
-			margin-left: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
+margin-left: -20px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-50 > * {
-				padding: 20px 0 0 20px;
+padding: 20px 0 0 20px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-50.gtr-uniform {
-				margin-top: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50.gtr-uniform > * {
-					padding-top: 20px;
+padding-top: 20px; /* Defines the padding-top property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row {
-			margin-top: -40px;
-			margin-left: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
+margin-left: -40px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row > * {
-				padding: 40px 0 0 40px;
+padding: 40px 0 0 40px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-uniform {
-				margin-top: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-uniform > * {
-					padding-top: 40px;
+padding-top: 40px; /* Defines the padding-top property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.gtr-150 {
-			margin-top: -60px;
-			margin-left: -60px;
+margin-top: -60px; /* Defines the margin-top property for this element. */
+margin-left: -60px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-150 > * {
-				padding: 60px 0 0 60px;
+padding: 60px 0 0 60px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-150.gtr-uniform {
-				margin-top: -60px;
+margin-top: -60px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150.gtr-uniform > * {
-					padding-top: 60px;
+padding-top: 60px; /* Defines the padding-top property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 		.row.gtr-200 {
-			margin-top: -80px;
-			margin-left: -80px;
+margin-top: -80px; /* Defines the margin-top property for this element. */
+margin-left: -80px; /* Defines the margin-left property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-200 > * {
-				padding: 80px 0 0 80px;
+padding: 80px 0 0 80px; /* Defines the padding property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row.gtr-200.gtr-uniform {
-				margin-top: -80px;
+margin-top: -80px; /* Defines the margin-top property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200.gtr-uniform > * {
-					padding-top: 80px;
+padding-top: 80px; /* Defines the padding-top property for this element. */
 				}
 
-		@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > * {
-					box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 				}
 
-				.row.gtr-uniform > * > :last-child {
-					margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-left {
-					justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-center {
-					justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-right {
-					justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-top {
-					align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-middle {
-					align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-bottom {
-					align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .imp-wide {
-					order: -1;
+order: -1; /* Defines the order property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-1-wide {
-					width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-1-wide {
-					margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-2-wide {
-					width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-2-wide {
-					margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-3-wide {
-					width: 25%;
+width: 25%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-3-wide {
-					margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-4-wide {
-					width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-4-wide {
-					margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-5-wide {
-					width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-5-wide {
-					margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-6-wide {
-					width: 50%;
+width: 50%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-6-wide {
-					margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-7-wide {
-					width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-7-wide {
-					margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-8-wide {
-					width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-8-wide {
-					margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-9-wide {
-					width: 75%;
+width: 75%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-9-wide {
-					margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-10-wide {
-					width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-10-wide {
-					margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-11-wide {
-					width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-11-wide {
-					margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-12-wide {
-					width: 100%;
+width: 100%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-12-wide {
-					margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0 {
-					margin-top: 0px;
-					margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0.gtr-uniform {
-						margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-0.gtr-uniform > * {
-							padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25 {
-					margin-top: -10px;
-					margin-left: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
+margin-left: -10px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25 > * {
-						padding: 10px 0 0 10px;
+padding: 10px 0 0 10px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25.gtr-uniform {
-						margin-top: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 10px;
+padding-top: 10px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50 {
-					margin-top: -20px;
-					margin-left: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
+margin-left: -20px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50 > * {
-						padding: 20px 0 0 20px;
+padding: 20px 0 0 20px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50.gtr-uniform {
-						margin-top: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 20px;
+padding-top: 20px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row {
-					margin-top: -40px;
-					margin-left: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
+margin-left: -40px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row > * {
-						padding: 40px 0 0 40px;
+padding: 40px 0 0 40px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-uniform {
-						margin-top: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-uniform > * {
-							padding-top: 40px;
+padding-top: 40px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150 {
-					margin-top: -60px;
-					margin-left: -60px;
+margin-top: -60px; /* Defines the margin-top property for this element. */
+margin-left: -60px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150 > * {
-						padding: 60px 0 0 60px;
+padding: 60px 0 0 60px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150.gtr-uniform {
-						margin-top: -60px;
+margin-top: -60px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 60px;
+padding-top: 60px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200 {
-					margin-top: -80px;
-					margin-left: -80px;
+margin-top: -80px; /* Defines the margin-top property for this element. */
+margin-left: -80px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200 > * {
-						padding: 80px 0 0 80px;
+padding: 80px 0 0 80px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200.gtr-uniform {
-						margin-top: -80px;
+margin-top: -80px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 80px;
+padding-top: 80px; /* Defines the padding-top property for this element. */
 						}
 
 		}
 
-		@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > * {
-					box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 				}
 
-				.row.gtr-uniform > * > :last-child {
-					margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-left {
-					justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-center {
-					justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-right {
-					justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-top {
-					align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-middle {
-					align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-bottom {
-					align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .imp-normal {
-					order: -1;
+order: -1; /* Defines the order property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-1-normal {
-					width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-1-normal {
-					margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-2-normal {
-					width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-2-normal {
-					margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-3-normal {
-					width: 25%;
+width: 25%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-3-normal {
-					margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-4-normal {
-					width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-4-normal {
-					margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-5-normal {
-					width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-5-normal {
-					margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-6-normal {
-					width: 50%;
+width: 50%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-6-normal {
-					margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-7-normal {
-					width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-7-normal {
-					margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-8-normal {
-					width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-8-normal {
-					margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-9-normal {
-					width: 75%;
+width: 75%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-9-normal {
-					margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-10-normal {
-					width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-10-normal {
-					margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-11-normal {
-					width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-11-normal {
-					margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-12-normal {
-					width: 100%;
+width: 100%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-12-normal {
-					margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0 {
-					margin-top: 0px;
-					margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0.gtr-uniform {
-						margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-0.gtr-uniform > * {
-							padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25 {
-					margin-top: -9px;
-					margin-left: -9px;
+margin-top: -9px; /* Defines the margin-top property for this element. */
+margin-left: -9px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25 > * {
-						padding: 9px 0 0 9px;
+padding: 9px 0 0 9px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25.gtr-uniform {
-						margin-top: -9px;
+margin-top: -9px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 9px;
+padding-top: 9px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50 {
-					margin-top: -18px;
-					margin-left: -18px;
+margin-top: -18px; /* Defines the margin-top property for this element. */
+margin-left: -18px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50 > * {
-						padding: 18px 0 0 18px;
+padding: 18px 0 0 18px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50.gtr-uniform {
-						margin-top: -18px;
+margin-top: -18px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 18px;
+padding-top: 18px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row {
-					margin-top: -36px;
-					margin-left: -36px;
+margin-top: -36px; /* Defines the margin-top property for this element. */
+margin-left: -36px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row > * {
-						padding: 36px 0 0 36px;
+padding: 36px 0 0 36px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-uniform {
-						margin-top: -36px;
+margin-top: -36px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-uniform > * {
-							padding-top: 36px;
+padding-top: 36px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150 {
-					margin-top: -54px;
-					margin-left: -54px;
+margin-top: -54px; /* Defines the margin-top property for this element. */
+margin-left: -54px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150 > * {
-						padding: 54px 0 0 54px;
+padding: 54px 0 0 54px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150.gtr-uniform {
-						margin-top: -54px;
+margin-top: -54px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 54px;
+padding-top: 54px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200 {
-					margin-top: -72px;
-					margin-left: -72px;
+margin-top: -72px; /* Defines the margin-top property for this element. */
+margin-left: -72px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200 > * {
-						padding: 72px 0 0 72px;
+padding: 72px 0 0 72px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200.gtr-uniform {
-						margin-top: -72px;
+margin-top: -72px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 72px;
+padding-top: 72px; /* Defines the padding-top property for this element. */
 						}
 
 		}
 
-		@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > * {
-					box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 				}
 
-				.row.gtr-uniform > * > :last-child {
-					margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-left {
-					justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-center {
-					justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-right {
-					justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-top {
-					align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-middle {
-					align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-bottom {
-					align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .imp-narrow {
-					order: -1;
+order: -1; /* Defines the order property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-1-narrow {
-					width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-1-narrow {
-					margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-2-narrow {
-					width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-2-narrow {
-					margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-3-narrow {
-					width: 25%;
+width: 25%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-3-narrow {
-					margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-4-narrow {
-					width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-4-narrow {
-					margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-5-narrow {
-					width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-5-narrow {
-					margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-6-narrow {
-					width: 50%;
+width: 50%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-6-narrow {
-					margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-7-narrow {
-					width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-7-narrow {
-					margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-8-narrow {
-					width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-8-narrow {
-					margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-9-narrow {
-					width: 75%;
+width: 75%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-9-narrow {
-					margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-10-narrow {
-					width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-10-narrow {
-					margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-11-narrow {
-					width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-11-narrow {
-					margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-12-narrow {
-					width: 100%;
+width: 100%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-12-narrow {
-					margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0 {
-					margin-top: 0px;
-					margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0.gtr-uniform {
-						margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-0.gtr-uniform > * {
-							padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25 {
-					margin-top: -8px;
-					margin-left: -8px;
+margin-top: -8px; /* Defines the margin-top property for this element. */
+margin-left: -8px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25 > * {
-						padding: 8px 0 0 8px;
+padding: 8px 0 0 8px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25.gtr-uniform {
-						margin-top: -8px;
+margin-top: -8px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 8px;
+padding-top: 8px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50 {
-					margin-top: -16px;
-					margin-left: -16px;
+margin-top: -16px; /* Defines the margin-top property for this element. */
+margin-left: -16px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50 > * {
-						padding: 16px 0 0 16px;
+padding: 16px 0 0 16px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50.gtr-uniform {
-						margin-top: -16px;
+margin-top: -16px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 16px;
+padding-top: 16px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row {
-					margin-top: -32px;
-					margin-left: -32px;
+margin-top: -32px; /* Defines the margin-top property for this element. */
+margin-left: -32px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row > * {
-						padding: 32px 0 0 32px;
+padding: 32px 0 0 32px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-uniform {
-						margin-top: -32px;
+margin-top: -32px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-uniform > * {
-							padding-top: 32px;
+padding-top: 32px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150 {
-					margin-top: -48px;
-					margin-left: -48px;
+margin-top: -48px; /* Defines the margin-top property for this element. */
+margin-left: -48px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150 > * {
-						padding: 48px 0 0 48px;
+padding: 48px 0 0 48px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150.gtr-uniform {
-						margin-top: -48px;
+margin-top: -48px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 48px;
+padding-top: 48px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200 {
-					margin-top: -64px;
-					margin-left: -64px;
+margin-top: -64px; /* Defines the margin-top property for this element. */
+margin-left: -64px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200 > * {
-						padding: 64px 0 0 64px;
+padding: 64px 0 0 64px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200.gtr-uniform {
-						margin-top: -64px;
+margin-top: -64px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 64px;
+padding-top: 64px; /* Defines the padding-top property for this element. */
 						}
 
 		}
 
-		@media screen and (max-width: 840px) {
+@media screen and (max-width: 840px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > * {
-					box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 				}
 
-				.row.gtr-uniform > * > :last-child {
-					margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-left {
-					justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-center {
-					justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-right {
-					justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-top {
-					align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-middle {
-					align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-bottom {
-					align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .imp-narrower {
-					order: -1;
+order: -1; /* Defines the order property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-1-narrower {
-					width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-1-narrower {
-					margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-2-narrower {
-					width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-2-narrower {
-					margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-3-narrower {
-					width: 25%;
+width: 25%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-3-narrower {
-					margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-4-narrower {
-					width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-4-narrower {
-					margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-5-narrower {
-					width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-5-narrower {
-					margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-6-narrower {
-					width: 50%;
+width: 50%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-6-narrower {
-					margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-7-narrower {
-					width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-7-narrower {
-					margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-8-narrower {
-					width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-8-narrower {
-					margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-9-narrower {
-					width: 75%;
+width: 75%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-9-narrower {
-					margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-10-narrower {
-					width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-10-narrower {
-					margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-11-narrower {
-					width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-11-narrower {
-					margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-12-narrower {
-					width: 100%;
+width: 100%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-12-narrower {
-					margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0 {
-					margin-top: 0px;
-					margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0.gtr-uniform {
-						margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-0.gtr-uniform > * {
-							padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25 {
-					margin-top: -8px;
-					margin-left: -8px;
+margin-top: -8px; /* Defines the margin-top property for this element. */
+margin-left: -8px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25 > * {
-						padding: 8px 0 0 8px;
+padding: 8px 0 0 8px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25.gtr-uniform {
-						margin-top: -8px;
+margin-top: -8px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 8px;
+padding-top: 8px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50 {
-					margin-top: -16px;
-					margin-left: -16px;
+margin-top: -16px; /* Defines the margin-top property for this element. */
+margin-left: -16px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50 > * {
-						padding: 16px 0 0 16px;
+padding: 16px 0 0 16px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50.gtr-uniform {
-						margin-top: -16px;
+margin-top: -16px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 16px;
+padding-top: 16px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row {
-					margin-top: -32px;
-					margin-left: -32px;
+margin-top: -32px; /* Defines the margin-top property for this element. */
+margin-left: -32px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row > * {
-						padding: 32px 0 0 32px;
+padding: 32px 0 0 32px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-uniform {
-						margin-top: -32px;
+margin-top: -32px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-uniform > * {
-							padding-top: 32px;
+padding-top: 32px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150 {
-					margin-top: -48px;
-					margin-left: -48px;
+margin-top: -48px; /* Defines the margin-top property for this element. */
+margin-left: -48px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150 > * {
-						padding: 48px 0 0 48px;
+padding: 48px 0 0 48px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150.gtr-uniform {
-						margin-top: -48px;
+margin-top: -48px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 48px;
+padding-top: 48px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200 {
-					margin-top: -64px;
-					margin-left: -64px;
+margin-top: -64px; /* Defines the margin-top property for this element. */
+margin-left: -64px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200 > * {
-						padding: 64px 0 0 64px;
+padding: 64px 0 0 64px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200.gtr-uniform {
-						margin-top: -64px;
+margin-top: -64px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 64px;
+padding-top: 64px; /* Defines the padding-top property for this element. */
 						}
 
 		}
 
-		@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) { /* Defines the @media screen and (max-width property for this element. */
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+display: flex; /* Defines the display property for this element. */
+flex-wrap: wrap; /* Defines the flex-wrap property for this element. */
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
+align-items: stretch; /* Defines the align-items property for this element. */
 			}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > * {
-					box-sizing: border-box;
+box-sizing: border-box; /* Defines the box-sizing property for this element. */
 				}
 
-				.row.gtr-uniform > * > :last-child {
-					margin-bottom: 0;
+/* Handles grid layout, including responsive column sizes and alignment. */
+.row.gtr-uniform > * > :last-child { /* Defines the .row.gtr-uniform > * > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-left {
-					justify-content: flex-start;
+justify-content: flex-start; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-center {
-					justify-content: center;
+justify-content: center; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-right {
-					justify-content: flex-end;
+justify-content: flex-end; /* Defines the justify-content property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-top {
-					align-items: flex-start;
+align-items: flex-start; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-middle {
-					align-items: center;
+align-items: center; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.aln-bottom {
-					align-items: flex-end;
+align-items: flex-end; /* Defines the align-items property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .imp-mobile {
-					order: -1;
+order: -1; /* Defines the order property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-1-mobile {
-					width: 8.33333%;
+width: 8.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-1-mobile {
-					margin-left: 8.33333%;
+margin-left: 8.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-2-mobile {
-					width: 16.66667%;
+width: 16.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-2-mobile {
-					margin-left: 16.66667%;
+margin-left: 16.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-3-mobile {
-					width: 25%;
+width: 25%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-3-mobile {
-					margin-left: 25%;
+margin-left: 25%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-4-mobile {
-					width: 33.33333%;
+width: 33.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-4-mobile {
-					margin-left: 33.33333%;
+margin-left: 33.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-5-mobile {
-					width: 41.66667%;
+width: 41.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-5-mobile {
-					margin-left: 41.66667%;
+margin-left: 41.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-6-mobile {
-					width: 50%;
+width: 50%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-6-mobile {
-					margin-left: 50%;
+margin-left: 50%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-7-mobile {
-					width: 58.33333%;
+width: 58.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-7-mobile {
-					margin-left: 58.33333%;
+margin-left: 58.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-8-mobile {
-					width: 66.66667%;
+width: 66.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-8-mobile {
-					margin-left: 66.66667%;
+margin-left: 66.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-9-mobile {
-					width: 75%;
+width: 75%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-9-mobile {
-					margin-left: 75%;
+margin-left: 75%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-10-mobile {
-					width: 83.33333%;
+width: 83.33333%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-10-mobile {
-					margin-left: 83.33333%;
+margin-left: 83.33333%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-11-mobile {
-					width: 91.66667%;
+width: 91.66667%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-11-mobile {
-					margin-left: 91.66667%;
+margin-left: 91.66667%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .col-12-mobile {
-					width: 100%;
+width: 100%; /* Defines the width property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row > .off-12-mobile {
-					margin-left: 100%;
+margin-left: 100%; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-0 {
-					margin-top: 0px;
-					margin-left: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
+margin-left: 0px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+padding: 0px 0 0 0px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-0.gtr-uniform {
-						margin-top: 0px;
+margin-top: 0px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-0.gtr-uniform > * {
-							padding-top: 0px;
+padding-top: 0px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-25 {
-					margin-top: -5px;
-					margin-left: -5px;
+margin-top: -5px; /* Defines the margin-top property for this element. */
+margin-left: -5px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25 > * {
-						padding: 5px 0 0 5px;
+padding: 5px 0 0 5px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-25.gtr-uniform {
-						margin-top: -5px;
+margin-top: -5px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 5px;
+padding-top: 5px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-50 {
-					margin-top: -10px;
-					margin-left: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
+margin-left: -10px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50 > * {
-						padding: 10px 0 0 10px;
+padding: 10px 0 0 10px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-50.gtr-uniform {
-						margin-top: -10px;
+margin-top: -10px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 10px;
+padding-top: 10px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row {
-					margin-top: -20px;
-					margin-left: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
+margin-left: -20px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row > * {
-						padding: 20px 0 0 20px;
+padding: 20px 0 0 20px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-uniform {
-						margin-top: -20px;
+margin-top: -20px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-uniform > * {
-							padding-top: 20px;
+padding-top: 20px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-150 {
-					margin-top: -30px;
-					margin-left: -30px;
+margin-top: -30px; /* Defines the margin-top property for this element. */
+margin-left: -30px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150 > * {
-						padding: 30px 0 0 30px;
+padding: 30px 0 0 30px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-150.gtr-uniform {
-						margin-top: -30px;
+margin-top: -30px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 30px;
+padding-top: 30px; /* Defines the padding-top property for this element. */
 						}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 				.row.gtr-200 {
-					margin-top: -40px;
-					margin-left: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
+margin-left: -40px; /* Defines the margin-left property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200 > * {
-						padding: 40px 0 0 40px;
+padding: 40px 0 0 40px; /* Defines the padding property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 					.row.gtr-200.gtr-uniform {
-						margin-top: -40px;
+margin-top: -40px; /* Defines the margin-top property for this element. */
 					}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 40px;
+padding-top: 40px; /* Defines the padding-top property for this element. */
 						}
 
 		}
@@ -1748,260 +2105,270 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+margin-bottom: 3em; /* Defines the margin-bottom property for this element. */
 	}
 
-		section > :last-child, section:last-child, article > :last-child, article:last-child {
-			margin-bottom: 0;
+section > :last-child, section:last-child, article > :last-child, article:last-child { /* Defines the section > property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 		}
 
 		section.special > header, section.special > footer, article.special > header, article.special > footer {
-			text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 		}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 	.row > section, .row > article {
-		margin-bottom: 0;
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
 	header {
-		margin: 0 0 1em 0;
+margin: 0 0 1em 0; /* Defines the margin property for this element. */
 	}
 
 		header > p {
-			display: block;
-			font-size: 1.5em;
-			margin: 1em 0 2em 0;
-			line-height: 1.5em;
-			text-align: inherit;
+display: block; /* Defines the display property for this element. */
+font-size: 1.5em; /* Defines the font-size property for this element. */
+margin: 1em 0 2em 0; /* Defines the margin property for this element. */
+line-height: 1.5em; /* Defines the line-height property for this element. */
+text-align: inherit; /* Defines the text-align property for this element. */
 		}
 
 	footer {
-		margin: 2.5em 0 0 0;
+margin: 0 0 0 0; /* Defines the margin property for this element. */
 	}
 
 /* Image */
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 	.image {
-		position: relative;
-		display: inline-block;
-		border: 0;
-		outline: 0;
+position: relative; /* Defines the position property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+border: 0; /* Defines the border property for this element. */
+outline: 0; /* Defines the outline property for this element. */
 	}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image img {
-			display: block;
-			width: 100%;
+display: block; /* Defines the display property for this element. */
+width: 100%; /* Defines the width property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.fit {
-			display: block;
-			width: 100%;
+display: block; /* Defines the display property for this element. */
+width: 100%; /* Defines the width property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 4em 0;
+display: block; /* Defines the display property for this element. */
+width: 100%; /* Defines the width property for this element. */
+margin: 0 0 4em 0; /* Defines the margin property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.projects {
 			/* display: block; */
-			display: flex; /* Enables flexbox layout */
-			justify-content: center; /* Centers the image horizontally */
+display: flex; /* Enables flexbox layout */ /* Defines the display property for this element. */
+justify-content: center; /* Centers the image horizontally */ /* Defines the justify-content property for this element. */
 			/* width: 100%; */
-			height: 250px;
-			width: auto;
-			align-items: center; /* Centers the image vertically */
-			object-fit: cover;
-			margin: 0 0 4em 0;
+height: 250px; /* Defines the height property for this element. */
+width: auto; /* Defines the width property for this element. */
+align-items: center; /* Centers the image vertically */ /* Defines the align-items property for this element. */
+object-fit: cover; /* Defines the object-fit property for this element. */
+margin: 0 0 1em 0; /* Defines the margin property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.portfolio {
-			display: flex; /* Use Flexbox for alignment */
-			justify-content: center; /* Center horizontally */
-			align-items: center; /* Center vertically */
-			margin: 0 auto 50px auto; /* Add 20px space below the image */
+display: flex; /* Use Flexbox for alignment */ /* Defines the display property for this element. */
+justify-content: center; /* Center horizontally */ /* Defines the justify-content property for this element. */
+align-items: center; /* Center vertically */ /* Defines the align-items property for this element. */
+margin: 0 auto 50px auto; /* Add 20px space below the image */ /* Defines the margin property for this element. */
 			/* width: fit-content; Shrink container to image size */
 			/* height: auto; Adjust height automatically */
-			width: 60%; /* Allow the container to grow */
-			max-width: 500px; /* Optional: Cap the maximum size */
-			height: auto;
+width: 60%; /* Allow the container to grow */ /* Defines the width property for this element. */
+max-width: 500px; /* Optional: Cap the maximum size */ /* Defines the max-width property for this element. */
+height: auto; /* Defines the height property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
+float: left; /* Defines the float property for this element. */
+margin: 0 2em 2em 0; /* Defines the margin property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
+display: block; /* Defines the display property for this element. */
+margin: 0 0 2em 0; /* Defines the margin property for this element. */
 		}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 			.image.centered img {
-				margin: 0 auto;
-				width: auto;
+margin: 0 auto; /* Defines the margin property for this element. */
+width: auto; /* Defines the width property for this element. */
 			}
 
 /* List */
 
 	ul {
-		list-style: disc;
-		padding-left: 1em;
+list-style: disc; /* Defines the list-style property for this element. */
+padding-left: 1em; /* Defines the padding-left property for this element. */
 	}
 
 		ul li {
-			padding-left: 0.5em;
+padding-left: 0.5em; /* Defines the padding-left property for this element. */
 		}
 
 	ol {
-		list-style: decimal;
-		padding-left: 1.25em;
+list-style: decimal; /* Defines the list-style property for this element. */
+padding-left: 1.25em; /* Defines the padding-left property for this element. */
 	}
 
 		ol li {
-			padding-left: 0.25em;
+padding-left: 0.25em; /* Defines the padding-left property for this element. */
 		}
 
 /* Actions */
 
 	ul.actions {
-		margin: 3em 0 0 0;
-		list-style: none;
-		padding-left: 0;
+margin: 3em 0 0 0; /* Defines the margin property for this element. */
+list-style: none; /* Defines the list-style property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 	}
 
 		form ul.actions {
-			margin-top: 0;
+margin-top: 0; /* Defines the margin-top property for this element. */
 		}
 
 		ul.actions li {
-			display: inline-block;
-			margin: 0 0.75em 0 0.75em;
-			padding-left: 0;
+display: inline-block; /* Defines the display property for this element. */
+margin: 0 0.75em 0 0.75em; /* Defines the margin property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 		}
 
-			ul.actions li:first-child {
-				margin-left: 0;
+ul.actions li:first-child { /* Defines the ul.actions li property for this element. */
+margin-left: 0; /* Defines the margin-left property for this element. */
 			}
 
-			ul.actions li:last-child {
-				margin-right: 0;
+ul.actions li:last-child { /* Defines the ul.actions li property for this element. */
+margin-right: 0; /* Defines the margin-right property for this element. */
 			}
 
 /* Divided */
 
 	ul.divided {
-		list-style: none;
-		padding-left: 0;
+list-style: none; /* Defines the list-style property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 	}
 
 		ul.divided li {
-			border-top: solid 1px rgba(128, 128, 128, 0.2);
-			padding-top: 1.5em;
-			margin-top: 1.5em;
-			padding-left: 0;
+border-top: solid 1px rgba(128, 128, 128, 0.2); /* Defines the border-top property for this element. */
+padding-top: 1.5em; /* Defines the padding-top property for this element. */
+margin-top: 1.5em; /* Defines the margin-top property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 		}
 
-			ul.divided li:first-child {
-				border-top: 0;
-				padding-top: 0;
-				margin-top: 0;
+ul.divided li:first-child { /* Defines the ul.divided li property for this element. */
+border-top: 0; /* Defines the border-top property for this element. */
+padding-top: 0; /* Defines the padding-top property for this element. */
+margin-top: 0; /* Defines the margin-top property for this element. */
 			}
 
 /* Menu */
 
 	ul.menu {
-		height: 1em;
-		line-height: 1em;
-		list-style: none;
-		padding-left: 0;
+height: 1em; /* Defines the height property for this element. */
+line-height: 1em; /* Defines the line-height property for this element. */
+list-style: none; /* Defines the list-style property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 	}
 
 		ul.menu li {
-			display: inline-block;
-			border-left: solid 1px rgba(128, 128, 128, 0.2);
-			padding-left: 1.25em;
-			margin-left: 1.25em;
+display: inline-block; /* Defines the display property for this element. */
+border-left: solid 1px rgba(128, 128, 128, 0.2); /* Defines the border-left property for this element. */
+padding-left: 1.25em; /* Defines the padding-left property for this element. */
+margin-left: 1.25em; /* Defines the margin-left property for this element. */
 		}
 
-			ul.menu li:first-child {
-				border-left: 0;
-				padding-left: 0;
-				margin-left: 0;
+ul.menu li:first-child { /* Defines the ul.menu li property for this element. */
+border-left: 0; /* Defines the border-left property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
+margin-left: 0; /* Defines the margin-left property for this element. */
 			}
 
 /* Icons */
 
 	ul.icons {
-		position: relative;
-		background: rgba(128, 128, 128, 0.05);
-		border-radius: 4em;
-		display: inline-block;
-		padding: 0.35em 0.75em 0.35em 0.75em;
-		font-size: 1.25em;
-		cursor: default;
-		list-style: none;
+position: relative; /* Defines the position property for this element. */
+background: rgba(128, 128, 128, 0.05); /* Defines the background property for this element. */
+border-radius: 4em; /* Defines the border-radius property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+padding: 0.35em 0.75em 0.35em 0.75em; /* Defines the padding property for this element. */
+font-size: 1.25em; /* Defines the font-size property for this element. */
+cursor: default; /* Defines the cursor property for this element. */
+list-style: none; /* Defines the list-style property for this element. */
 	}
 
 		ul.icons li {
-			display: inline-block;
-			padding-left: 0;
+display: inline-block; /* Defines the display property for this element. */
+padding-left: 0; /* Defines the padding-left property for this element. */
 		}
 
 			ul.icons li a {
-				display: inline-block;
-				background: none;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				text-align: center;
-				border-radius: 100%;
-				border: 0;
-				color: inherit;
+display: inline-block; /* Defines the display property for this element. */
+background: none; /* Defines the background property for this element. */
+width: 2.5em; /* Defines the width property for this element. */
+height: 2.5em; /* Defines the height property for this element. */
+line-height: 2.5em; /* Defines the line-height property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+border-radius: 100%; /* Defines the border-radius property for this element. */
+border: 0; /* Defines the border property for this element. */
+color: inherit; /* Defines the color property for this element. */
 			}
 
-				ul.icons li a:hover {
-					color: #ef8376;
+ul.icons li a:hover { /* Defines the ul.icons li a property for this element. */
+color: #ef8376; /* Defines the color property for this element. */
 				}
 
 	ul.iconsportfolio {
-		position: relative;
-		display: flex; /* Switch to Flexbox for centering */
-		justify-content: center; /* Center the icons horizontally */
-		list-style: none; /* Remove bullet points */
-		padding: 0.35em 0.75em;
-		font-size: 1.25em;
-		margin: 0 auto; /* Ensure it's centered within the parent */
+position: relative; /* Defines the position property for this element. */
+display: flex; /* Switch to Flexbox for centering */ /* Defines the display property for this element. */
+justify-content: center; /* Center the icons horizontally */ /* Defines the justify-content property for this element. */
+list-style: none; /* Remove bullet points */ /* Defines the list-style property for this element. */
+padding: 0.35em 0.75em; /* Defines the padding property for this element. */
+font-size: 1.25em; /* Defines the font-size property for this element. */
+margin: 0 auto; /* Ensure it's centered within the parent */ /* Defines the margin property for this element. */
 	}
 
 		ul.iconsportfolio li {
-			margin: 0 0em; /* Add spacing between icons */
+margin: 0 0em; /* Add spacing between icons */ /* Defines the margin property for this element. */
 		}
 
 			ul.iconsportfolio li a {
-				display: inline-block;
-				background: none;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				text-align: center;
-				border-radius: 100%;
-				border: 0;
-				color: inherit;
+display: inline-block; /* Defines the display property for this element. */
+background: none; /* Defines the background property for this element. */
+width: 2.5em; /* Defines the width property for this element. */
+height: 2.5em; /* Defines the height property for this element. */
+line-height: 2.5em; /* Defines the line-height property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+border-radius: 100%; /* Defines the border-radius property for this element. */
+border: 0; /* Defines the border property for this element. */
+color: inherit; /* Defines the color property for this element. */
 			}
 
-				ul.iconsportfolio li a:hover {
-					color: #ef8376;
+ul.iconsportfolio li a:hover { /* Defines the ul.iconsportfolio li a property for this element. */
+color: #ef8376; /* Defines the color property for this element. */
 				}
 
 /* Form */
 
 	form label {
-		display: block;
-		font-weight: 400;
-		color: #483949;
-		margin: 0 0 1em 0;
+display: block; /* Defines the display property for this element. */
+font-weight: 400; /* Defines the font-weight property for this element. */
+color: #483949; /* Defines the color property for this element. */
+margin: 0 0 1em 0; /* Defines the margin property for this element. */
 	}
 
 	form input[type="text"],
@@ -2009,98 +2376,98 @@ input, select, textarea {
 	form input[type="password"],
 	form select,
 	form textarea {
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #fafafa;
-		width: 100%;
-		border-radius: 0.5em;
-		border: solid 1px #E5E5E5;
-		padding: 1em;
-		-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+-webkit-appearance: none; /* Defines the -webkit-appearance property for this element. */
+display: block; /* Defines the display property for this element. */
+border: 0; /* Defines the border property for this element. */
+background: #fafafa; /* Defines the background property for this element. */
+width: 100%; /* Defines the width property for this element. */
+border-radius: 0.5em; /* Defines the border-radius property for this element. */
+border: solid 1px #E5E5E5; /* Defines the border property for this element. */
+padding: 1em; /* Defines the padding property for this element. */
+-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out; /* Defines the transition property for this element. */
 	}
 
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #fff;
-			border-color: #df7366;
+form input[type="text"]:focus, /* Defines the form input[type="text"] property for this element. */
+form input[type="email"]:focus, /* Defines the form input[type="email"] property for this element. */
+form input[type="password"]:focus, /* Defines the form input[type="password"] property for this element. */
+form select:focus, /* Defines the form select property for this element. */
+form textarea:focus { /* Defines the form textarea property for this element. */
+background: #fff; /* Defines the background property for this element. */
+border-color: #df7366; /* Defines the border-color property for this element. */
 		}
 
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select {
-		line-height: 1em;
+line-height: 1em; /* Defines the line-height property for this element. */
 	}
 
 	form textarea {
-		min-height: 9em;
+min-height: 9em; /* Defines the min-height property for this element. */
 	}
 
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
+form ::-webkit-input-placeholder { /* Defines the form property for this element. */
+color: #555 !important; /* Defines the color property for this element. */
 	}
 
-	form :-moz-placeholder {
-		color: #555 !important;
+form :-moz-placeholder { /* Defines the form property for this element. */
+color: #555 !important; /* Defines the color property for this element. */
 	}
 
-	form ::-moz-placeholder {
-		color: #555 !important;
+form ::-moz-placeholder { /* Defines the form property for this element. */
+color: #555 !important; /* Defines the color property for this element. */
 	}
 
-	form :-ms-input-placeholder {
-		color: #555 !important;
+form :-ms-input-placeholder { /* Defines the form property for this element. */
+color: #555 !important; /* Defines the color property for this element. */
 	}
 
-	form ::-moz-focus-inner {
-		border: 0;
+form ::-moz-focus-inner { /* Defines the form property for this element. */
+border: 0; /* Defines the border property for this element. */
 	}
 
 /* Table */
 
 	table {
-		width: 100%;
+width: 100%; /* Defines the width property for this element. */
 	}
 
 		table.default {
-			width: 100%;
+width: 100%; /* Defines the width property for this element. */
 		}
 
 			table.default tbody tr {
-				border-top: solid 1px #e5e5e5;
+border-top: solid 1px #e5e5e5; /* Defines the border-top property for this element. */
 			}
 
-				table.default tbody tr:first-child {
-					border-top: 0;
+table.default tbody tr:first-child { /* Defines the table.default tbody tr property for this element. */
+border-top: 0; /* Defines the border-top property for this element. */
 				}
 
-				table.default tbody tr:nth-child(2n+1) {
-					background: #fafafa;
+table.default tbody tr:nth-child(2n+1) { /* Defines the table.default tbody tr property for this element. */
+background: #fafafa; /* Defines the background property for this element. */
 				}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+padding: 0.5em 1em 0.5em 1em; /* Defines the padding property for this element. */
 			}
 
 			table.default th {
-				text-align: left;
-				font-weight: 400;
-				padding: 0.5em 1em 0.5em 1em;
+text-align: left; /* Defines the text-align property for this element. */
+font-weight: 400; /* Defines the font-weight property for this element. */
+padding: 0.5em 1em 0.5em 1em; /* Defines the padding property for this element. */
 			}
 
 			table.default thead {
-				border-bottom: solid 2px #e5e5e5;
+border-bottom: solid 2px #e5e5e5; /* Defines the border-bottom property for this element. */
 			}
 
 			table.default tfoot {
-				border-top: solid 2px #e5e5e5;
+border-top: solid 2px #e5e5e5; /* Defines the border-top property for this element. */
 			}
 
 /* Button */
@@ -2110,31 +2477,31 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
-		position: relative;
-		display: inline-block;
-		background: #011627;
-		color: #fff;
-		text-align: center;
-		border-radius: 0.5em;
-		text-decoration: none;
-		padding: 0.65em 3em 0.65em 3em;
-		border: 0;
-		cursor: pointer;
-		outline: 0;
-		font-weight: 300;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+position: relative; /* Defines the position property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+background: #011627; /* Defines the background property for this element. */
+color: #fff; /* Defines the color property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+border-radius: 0.5em; /* Defines the border-radius property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
+padding: 0.65em 3em 0.65em 3em; /* Defines the padding property for this element. */
+border: 0; /* Defines the border property for this element. */
+cursor: pointer; /* Defines the cursor property for this element. */
+outline: 0; /* Defines the outline property for this element. */
+font-weight: 300; /* Defines the font-weight property for this element. */
+-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out; /* Defines the transition property for this element. */
 	}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			color: #fff;
-			background: #ef8376;
+input[type="button"]:hover, /* Defines the input[type="button"] property for this element. */
+input[type="submit"]:hover, /* Defines the input[type="submit"] property for this element. */
+input[type="reset"]:hover, /* Defines the input[type="reset"] property for this element. */
+button:hover, /* Defines the button property for this element. */
+.button:hover { /* Defines the .button property for this element. */
+color: #fff; /* Defines the color property for this element. */
+background: #ef8376; /* Defines the background property for this element. */
 		}
 
 		input[type="button"].alt,
@@ -2142,632 +2509,688 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #2B252C;
+background: #2B252C; /* Defines the background property for this element. */
 		}
 
-			input[type="button"].alt:hover,
-			input[type="submit"].alt:hover,
-			input[type="reset"].alt:hover,
-			button.alt:hover,
-			.button.alt:hover {
-				background: #3B353C;
+input[type="button"].alt:hover, /* Defines the input[type="button"].alt property for this element. */
+input[type="submit"].alt:hover, /* Defines the input[type="submit"].alt property for this element. */
+input[type="reset"].alt:hover, /* Defines the input[type="reset"].alt property for this element. */
+button.alt:hover, /* Defines the button.alt property for this element. */
+.button.alt:hover { /* Defines the .button.alt property for this element. */
+background: #3B353C; /* Defines the background property for this element. */
 			}
 
 /* Post */
 
 	.post.stub {
-		text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 	}
 
 		.post.stub header {
-			margin: 0;
+margin: 0; /* Defines the margin property for this element. */
 		}
 
 /* Icons */
 
 	.icon {
-		text-decoration: none;
-		text-decoration: none;
+text-decoration: none; /* Defines the text-decoration property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
 	}
 
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+.icon:before { /* Defines the .icon property for this element. */
+-moz-osx-font-smoothing: grayscale; /* Defines the -moz-osx-font-smoothing property for this element. */
+-webkit-font-smoothing: antialiased; /* Defines the -webkit-font-smoothing property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+font-style: normal; /* Defines the font-style property for this element. */
+font-variant: normal; /* Defines the font-variant property for this element. */
+text-rendering: auto; /* Defines the text-rendering property for this element. */
+line-height: 1; /* Defines the line-height property for this element. */
+text-transform: none !important; /* Defines the text-transform property for this element. */
+font-family: 'Font Awesome 5 Free'; /* Defines the font-family property for this element. */
+font-weight: 400; /* Defines the font-weight property for this element. */
 		}
 
-		.icon:before {
-			line-height: inherit;
-			font-size: 1.25em;
+.icon:before { /* Defines the .icon property for this element. */
+line-height: inherit; /* Defines the line-height property for this element. */
+font-size: 1.25em; /* Defines the font-size property for this element. */
 		}
 
 		.icon > .label {
-			display: none;
+display: none; /* Defines the display property for this element. */
 		}
 
-		.icon.solid:before {
-			font-weight: 900;
+.icon.solid:before { /* Defines the .icon.solid property for this element. */
+font-weight: 900; /* Defines the font-weight property for this element. */
 		}
 
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+.icon.brands:before { /* Defines the .icon.brands property for this element. */
+font-family: 'Font Awesome 5 Brands'; /* Defines the font-family property for this element. */
 		}
 
 		.icon.circled {
-			position: relative;
-			display: inline-block;
-			background: #2b252c;
-			color: #fff;
-			border-radius: 100%;
-			width: 3em;
-			height: 3em;
-			line-height: 3em;
-			text-align: center;
-			font-size: 1.25em;
+position: relative; /* Defines the position property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+background: #2b252c; /* Defines the background property for this element. */
+color: #fff; /* Defines the color property for this element. */
+border-radius: 100%; /* Defines the border-radius property for this element. */
+width: 3em; /* Defines the width property for this element. */
+height: 3em; /* Defines the height property for this element. */
+line-height: 3em; /* Defines the line-height property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+font-size: 1.25em; /* Defines the font-size property for this element. */
 		}
 
 			header .icon.circled {
-				margin: 0 0 2em 0;
+margin: 0 0 2em 0; /* Defines the margin property for this element. */
 			}
 
 /* Wrapper */
 
 	.wrapper {
-		background: #fff;
-		margin: 0 0 2em 0;
-		padding: 3em 0 6em 0;
+background: #fff; /* Defines the background property for this element. */
+margin: 0 0 2em 0; /* Defines the margin property for this element. */
+padding: 3em 0 6em 0; /* Defines the padding property for this element. */
 	}
 
+	
 		.wrapper.style2 {
-			padding-top: 0;
+padding-top: 0; /* Defines the padding-top property for this element. */
 		}
 
 /* Header */
 
+
+/* Styles for the header section, including the background image, title, and introduction text. */
 	#header {
-		position: relative;
-		background-image: url("../../images/header.jpg");
-		background-size: cover;
-		background-position: center center;
+position: relative; /* Defines the position property for this element. */
+background-color: #011627;
+background-size: auto; /* Defines the background-size property for this element. */
+background-position: center center; /* Defines the background-position property for this element. */
 		/* background-position: center; */
-		background-attachment: fixed;
-		color: #fff;
-		text-align: center;
-		padding: 7.5em 0 2em 0;
+color: #fff; /* Defines the color property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+padding: 7.5em 0 0 0; /* Defines the padding property for this element. */
 		/* padding: 50px 20px; */
-		cursor: default;
+cursor: default; /* Defines the cursor property for this element. */
 	}
-	@media (max-width: 768px) {
+@media (max-width: 768px) { /* Defines the @media (max-width property for this element. */
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header {
 			/* padding: 30px 10px; Reduced padding for smaller screens */
-			padding: 4.5em 0 1em 0;
+padding: 4.5em 0 1em 0; /* Defines the padding property for this element. */
 		}
 	}
 
-		#header:before {
-			content: '';
-			display: inline-block;
-			vertical-align: middle;
-			height: 100%;
+/* Styles for the header section, including the background image, title, and introduction text. */
+#header:before { /* Defines the #header property for this element. */
+content: ''; /* Defines the content property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+vertical-align: middle; /* Defines the vertical-align property for this element. */
+height: auto; /* Defines the height property for this element. */
 		}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header .inner {
-			position: relative;
-			z-index: 1;
-			margin: 0;
-			display: inline-block;
-			vertical-align: middle;
+position: relative; /* Defines the position property for this element. */
+z-index: 1; /* Defines the z-index property for this element. */
+margin: 0; /* Defines the margin property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+vertical-align: middle; /* Defines the vertical-align property for this element. */
 		}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header header {
-			display: inline-block;
+display: inline-block; /* Defines the display property for this element. */
 		}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 			#header header > p {
-				font-size: 1.25em;
-				margin: 0;
+font-size: 1.25em; /* Defines the font-size property for this element. */
+margin: 0; /* Defines the margin property for this element. */
 			}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header h1 {
-			color: #fff;
-			font-size: 3em;
-			line-height: 1em;
+color: #fff; /* Defines the color property for this element. */
+font-size: 3em; /* Defines the font-size property for this element. */
+line-height: 1em; /* Defines the line-height property for this element. */
 		}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 			#header h1 a {
-				color: inherit;
+color: inherit; /* Defines the color property for this element. */
 			}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header .button {
-			display: inline-block;
-			border-radius: 100%;
-			width: 4.5em;
-			height: 4.5em;
-			line-height: 4.5em;
-			text-align: center;
-			font-size: 1.25em;
-			padding: 0;
+display: inline-block; /* Defines the display property for this element. */
+border-radius: 100%; /* Defines the border-radius property for this element. */
+width: 4.5em; /* Defines the width property for this element. */
+height: 4.5em; /* Defines the height property for this element. */
+line-height: 4.5em; /* Defines the line-height property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+font-size: 1.25em; /* Defines the font-size property for this element. */
+padding: 0; /* Defines the padding property for this element. */
 		}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header hr {
-			top: 1.5em;
-			margin-bottom: 3em;
-			border-bottom-color: rgba(192, 192, 192, 0.35);
-			box-shadow: inset 0 1px 0 0 rgba(192, 192, 192, 0.35);
+top: 1.5em; /* Defines the top property for this element. */
+margin-bottom: 3em; /* Defines the margin-bottom property for this element. */
+border-bottom-color: rgb(255, 255, 255); /* Defines the border-bottom-color property for this element. */
+box-shadow: inset 0 0px 0 0 rgb(255, 255, 255); /* Defines the box-shadow property for this element. */
 		}
 
-			#header hr:before, #header hr:after {
-				background: rgba(192, 192, 192, 0.35);
+/* Styles for the header section, including the background image, title, and introduction text. */
+#header hr:before, #header hr:after { /* Defines the #header hr property for this element. */
+background: rgba(192, 192, 192, 0.35); /* Defines the background property for this element. */
 			}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 		#header footer {
-			margin: 1em 0 0 0;
+margin: 0 0 0 0; /* Defines the margin property for this element. */
 		}
 
 	body.homepage #header {
-		height: 100vh;
-		min-height: 40em;
+height: atuo; /* Defines the height property for this element. */
+min-height: 40em; /* Defines the min-height property for this element. */
 	}
 
 		body.homepage #header h1 {
-			font-size: 4em;
+font-size: 4em; /* Defines the font-size property for this element. */
 		}
 
-		body.homepage #header:after {
-			content: '';
-			background: #011627;
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			-moz-transition: opacity 2.5s ease-in-out;
-			-webkit-transition: opacity 2.5s ease-in-out;
-			-ms-transition: opacity 2.5s ease-in-out;
-			transition: opacity 2.5s ease-in-out;
-			-moz-transition-delay: 0.5s;
-			-webkit-transition-delay: 0.5s;
-			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
+body.homepage #header:after { /* Defines the body.homepage #header property for this element. */
+content: ''; /* Defines the content property for this element. */
+background: #011627; /* Defines the background property for this element. */
+display: block; /* Defines the display property for this element. */
+position: absolute; /* Defines the position property for this element. */
+left: 0; /* Defines the left property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: 100%; /* Defines the width property for this element. */
+height: auto; /* Defines the height property for this element. */
+opacity: 0; /* Defines the opacity property for this element. */
+-moz-transition: opacity 2.5s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: opacity 2.5s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-ms-transition: opacity 2.5s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: opacity 2.5s ease-in-out; /* Defines the transition property for this element. */
+-moz-transition-delay: 0.5s; /* Defines the -moz-transition-delay property for this element. */
+-webkit-transition-delay: 0.5s; /* Defines the -webkit-transition-delay property for this element. */
+-ms-transition-delay: 0.5s; /* Defines the -ms-transition-delay property for this element. */
+transition-delay: 0.5s; /* Defines the transition-delay property for this element. */
 		}
 
-	body.homepage.is-preload #header:after {
-		opacity: 1;
+body.homepage.is-preload #header:after { /* Defines the body.homepage.is-preload #header property for this element. */
+opacity: 1; /* Defines the opacity property for this element. */
 	}
 
 /* Nav */
 
-	#nav {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		text-align: center;
-		padding: 1.5em 0 1.5em 0;
-		z-index: 1;
-		overflow: hidden;
-		/* font-weight: bold; */
-	}
+/* Nav */
 
-		#nav > ul {
-			line-height: 0px;
-			position: relative;
-			display: inline-block;
-			margin: 0;
-			height: 21px;
-			border-left: solid 1px rgba(192, 192, 192, 0.35);
-			border-right: solid 1px rgba(192, 192, 192, 0.35);
-			padding: 0 20px; /* Add consistent padding on left and right */
-		}
+/* Navigation bar container */
+#nav {
+    position: absolute; /* Positions the navigation pane */
+    top: 0; /* Places it at the top of the page */
+    left: 0; /* Starts at the left edge */
+    width: 100%; /* Full width of the page */
+    text-align: center; /* Centers text within the navigation pane */
+    padding: 1.5em 2.5em 0; /* Adds padding to the top and bottom */
+    z-index: 1; /* Ensures it appears above other elements */
+    overflow: visible; /* Prevents content overflow */
+}
 
-			#nav > ul:before, #nav > ul:after {
-				content: '';
-				display: block;
-				width: 300%;
-				position: absolute;
-				top: 50%;
-				margin-top: -2px;
-				height: 5px;
-				border-top: solid 1px rgba(192, 192, 192, 0.35);
-				border-bottom: solid 1px rgba(192, 192, 192, 0.35);
-			}
+/* General navigation list styling */
+#nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-			#nav > ul:before {
-				left: 100%;
-				margin-left: 1px;
-			}
+/* Navigation items */
+#nav > ul > li {
+    display: inline-block; /* Displays items in a row */
+    margin: 0 0.5em; /* Adjust spacing around items */
+    padding: 0.5em 0.85em; /* Padding inside items */
+    border: none; /* Remove the default border */
+    position: relative; /* Required for the hover effect positioning */
+}
 
-			#nav > ul:after {
-				right: 100%;
-				margin-right: 1px;
-			}
+/* Hover effect for navigation items */
+#nav > .nav-right > li:hover::after {
+    content: ''; /* Adds an empty pseudo-element for the line */
+    position: absolute; /* Positions it relative to the parent */
+    bottom: 0; /* Aligns the line at the bottom of the button */
+    left: 12.5%; /* Starts the line at the left edge */
+    width: 75%; /* Matches the width of the button */
+    height: 2px; /* Thickness of the line */
+    background-color: rgba(192, 192, 192, 0.8); /* Color of the line */
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
 
-			#nav > ul > li {
-				display: inline-block;
-				margin: -9px 0.5em 0 0.5em;
-				border-radius: 0.5em;
-				padding: 0.85em;
-				border: solid 1px transparent;
-				-moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-			}
+/* Optional: Make the line grow on hover */
+#nav > .nav-right > li::after {
+    content: ''; /* Adds an empty pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Starts the line in the center */
+    width: 0; /* No visible line initially */
+    height: 2px;
+    background-color: rgba(192, 192, 192, 0.8);
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
 
-				#nav > ul > li.active {
-					border-color: rgba(192, 192, 192, 0.35);
-				}
+#nav > nav-right > li:hover::after {
+    left: 12.5%; /* Expands the line to start from the left */
+    width: 75%; /* Expands the line to full width */
+}
 
-				#nav > ul > li > a, #nav > ul > li > span {
-					display: block;
-					color: inherit;
-					text-decoration: none;
-					border: 0;
-					outline: 0;
-				}
+#nav > ul > li > a, #nav > ul > li > span {
+    display: block; /* Makes links block-level for easier styling */
+    color: white; /* Inherits text color */
+    text-decoration: none; /* Removes underline */
+    border: 0;
+    outline: 0;
+}
 
-				#nav > ul > li > ul {
-					display: none;
-				}
+/* Dropdown menus */
+#nav > ul > li > ul {
+    display: none; /* Hidden by default */
+}
 
-	.dropotron {
-		background: rgba(255, 255, 255, 0.975);
-		padding: 1em 1.25em 1em 1.25em;
-		line-height: 1em;
-		height: auto;
-		text-align: left;
-		border-radius: 0.5em;
-		box-shadow: 0 0.15em 0.25em 0 rgba(0, 0, 0, 0.25);
-		min-width: 12em;
-		margin-top: -1em;
-		list-style: none;
-	}
+/* Show dropdown menu on hover */
+#nav > ul > li:hover > ul {
+    display: block; /* Show the dropdown on hover */
+    position: absolute; /* Position it relative to the parent */
+    top: 3.5em; /* Below the parent item */
+    left: 0; /* Align with the left edge of the parent */
+    z-index: 10; /* Ensure it appears above other elements */
+    background-color: white; /* Dropdown background for visibility */
+    padding: 0.5em; /* Add spacing inside the dropdown */
+    list-style: none; /* Remove bullets from list items */
+    min-width: 100px; /* Ensure dropdown has sufficient width */
+    border-radius: 0.5em; /* Adds rounded corners */
+}
 
-		.dropotron li {
-			border-top: solid 1px rgba(128, 128, 128, 0.2);
-			color: #5b5b5b;
-			padding-left: 0;
-		}
+/* Dropdown menu items */
+#nav > ul > li > ul > li {
+    width: 100%; /* Make dropdown items fill the parent width */
+    padding: 0; /* Add spacing inside each item */
+    text-align: left; /* Align text to the left */
+    border-bottom: solid 1px rgba(192, 192, 192, 0.2); /* Add subtle divider */
+}
 
-			.dropotron li:first-child {
-				border-top: 0;
-			}
+#nav > ul > li > ul > li:hover {
+    background-color: #f0f0f0; /* Add hover effect for dropdown items */
+    color: #000; /* Change text color on hover */
+}
 
-			.dropotron li:hover {
-				color: #ef8376;
-			}
+/* Dropotron styling for advanced dropdowns */
+.dropotron {
+    background: rgba(255, 255, 255, 0.975);
+    padding: 1em 1.25em;
+    line-height: 1em;
+    height: auto;
+    text-align: left;
+    border-radius: 0.5em;
+    box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+    min-width: 12em;
+    margin-top: -1em;
+    list-style: none;
+}
 
-			.dropotron li a, .dropotron li span {
-				display: block;
-				border: 0;
-				padding: 0.5em 0 0.5em 0;
-				-moz-transition: color 0.35s ease-in-out;
-				-webkit-transition: color 0.35s ease-in-out;
-				-ms-transition: color 0.35s ease-in-out;
-				transition: color 0.35s ease-in-out;
-			}
+.dropotron li {
+    border-top: solid 1px rgba(128, 128, 128, 0.2);
+    color: #5b5b5b;
+    padding-left: 0;
+}
 
-		.dropotron.level-0 {
-			margin-top: 2em;
-			font-size: 0.9em;
-		}
+.dropotron li:first-child {
+    border-top: 0;
+}
 
-			.dropotron.level-0:before {
-				content: '';
-				position: absolute;
-				left: 50%;
-				top: -0.7em;
-				margin-left: -0.75em;
-				border-bottom: solid 0.75em rgba(255, 255, 255, 0.975);
-				border-left: solid 0.75em rgba(64, 64, 64, 0);
-				border-right: solid 0.75em rgba(64, 64, 64, 0);
-			}
+
+.dropotron li a, .dropotron li span {
+    display: block;
+    border: 0;
+    padding: 0.5em 0 0.5em 0;
+    transition: color 0.35s ease-in-out;
+}
+
+.dropotron.level-0 {
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+
+.dropotron.level-0:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -0.7em;
+    margin-left: -0.75em;
+    border-bottom: solid 0.75em rgba(255, 255, 255, 0.975);
+    border-left: solid 0.75em rgba(64, 64, 64, 0);
+    border-right: solid 0.75em rgba(64, 64, 64, 0);
+}
+
+/* Left-aligned navigation items */
+.nav-left {
+    float: left; /* Aligns items to the left */
+}
+
+/* Right-aligned navigation items */
+.nav-right {
+    float: right; /* Aligns items to the right */
+}
 
 /* Banner */
 
 	#banner {
-		background: #fff;
-		text-align: center;
-		padding: 4.5em 0 4.5em 0;
-		margin-bottom: 0;
+background: #fff; /* Defines the background property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+padding: 4.5em 0 4.5em 0; /* Defines the padding property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
 		#banner header > p {
-			margin-bottom: 0;
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 		}
 
 /* Content */
 
 	#content > hr {
-		top: 3em;
-		margin-bottom: 6em;
+top: 3em; /* Defines the top property for this element. */
+margin-bottom: 6em; /* Defines the margin-bottom property for this element. */
 	}
 
 	#content > section {
-		margin-bottom: 0;
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
 /* Sidebar */
 
 	#sidebar > hr {
-		top: 3em;
-		margin-bottom: 6em;
+top: 3em; /* Defines the top property for this element. */
+margin-bottom: 6em; /* Defines the margin-bottom property for this element. */
 	}
 
 		#sidebar > hr.first {
-			display: none;
+display: none; /* Defines the display property for this element. */
 		}
 
 	#sidebar > section {
-		margin-bottom: 0;
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
 /* Main */
 
 	#main {
-		margin-bottom: 0;
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
-		#main section:first-of-type {
-			padding-top: 2em;
+#main section:first-of-type { /* Defines the #main section property for this element. */
+padding-top: 2em; /* Defines the padding-top property for this element. */
 		}
 
 /* Footer */
 
-/*	#footer {
-		position: relative;
-		overflow: hidden;
-		padding: 3em 0 3em 0;
-		background: #011627;
-		color: #fff;
-	}*/
+#footer {
+position: relative; /* Defines the position property for this element. */
+overflow: hidden; /* Defines the overflow property for this element. */
+padding: 0 0 3em 0; /* Defines the padding property for this element. */
+background: #011627; /* Defines the background property for this element. */
+color: #fff; /* Defines the color property for this element. */
+}
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 	#footer {
-		position: relative;
-		overflow: hidden;
-		background: #011627;
-		color: #fff;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+position: relative; /* Defines the position property for this element. */
+overflow: hidden; /* Defines the overflow property for this element. */
+background: #011627; /* Defines the background property for this element. */
+color: #fff; /* Defines the color property for this element. */
+display: flex; /* Defines the display property for this element. */
+flex-direction: column; /* Defines the flex-direction property for this element. */
+align-items: center; /* Defines the align-items property for this element. */
+justify-content: center; /* Defines the justify-content property for this element. */
 		/* padding: 12em 0 3em 0; */
-		padding: 3em 0 3em 0;
+padding: 0 0 3em 0; /* Defines the padding property for this element. */
 		/* padding: 12em 1em; */
 	}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 		#footer .icon.circled {
-			background: #fff;
-			color: #2b252c;
+background: #fff; /* Defines the background property for this element. */
+color: #2b252c; /* Defines the color property for this element. */
 		}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 		#footer header {
-			text-align: center;
-			cursor: default;
+text-align: center; /* Defines the text-align property for this element. */
+cursor: default; /* Defines the cursor property for this element. */
 		}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #fff;
+color: #fff; /* Defines the color property for this element. */
 		}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 		#footer .contact {
-			text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 		}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 			#footer .contact p {
-				text-align: center;
-				margin: 0 0 3em 0;
+text-align: center; /* Defines the text-align property for this element. */
+margin: 0 0 3em 0; /* Defines the margin property for this element. */
 			}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 		#footer .copyright {
-			text-align: center;
-			color: rgba(128, 128, 128, 0.75);
-			font-size: 0.8em;
-			cursor: default;
+text-align: center; /* Defines the text-align property for this element. */
+color: rgba(128, 128, 128, 0.75); /* Defines the color property for this element. */
+font-size: 0.8em; /* Defines the font-size property for this element. */
+cursor: default; /* Defines the cursor property for this element. */
 		}
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 			#footer .copyright a {
-				color: rgba(128, 128, 128, 0.75);
+color: rgba(128, 128, 128, 0.75); /* Defines the color property for this element. */
 			}
 
-				#footer .copyright a:hover {
-					color: rgba(212, 212, 212, 0.85);
+/* Styles the footer, including contact information, copyright text, and social media icons. */
+#footer .copyright a:hover { /* Defines the #footer .copyright a property for this element. */
+color: rgba(212, 212, 212, 0.85); /* Defines the color property for this element. */
 				}
 
 /* Carousel */
 
 	.carousel {
-		position: relative;
-		overflow: hidden;
-		padding: 2em 0 2em 0;
-		margin-bottom: 0;
+position: relative; /* Defines the position property for this element. */
+overflow: hidden; /* Defines the overflow property for this element. */
+padding: 2em 0 2em 0; /* Defines the padding property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 	}
 
 		.carousel .forward, .carousel .backward {
-			position: absolute;
-			top: 50%;
-			width: 6em;
-			height: 12em;
-			margin-top: -6em;
-			cursor: pointer;
+position: absolute; /* Defines the position property for this element. */
+top: 50%; /* Defines the top property for this element. */
+width: 6em; /* Defines the width property for this element. */
+height: 12em; /* Defines the height property for this element. */
+margin-top: -6em; /* Defines the margin-top property for this element. */
+cursor: pointer; /* Defines the cursor property for this element. */
 		}
 
-			.carousel .forward:before, .carousel .backward:before {
-				content: '';
-				display: block;
-				width: 6em;
-				height: 6em;
-				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.5);
-				position: absolute;
-				top: 50%;
-				margin-top: -3em;
-				-moz-transition: background-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
+.carousel .forward:before, .carousel .backward:before { /* Defines the .carousel .forward property for this element. */
+content: ''; /* Defines the content property for this element. */
+display: block; /* Defines the display property for this element. */
+width: 6em; /* Defines the width property for this element. */
+height: 6em; /* Defines the height property for this element. */
+border-radius: 100%; /* Defines the border-radius property for this element. */
+background-color: rgba(72, 57, 73, 0.5); /* Defines the background-color property for this element. */
+position: absolute; /* Defines the position property for this element. */
+top: 50%; /* Defines the top property for this element. */
+margin-top: -3em; /* Defines the margin-top property for this element. */
+-moz-transition: background-color 0.35s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: background-color 0.35s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-o-transition: background-color 0.35s ease-in-out; /* Defines the -o-transition property for this element. */
+-ms-transition: background-color 0.35s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: background-color 0.35s ease-in-out; /* Defines the transition property for this element. */
+-webkit-backface-visibility: hidden; /* Defines the -webkit-backface-visibility property for this element. */
 			}
 
-			.carousel .forward:after, .carousel .backward:after {
-				content: '';
-				width: 3em;
-				height: 3em;
-				position: absolute;
-				top: 50%;
-				margin: -1.5em 0 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
+.carousel .forward:after, .carousel .backward:after { /* Defines the .carousel .forward property for this element. */
+content: ''; /* Defines the content property for this element. */
+width: 3em; /* Defines the width property for this element. */
+height: 3em; /* Defines the height property for this element. */
+position: absolute; /* Defines the position property for this element. */
+top: 50%; /* Defines the top property for this element. */
+margin: -1.5em 0 0 0; /* Defines the margin property for this element. */
+background: url("images/arrow.svg") no-repeat center center; /* Defines the background property for this element. */
 			}
 
-			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
+.carousel .forward:hover:before, .carousel .backward:hover:before { /* Defines the .carousel .forward property for this element. */
+background-color: rgba(239, 131, 118, 0.75); /* Defines the background-color property for this element. */
 			}
 
 		.carousel .forward {
-			right: 0;
+right: 0; /* Defines the right property for this element. */
 		}
 
-			.carousel .forward:before {
-				right: -3em;
+.carousel .forward:before { /* Defines the .carousel .forward property for this element. */
+right: -3em; /* Defines the right property for this element. */
 			}
 
-			.carousel .forward:after {
-				right: -0.25em;
+.carousel .forward:after { /* Defines the .carousel .forward property for this element. */
+right: -0.25em; /* Defines the right property for this element. */
 			}
 
 		.carousel .backward {
-			left: 0;
+left: 0; /* Defines the left property for this element. */
 		}
 
-			.carousel .backward:before {
-				left: -3em;
+.carousel .backward:before { /* Defines the .carousel .backward property for this element. */
+left: -3em; /* Defines the left property for this element. */
 			}
 
-			.carousel .backward:after {
-				left: -0.25em;
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
+.carousel .backward:after { /* Defines the .carousel .backward property for this element. */
+left: -0.25em; /* Defines the left property for this element. */
+-moz-transform: scaleX(-1); /* Defines the -moz-transform property for this element. */
+-webkit-transform: scaleX(-1); /* Defines the -webkit-transform property for this element. */
+-ms-transform: scaleX(-1); /* Defines the -ms-transform property for this element. */
+transform: scaleX(-1); /* Defines the transform property for this element. */
 			}
 
 		.carousel .reel {
-			white-space: nowrap;
-			position: relative;
-			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
+white-space: nowrap; /* Defines the white-space property for this element. */
+position: relative; /* Defines the position property for this element. */
+-webkit-overflow-scrolling: touch; /* Defines the -webkit-overflow-scrolling property for this element. */
+padding: 0 2em 0 2em; /* Defines the padding property for this element. */
 		}
 
 		.carousel article {
-			display: inline-block;
-			width: 18em;
-			background: #fff;
-			text-align: center;
-			padding: 0 1em 3em 1em;
-			margin: 0 2em 0 0;
-			white-space: normal;
-			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;
-			-webkit-transition: opacity 0.75s ease-in-out;
-			-ms-transition: opacity 0.75s ease-in-out;
-			transition: opacity 0.75s ease-in-out;
+display: inline-block; /* Defines the display property for this element. */
+width: 18em; /* Defines the width property for this element. */
+background: #fff; /* Defines the background property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+padding: 0 1em 3em 1em; /* Defines the padding property for this element. */
+margin: 0 2em 0 0; /* Defines the margin property for this element. */
+white-space: normal; /* Defines the white-space property for this element. */
+opacity: 1.0; /* Defines the opacity property for this element. */
+-moz-transition: opacity 0.75s ease-in-out; /* Defines the -moz-transition property for this element. */
+-webkit-transition: opacity 0.75s ease-in-out; /* Defines the -webkit-transition property for this element. */
+-ms-transition: opacity 0.75s ease-in-out; /* Defines the -ms-transition property for this element. */
+transition: opacity 0.75s ease-in-out; /* Defines the transition property for this element. */
 		}
 
 			.carousel article.loading {
-				opacity: 0;
+opacity: 0; /* Defines the opacity property for this element. */
 			}
 
 			.carousel article .image {
-				position: relative;
-				left: -1em;
-				top: 0;
-				width: auto;
-				margin-right: -2em;
-				margin-bottom: 3em;
+position: relative; /* Defines the position property for this element. */
+left: -1em; /* Defines the left property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: auto; /* Defines the width property for this element. */
+margin-right: -2em; /* Defines the margin-right property for this element. */
+margin-bottom: 3em; /* Defines the margin-bottom property for this element. */
 			}
 
 			.carousel article p {
-				text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 			}
 
 /* Wide */
 
-	@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) { /* Defines the @media screen and (max-width property for this element. */
 
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
-				line-height: 1.75em;
+font-size: 14pt; /* Defines the font-size property for this element. */
+line-height: 1.75em; /* Defines the line-height property for this element. */
 			}
 
 		/* Carousel */
 
 			.carousel {
-				padding: 1.5em 0 1.5em 0;
+padding: 1.5em 0 1.5em 0; /* Defines the padding property for this element. */
 			}
 
 				.carousel .reel {
-					padding: 0 1.5em 0 1.5em;
+padding: 0 1.5em 0 1.5em; /* Defines the padding property for this element. */
 				}
 
 				.carousel article {
-					width: 18em;
-					margin: 0 1.25em 0 0;
+width: 18em; /* Defines the width property for this element. */
+margin: 0 1.25em 0 0; /* Defines the margin property for this element. */
 				}
 
 	}
 
 /* Normal */
 
-	@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) { /* Defines the @media screen and (max-width property for this element. */
 
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 12pt;
-				line-height: 1.5em;
+font-size: 12pt; /* Defines the font-size property for this element. */
+line-height: 1.5em; /* Defines the line-height property for this element. */
 			}
 
 		/* Wrapper */
 
 			.wrapper {
-				padding-left: 2em;
-				padding-right: 2em;
+padding-left: 2em; /* Defines the padding-left property for this element. */
+padding-right: 2em; /* Defines the padding-right property for this element. */
 			}
 
 		/* Header */
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 			#header {
-				background-attachment: scroll;
+background-attachment: scroll; /* Defines the background-attachment property for this element. */
 			}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 				#header .inner {
-					padding-left: 2em;
-					padding-right: 2em;
+padding-left: 2em; /* Defines the padding-left property for this element. */
+padding-right: 2em; /* Defines the padding-right property for this element. */
 				}
 
 		/* Banner */
 
 			#banner {
-				padding-left: 2em;
-				padding-right: 2em;
+padding-left: 2em; /* Defines the padding-left property for this element. */
+padding-right: 2em; /* Defines the padding-right property for this element. */
 			}
 
 		/* Footer */
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 			#footer {
-				padding-left: 2em;
-				padding-right: 2em;
+padding-left: 2em; /* Defines the padding-left property for this element. */
+padding-right: 2em; /* Defines the padding-right property for this element. */
 			}
 
 	}
@@ -2776,149 +3199,155 @@ input, select, textarea {
 
 /* Narrower */
 
-	@media screen and (max-width: 840px) {
+@media screen and (max-width: 840px) { /* Defines the @media screen and (max-width property for this element. */
 
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 13pt;
-				line-height: 1.65em;
+font-size: 13pt; /* Defines the font-size property for this element. */
+line-height: 1.65em; /* Defines the line-height property for this element. */
 			}
 
 			.tweet {
-				text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 			}
 
 			.timestamp {
-				display: block;
-				text-align: center;
+display: block; /* Defines the display property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
 			}
 
 		/* Footer */
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 			#footer {
-				padding: 4em 2em 4em 2em;
+padding: 4em 2em 4em 2em; /* Defines the padding property for this element. */
 			}
 
 		/* Carousel */
 
 			.carousel {
-				padding: 1.25em 0 1.25em 0;
+padding: 1.25em 0 1.25em 0; /* Defines the padding property for this element. */
 			}
 
 				.carousel article {
-					width: 18em;
-					margin: 0 1em 0 0;
+width: 18em; /* Defines the width property for this element. */
+margin: 0 1em 0 0; /* Defines the margin property for this element. */
 				}
 
 	}
 
 /* Mobile */
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 	#navPanel, #titleBar {
-		display: none;
+display: none; /* Defines the display property for this element. */
 	}
 
-	@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) { /* Defines the @media screen and (max-width property for this element. */
 
 		/* Basic */
 
 			html, body {
-				overflow-x: hidden;
+overflow-x: hidden; /* Defines the overflow-x property for this element. */
 			}
 
 			body, input, textarea, select {
-				font-size: 12.5pt;
-				line-height: 1.5em;
+font-size: 12.5pt; /* Defines the font-size property for this element. */
+line-height: 1.5em; /* Defines the line-height property for this element. */
 			}
 
 			h2 {
-				font-size: 1.75em;
+font-size: 1.75em; /* Defines the font-size property for this element. */
 			}
 
 			h3 {
-				font-size: 1.25em;
+font-size: 1.25em; /* Defines the font-size property for this element. */
 			}
 
 			hr {
-				top: 3em;
-				margin-bottom: 6em;
+top: 3em; /* Defines the top property for this element. */
+margin-bottom: 6em; /* Defines the margin-bottom property for this element. */
 			}
 
 		/* Section/Article */
 
 			section, article {
-				margin-bottom: 2em;
+margin-bottom: 2em; /* Defines the margin-bottom property for this element. */
 			}
 
-				section:last-child, article:last-child {
-					margin-bottom: 0;
+section:last-child, article:last-child { /* Defines the section property for this element. */
+margin-bottom: 0; /* Defines the margin-bottom property for this element. */
 				}
 
+/* Handles grid layout, including responsive column sizes and alignment. */
 			.row > section, .row > article {
-				margin-bottom: 2em;
+margin-bottom: 2em; /* Defines the margin-bottom property for this element. */
 			}
 
 			header > p {
-				font-size: 1.25em;
+font-size: 1.25em; /* Defines the font-size property for this element. */
 			}
 
 		/* Image */
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 			.image.featured {
-				margin: 0 0 2em 0;
+margin: 0 0 2em 0; /* Defines the margin property for this element. */
 			}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 			.image.left {
-				margin: 0 1em 1em 0;
+margin: 0 1em 1em 0; /* Defines the margin property for this element. */
 			}
 
+/* Controls the appearance of images across the site, including alignment and responsive behavior. */
 			.image.centered {
-				margin: 0 0 1em 0;
+margin: 0 0 1em 0; /* Defines the margin property for this element. */
 			}
 
 		/* Actions */
 
 			form ul.actions {
-				margin-top: 0;
+margin-top: 0; /* Defines the margin-top property for this element. */
 			}
 
 			ul.actions li {
-				display: block;
-				margin: 0.75em 0 0 0;
+display: block; /* Defines the display property for this element. */
+margin: 0.75em 0 0 0; /* Defines the margin property for this element. */
 			}
 
-				ul.actions li:first-child {
-					margin-top: 0;
+ul.actions li:first-child { /* Defines the ul.actions li property for this element. */
+margin-top: 0; /* Defines the margin-top property for this element. */
 				}
 
 		/* Menu */
 
 			ul.menu {
-				height: auto;
-				text-align: center;
+height: auto; /* Defines the height property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
 			}
 
 				ul.menu li {
-					display: block;
-					border: 0;
-					padding: 0.75em 0 0 0;
-					margin: 0;
+display: block; /* Defines the display property for this element. */
+border: 0; /* Defines the border property for this element. */
+padding: 0.75em 0 0 0; /* Defines the padding property for this element. */
+margin: 0; /* Defines the margin property for this element. */
 				}
 
-					ul.menu li:first-child {
-						padding-top: 0;
+ul.menu li:first-child { /* Defines the ul.menu li property for this element. */
+padding-top: 0; /* Defines the padding-top property for this element. */
 					}
 
 		/* Icons */
 
 			ul.icons {
-				font-size: 1em;
-				padding: 0.35em 0.5em 0.35em 0.5em;
+font-size: 1em; /* Defines the font-size property for this element. */
+padding: 0.35em 0.5em 0.35em 0.5em; /* Defines the padding property for this element. */
 			}
 
 				ul.icons li a {
-					width: 2.25em;
+width: 2.25em; /* Defines the width property for this element. */
 				}
 
 		/* Button */
@@ -2928,291 +3357,522 @@ input, select, textarea {
 			input[type="reset"],
 			button,
 			.button {
-				display: block;
-				padding: 0;
-				line-height: 3em;
-				width: 100%;
+display: block; /* Defines the display property for this element. */
+padding: 0; /* Defines the padding property for this element. */
+line-height: 3em; /* Defines the line-height property for this element. */
+width: 100%; /* Defines the width property for this element. */
 			}
 
 		/* Nav */
 
 			#page-wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding-bottom: 1px;
+-moz-backface-visibility: hidden; /* Defines the -moz-backface-visibility property for this element. */
+-webkit-backface-visibility: hidden; /* Defines the -webkit-backface-visibility property for this element. */
+-ms-backface-visibility: hidden; /* Defines the -ms-backface-visibility property for this element. */
+backface-visibility: hidden; /* Defines the backface-visibility property for this element. */
+-moz-transition: -moz-transform 0.5s ease; /* Defines the -moz-transition property for this element. */
+-webkit-transition: -webkit-transform 0.5s ease; /* Defines the -webkit-transition property for this element. */
+-ms-transition: -ms-transform 0.5s ease; /* Defines the -ms-transition property for this element. */
+transition: transform 0.5s ease; /* Defines the transition property for this element. */
+padding-bottom: 1px; /* Defines the padding-bottom property for this element. */
 			}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 			#navButton {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10001;
+-moz-backface-visibility: hidden; /* Defines the -moz-backface-visibility property for this element. */
+-webkit-backface-visibility: hidden; /* Defines the -webkit-backface-visibility property for this element. */
+-ms-backface-visibility: hidden; /* Defines the -ms-backface-visibility property for this element. */
+backface-visibility: hidden; /* Defines the backface-visibility property for this element. */
+-moz-transition: -moz-transform 0.5s ease; /* Defines the -moz-transition property for this element. */
+-webkit-transition: -webkit-transform 0.5s ease; /* Defines the -webkit-transition property for this element. */
+-ms-transition: -ms-transform 0.5s ease; /* Defines the -ms-transition property for this element. */
+transition: transform 0.5s ease; /* Defines the transition property for this element. */
+display: block; /* Defines the display property for this element. */
+height: 44px; /* Defines the height property for this element. */
+left: 0; /* Defines the left property for this element. */
+position: fixed; /* Defines the position property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: 100%; /* Defines the width property for this element. */
+z-index: 10001; /* Defines the z-index property for this element. */
 			}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navButton .toggle {
-					text-decoration: none;
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					border: 0;
-					outline: 0;
+text-decoration: none; /* Defines the text-decoration property for this element. */
+position: absolute; /* Defines the position property for this element. */
+left: 0; /* Defines the left property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: 100%; /* Defines the width property for this element. */
+height: 100%; /* Defines the height property for this element. */
+border: 0; /* Defines the border property for this element. */
+outline: 0; /* Defines the outline property for this element. */
 				}
 
-					#navButton .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						display: inline-block;
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
-						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
+#navButton .toggle:before { /* Defines the #navButton .toggle property for this element. */
+-moz-osx-font-smoothing: grayscale; /* Defines the -moz-osx-font-smoothing property for this element. */
+-webkit-font-smoothing: antialiased; /* Defines the -webkit-font-smoothing property for this element. */
+display: inline-block; /* Defines the display property for this element. */
+font-style: normal; /* Defines the font-style property for this element. */
+font-variant: normal; /* Defines the font-variant property for this element. */
+text-rendering: auto; /* Defines the text-rendering property for this element. */
+line-height: 1; /* Defines the line-height property for this element. */
+text-transform: none !important; /* Defines the text-transform property for this element. */
+font-family: 'Font Awesome 5 Free'; /* Defines the font-family property for this element. */
+font-weight: 900; /* Defines the font-weight property for this element. */
 					}
 
-					#navButton .toggle:before {
-						text-decoration: none;
-						font-style: normal;
-						content: '\f0c9';
-						color: #fff;
-						color: rgba(255, 255, 255, 0.75);
-						text-align: center;
-						display: block;
-						font-size: 14px;
-						width: 80px;
-						height: 30px;
-						line-height: 30px;
-						position: absolute;
-						left: 50%;
-						margin-left: -40px;
-						background: rgba(132, 128, 136, 0.75);
-						border-top: 0;
-						border-radius: 0 0 0.35em 0.35em;
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
+#navButton .toggle:before { /* Defines the #navButton .toggle property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
+font-style: normal; /* Defines the font-style property for this element. */
+content: '\f0c9'; /* Defines the content property for this element. */
+color: #fff; /* Defines the color property for this element. */
+color: rgba(255, 255, 255, 0.75); /* Defines the color property for this element. */
+text-align: center; /* Defines the text-align property for this element. */
+display: block; /* Defines the display property for this element. */
+font-size: 14px; /* Defines the font-size property for this element. */
+width: 80px; /* Defines the width property for this element. */
+height: 30px; /* Defines the height property for this element. */
+line-height: 30px; /* Defines the line-height property for this element. */
+position: absolute; /* Defines the position property for this element. */
+left: 50%; /* Defines the left property for this element. */
+margin-left: -40px; /* Defines the margin-left property for this element. */
+background: rgba(132, 128, 136, 0.75); /* Defines the background property for this element. */
+border-top: 0; /* Defines the border-top property for this element. */
+border-radius: 0 0 0.35em 0.35em; /* Defines the border-radius property for this element. */
 					}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 			#navPanel {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transform: translateY(-50vh);
-				-webkit-transform: translateY(-50vh);
-				-ms-transform: translateY(-50vh);
-				transform: translateY(-50vh);
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 50vh;
-				left: 0;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10002;
-				background: #1f1920;
-				box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
-				font-size: 1em;
+-moz-backface-visibility: hidden; /* Defines the -moz-backface-visibility property for this element. */
+-webkit-backface-visibility: hidden; /* Defines the -webkit-backface-visibility property for this element. */
+-ms-backface-visibility: hidden; /* Defines the -ms-backface-visibility property for this element. */
+backface-visibility: hidden; /* Defines the backface-visibility property for this element. */
+-moz-transform: translateY(-50vh); /* Defines the -moz-transform property for this element. */
+-webkit-transform: translateY(-50vh); /* Defines the -webkit-transform property for this element. */
+-ms-transform: translateY(-50vh); /* Defines the -ms-transform property for this element. */
+transform: translateY(-50vh); /* Defines the transform property for this element. */
+-moz-transition: -moz-transform 0.5s ease; /* Defines the -moz-transition property for this element. */
+-webkit-transition: -webkit-transform 0.5s ease; /* Defines the -webkit-transition property for this element. */
+-ms-transition: -ms-transform 0.5s ease; /* Defines the -ms-transition property for this element. */
+transition: transform 0.5s ease; /* Defines the transition property for this element. */
+display: block; /* Defines the display property for this element. */
+height: 50vh; /* Defines the height property for this element. */
+left: 0; /* Defines the left property for this element. */
+overflow-y: auto; /* Defines the overflow-y property for this element. */
+position: fixed; /* Defines the position property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: 100%; /* Defines the width property for this element. */
+z-index: 10002; /* Defines the z-index property for this element. */
+background: #1f1920; /* Defines the background property for this element. */
+box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25); /* Defines the box-shadow property for this element. */
+font-size: 1em; /* Defines the font-size property for this element. */
 			}
 
-				#navPanel:before {
-					content: '';
-					display: block;
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					background: url("images/overlay.png");
-					background-size: 128px 128px;
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
+#navPanel:before { /* Defines the #navPanel property for this element. */
+content: ''; /* Defines the content property for this element. */
+display: block; /* Defines the display property for this element. */
+position: absolute; /* Defines the position property for this element. */
+left: 0; /* Defines the left property for this element. */
+top: 0; /* Defines the top property for this element. */
+width: 100%; /* Defines the width property for this element. */
+height: 100%; /* Defines the height property for this element. */
+background: url("images/overlay.png"); /* Defines the background property for this element. */
+background-size: 128px 128px; /* Defines the background-size property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .link {
-					position: relative;
-					z-index: 1;
-					display: block;
-					text-decoration: none;
-					padding: 0.5em;
-					color: #ddd;
-					border: 0;
-					border-top: dotted 1px rgba(255, 255, 255, 0.05);
+position: relative; /* Defines the position property for this element. */
+z-index: 1; /* Defines the z-index property for this element. */
+display: block; /* Defines the display property for this element. */
+text-decoration: none; /* Defines the text-decoration property for this element. */
+padding: 0.5em; /* Defines the padding property for this element. */
+color: #ddd; /* Defines the color property for this element. */
+border: 0; /* Defines the border property for this element. */
+border-top: dotted 1px rgba(255, 255, 255, 0.05); /* Defines the border-top property for this element. */
 				}
 
-					#navPanel .link:first-child {
-						border-top: 0;
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
+#navPanel .link:first-child { /* Defines the #navPanel .link property for this element. */
+border-top: 0; /* Defines the border-top property for this element. */
 					}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 					#navPanel .link.depth-0 {
-						color: #fff;
-						font-weight: 600;
+color: #fff; /* Defines the color property for this element. */
+font-weight: 600; /* Defines the font-weight property for this element. */
 					}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .indent-1 {
-					display: inline-block;
-					width: 1em;
+display: inline-block; /* Defines the display property for this element. */
+width: 1em; /* Defines the width property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .indent-2 {
-					display: inline-block;
-					width: 2em;
+display: inline-block; /* Defines the display property for this element. */
+width: 2em; /* Defines the width property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .indent-3 {
-					display: inline-block;
-					width: 3em;
+display: inline-block; /* Defines the display property for this element. */
+width: 3em; /* Defines the width property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .indent-4 {
-					display: inline-block;
-					width: 4em;
+display: inline-block; /* Defines the display property for this element. */
+width: 4em; /* Defines the width property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .indent-5 {
-					display: inline-block;
-					width: 5em;
+display: inline-block; /* Defines the display property for this element. */
+width: 5em; /* Defines the width property for this element. */
 				}
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 				#navPanel .depth-0 {
-					color: #fff;
+color: #fff; /* Defines the color property for this element. */
 				}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateY(50vh);
-				-webkit-transform: translateY(50vh);
-				-ms-transform: translateY(50vh);
-				transform: translateY(50vh);
+-moz-transform: translateY(50vh); /* Defines the -moz-transform property for this element. */
+-webkit-transform: translateY(50vh); /* Defines the -webkit-transform property for this element. */
+-ms-transform: translateY(50vh); /* Defines the -ms-transform property for this element. */
+transform: translateY(50vh); /* Defines the transform property for this element. */
 			}
 
 			body.navPanel-visible #navButton {
-				-moz-transform: translateY(50vh);
-				-webkit-transform: translateY(50vh);
-				-ms-transform: translateY(50vh);
-				transform: translateY(50vh);
+-moz-transform: translateY(50vh); /* Defines the -moz-transform property for this element. */
+-webkit-transform: translateY(50vh); /* Defines the -webkit-transform property for this element. */
+-ms-transform: translateY(50vh); /* Defines the -ms-transform property for this element. */
+transform: translateY(50vh); /* Defines the transform property for this element. */
 			}
 
 			body.navPanel-visible #navPanel {
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
+-moz-transform: translateY(0); /* Defines the -moz-transform property for this element. */
+-webkit-transform: translateY(0); /* Defines the -webkit-transform property for this element. */
+-ms-transform: translateY(0); /* Defines the -ms-transform property for this element. */
+transform: translateY(0); /* Defines the transform property for this element. */
 			}
 
 		/* Wrapper */
 
 			.wrapper {
-				padding: 3em 1em 3em 1em;
+padding: 3em 1em 3em 1em; /* Defines the padding property for this element. */
 			}
 
 		/* Header */
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 			#header {
-				background-attachment: scroll;
-				padding: 2.5em 0 0 0;
+background-attachment: scroll; /* Defines the background-attachment property for this element. */
+padding: 2.5em 0 0 0; /* Defines the padding property for this element. */
 			}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 				#header .inner {
-					padding-top: 1.5em;
-					padding-left: 1em;
-					padding-right: 1em;
+padding-top: 1.5em; /* Defines the padding-top property for this element. */
+padding-left: 1em; /* Defines the padding-left property for this element. */
+padding-right: 1em; /* Defines the padding-right property for this element. */
 				}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 				#header header > p {
-					font-size: 1em;
+font-size: 1em; /* Defines the font-size property for this element. */
 				}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 				#header h1 {
-					font-size: 1.75em;
+font-size: 1.75em; /* Defines the font-size property for this element. */
 				}
 
+/* Styles for the header section, including the background image, title, and introduction text. */
 				#header hr {
-					top: 1em;
-					margin-bottom: 2.5em;
+top: 1em; /* Defines the top property for this element. */
+margin-bottom: 2.5em; /* Defines the margin-bottom property for this element. */
 				}
 
 			body.homepage #header {
-				min-height: 0;
-				padding: 5.5em 0 5em 0;
-				height: auto;
+min-height: 0; /* Defines the min-height property for this element. */
+padding: 5.5em 0 5em 0; /* Defines the padding property for this element. */
+height: auto; /* Defines the height property for this element. */
 			}
 
-				body.homepage #header:before {
-					display: none;
+body.homepage #header:before { /* Defines the body.homepage #header property for this element. */
+display: none; /* Defines the display property for this element. */
 				}
 
 				body.homepage #header h1 {
-					font-size: 2.5em;
+font-size: 2.5em; /* Defines the font-size property for this element. */
 				}
 
 		/* Nav */
 
+/* Defines the navigation bar, including links, dropdown menus, and decorative lines. */
 			#nav {
-				display: none;
+display: none; /* Defines the display property for this element. */
 			}
 
 		/* Banner */
 
 			#banner {
-				padding: 3em 2em 3em 2em;
+padding: 3em 2em 3em 2em; /* Defines the padding property for this element. */
 			}
 
 		/* Sidebar */
 
-			#sidebar > hr:first-of-type {
-				display: block;
+#sidebar > hr:first-of-type { /* Defines the #sidebar > hr property for this element. */
+display: block; /* Defines the display property for this element. */
 			}
 
 		/* Main */
 
 			#main > header {
-				text-align: center;
+text-align: center; /* Defines the text-align property for this element. */
 			}
 
 		/* Footer */
 
+/* Styles the footer, including contact information, copyright text, and social media icons. */
 			#footer {
-				padding-left: 1em;
-				padding-right: 1em;
+padding-left: 1em; /* Defines the padding-left property for this element. */
+padding-right: 1em; /* Defines the padding-right property for this element. */
 			}
 
 		/* Carousel */
 
 			.carousel {
-				padding: 0.5em 0 0.5em 0;
+padding: 0.5em 0 0.5em 0; /* Defines the padding property for this element. */
 			}
 
 				.carousel .reel {
-					padding: 0 0.5em 0 0.5em;
+padding: 0 0.5em 0 0.5em; /* Defines the padding property for this element. */
 				}
 
 				.carousel article {
-					width: 14em;
-					padding-bottom: 2em;
-					margin: 0 0.5em 0 0;
+width: 14em; /* Defines the width property for this element. */
+padding-bottom: 2em; /* Defines the padding-bottom property for this element. */
+margin: 0 0.5em 0 0; /* Defines the margin property for this element. */
 				}
 
 					.carousel article .image {
-						margin-bottom: 2em;
+margin-bottom: 2em; /* Defines the margin-bottom property for this element. */
 					}
 
 	}
+
+
+
+
+
+
+/* NEW STUFF */
+
+/* Navigation line definitions */
+
+.nav-divider {
+	position: relative; /* Defines the position property for this element. */
+	display: block; /* Defines the display property for this element. */
+	border: 0; /* Defines the border property for this element. */
+	top: 4.5em; /* Defines the top property for this element. */
+	margin-top: -6px; /* Defines the margin-bottom property for this element. */
+	margin-bottom: 9em; /* Defines the margin-bottom property for this element. */
+	width: 100vw;
+	height: 6px; /* Defines the height property for this element. */
+	border-top: solid 1px rgb(255, 255, 255); /* Defines the border-top property for this element. */
+	border-bottom: solid 1px rgb(255, 255, 255); /* Defines the border-bottom property for this element. */
+}
+	
+nav-divider:before, nav-divider:after { /* Defines the hr property for this element. */
+	content: ''; /* Defines the content property for this element. */
+	position: relative; /* Defines the position property for this element. */
+	/* top: -8px; Defines the top property for this element. */
+	display: block; /* Defines the display property for this element. */
+	width: 1px; /* Defines the width property for this element. */
+	height: 21px; /* Defines the height property for this element. */
+	background: rgb(255, 255, 255); /* Defines the background property for this element. */
+			}
+	
+			nav-divider:before { /* Defines the hr property for this element. */
+	left: -1px; /* Defines the left property for this element. */
+			}
+	
+			nav-divider:after { /* Defines the hr property for this element. */
+	right: -1px; /* Defines the right property for this element. */
+			}
+
+.non-selectable-text {
+	cursor: default; /* Keeps the cursor as the default (arrow) style */
+	user-select: none; /* Prevents the text from being selected */
+}
+
+/* papers.html specifics */
+.papers-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; /* Ensures items align starting from the left */
+	margin-bottom: 30px; /* Space between each publication */
+}
+.papers-title {
+	display: block;
+	text-align: left;
+	font-size: 1.3em;
+}
+.papers-image {
+	width: 200px;
+	height: auto;
+	object-fit: contain;
+	margin-right: 20px; /* Space between the image and the title */
+}
+.papers-description {
+	font-size: 0.9em; /* Smaller font for the description */
+	color: #555; /* Lighter color for distinction */
+	margin-top: 5px; /* Space between title and description */
+	line-height: 1.4; /* Improve readability */
+}
+.papers-link {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #333;
+	flex: 1;
+	display: block;
+	text-align: left;
+}
+.papers-link:hover {
+	text-decoration: underline;
+}
+@media (max-width: 768px) {
+	.papers-item {
+		flex-direction: column; /* Stack image and title vertically on small screens */
+		align-items: flex-start; /* Aligns items to the left on small screens */
+	}
+	.papers-image {
+		margin-right: 0; /* Remove right margin on small screens */
+		margin-bottom: 10px; /* Space below the image */
+		width: 80px; /* Smaller image for mobile */
+	}
+}
+
+/* Publications.html specifics  */
+.publication-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; /* Ensures items align starting from the left */
+	margin-bottom: 30px; /* Space between each publication */
+	
+}
+.publication-image {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+	margin-right: 20px; /* Space between the image and the title */
+}
+.publication-description {
+	font-size: 0.9em; /* Smaller font for the description */
+	color: #555; /* Lighter color for distinction */
+	margin-top: 5px; /* Space between title and description */
+	line-height: 1.4; /* Improve readability */
+}
+.publication-link {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #333;
+	flex: 1;
+}
+.publication-link:hover {
+	text-decoration: underline;
+}
+@media (max-width: 768px) {
+	.publication-item {
+		flex-direction: column; /* Stack image and title vertically on small screens */
+		align-items: flex-start; /* Aligns items to the left on small screens */
+	}
+	.publication-image {
+		margin-right: 0; /* Remove right margin on small screens */
+		margin-bottom: 10px; /* Space below the image */
+		width: 80px; /* Smaller image for mobile */
+	}
+}
+
+/* Startups.html specifics */
+
+.startup-item {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	justify-content: flex-start; /* Ensures items align starting from the left */
+	margin-bottom: 30px; /* Space between each publication */
+}
+.startup-image {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+	margin-right: 20px; /* Space between the image and the title */
+}
+.startup-description {
+	font-size: 0.9em; /* Smaller font for the description */
+	color: #555; /* Lighter color for distinction */
+	margin-top: 5px; /* Space between title and description */
+	line-height: 1.4; /* Improve readability */
+}
+.startup-link {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #333;
+}
+.startup-link:hover {
+	text-decoration: underline;
+}
+@media (max-width: 768px) {
+	.startup-item {
+		flex-direction: column; /* Stack image and title vertically on small screens */
+		align-items: flex-start; /* Aligns items to the left on small screens */
+	}
+	.startup-image {
+		margin-right: 0; /* Remove right margin on small screens */
+		margin-bottom: 10px; /* Space below the image */
+		width: 80px; /* Smaller image for mobile */
+	}
+}
+
+/* index.html specifics */
+/* Updated homepage image styles for better responsiveness while retaining alignment */
+.homepage-image {
+    position: absolute; /* Position relative to the viewport */
+    top: 7%; /* Move down 20px from the top of the viewport */
+    right: 200px; /* Move 30px from the right of the viewport */
+    width: 18%;
+    height: auto;
+    object-fit: contain;
+	justify-content: flex-end;
+}
+
+.homepage-wrapper {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Adds space between the image and paragraph */
+    gap: 10px; /* Optional: Adds consistent spacing between elements */
+}
+
+.about-paragraph {
+	display: flex;
+    text-align: justify; /* Justifies the paragraph text */
+    max-width: 60%; /* Restricts paragraph width for readability */
+    margin: 0 32em 0 10em; /* Removes default margins */ 
+	margin-top: 7%; /* Moves the text higher */
+	flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.homepage-image {
+		width: 80px; /* Reduced width for mobile screens */
+		margin-bottom: 10px; /* Added space below the image */
+	}
+}
