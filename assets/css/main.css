@@ -237,8 +237,8 @@ font-size: 0.8em; /* Defines the font-size property for this element. */
 /* Sets a consistent width and centering for content blocks. */
 	.container {
 margin: 0 auto; /* Defines the margin property for this element. */
-max-width: 90%; /* Defines the max-width property for this element. */
-width: 80%; /* Defines the width property for this element. */
+max-width: 85%; /* Defines the max-width property for this element. */
+width: 75%; /* Defines the width property for this element. */
 	}
 
 @media screen and (max-width: 1680px) { /* Defines the @media screen and (max-width property for this element. */
@@ -2754,6 +2754,10 @@ opacity: 1; /* Defines the opacity property for this element. */
     padding: 0.5em 0.85em; /* Padding inside items */
     border: none; /* Remove the default border */
     position: relative; /* Required for the hover effect positioning */
+	-moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 }
 
 /* Hover effect for navigation items */
@@ -2854,6 +2858,9 @@ opacity: 1; /* Defines the opacity property for this element. */
     display: block;
     border: 0;
     padding: 0.5em 0 0.5em 0;
+	-moz-transition: color 0.35s ease-in-out;
+	-webkit-transition: color 0.35s ease-in-out;
+	-ms-transition: color 0.35s ease-in-out;
     transition: color 0.35s ease-in-out;
 }
 
