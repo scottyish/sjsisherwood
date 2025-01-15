@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="icon" type="image/x-icon" href="images/favicon.png"/>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -28,50 +28,76 @@
 <body class="homepage is-preload">
 	<!-- Prevents animations and transitions loading at the start -->
 
+	<div id="page-wrapper"></div>
 	<!-- Load nav -->
-	<div id="nav-placeholder"></div>
+	<!-- <div id="nav-placeholder"></div> -->
 
-	<!-- <div id="page-wrapper"> -->
-	<!-- Header -->
-	<div id="header">
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="nav-right">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Blog</a>
+					<ul class="dropotron">
+						<li><a href="Papers.html">Papers</a></li>
+						<li><a href="Startups.html">Startups</a></li>
+					</ul>
+				</li>
+				<li><a href="Portfolio.html">Portfolio</a></li>
+				<li><a href="Publications.html">Publications</a></li>
+				<li><a href="Data.html">Data</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+			</ul>
+			<ul class="nav-left">
+				<li>
+					<p style="font-size: 1.6em" class="non-selectable-text"><b>Scott JS Isherwood</b></p>
+				</li>
+			</ul>
+		</nav>
+	
+		<!-- <div id="page-wrapper"> -->
+		<!-- Header -->
+		<div id="header">
 
-		<!-- Inner -->
-		<div class="inner">
+			<!-- Inner -->
+			<div class="inner">
 
-			<p class="about-paragraph">
-				I’m a problem solver, investor, and passionate advocate for advancing life sciences and healthcare
-				research. I hold a PhD in cognitive neuroscience and have
-				spent many years programming, forming and testing hypotheses, and engineering interdisciplinary
-				solutions to help people, research lines and organisations
-				succeed. I thrive at the intersection of science, technology, and strategy. I have worked with all
-				things data, from financial & cognitive modelling to
-				machine learning approaches to image segmentation. I aim to continue to learn, grow and refine the way I
-				approach problems, to help organisations make
-				informed decisions and optimise their projects. As an investor, I’m particularly interested in
-				supporting innovative companies that are pushing boundaries
-				in biotech and medtech. Whether it’s advising on digital infrastructure or driving healthcare
-				innovation, my goal is simple: to make a meaningful impact
-				by supporting research and solutions that improve the way we live.
-				<br><br>
-				Educational background <br><br>
-				<strong>University of Amsterdam</strong>
-				<i>PhD Cognitive Neuroscience (2019-2023)</i>
-				Integrative Model-based Cognitive Neuroscience Research unit <br><br>
-				<strong>University of Amsterdam</strong>
-				<i>MSc Brain and Cognitive sciences (2016-2018)</i><br>
-				<strong>King's College London</strong>
-				<i>BSc Biochemistry (2013-2016)</i>
-			</p>
-			<!-- Image -->
-			<div class="homepage-image">
-				<img src="images/dog1.jpg" alt="" class="image fit" />
-				<div style="height: 1em;"></div>
+				<!-- Image -->
+				<div class="homepage-image">
+					<img src="images/dog1.jpg" alt="" class="image fit" />
+					<div style="height: 1em;"></div>
+				</div>
+				<p class="about-paragraph">
+					I’m a problem solver, investor, and passionate advocate for advancing life sciences and healthcare
+					research. I hold a PhD in cognitive neuroscience and have
+					spent many years programming, forming and testing hypotheses, and engineering interdisciplinary
+					solutions to help people, research lines and organisations
+					succeed. I thrive at the intersection of science, technology, and strategy. I have worked with all
+					things data, from financial & cognitive modelling to
+					machine learning approaches to image segmentation. I aim to continue to learn, grow and refine the
+					way I
+					approach problems, to help organisations make
+					informed decisions and optimise their projects. As an investor, I’m particularly interested in
+					supporting innovative companies that are pushing boundaries
+					in biotech and medtech. Whether it’s advising on digital infrastructure or driving healthcare
+					innovation, my goal is simple: to make a meaningful impact
+					by supporting research and solutions that improve the way we live.
+					<br><br>
+					<strong>Educational background</strong><br>
+					<strong>University of Amsterdam</strong>
+					<i>PhD Cognitive Neuroscience (2019-2023)</i>
+					Integrative Model-based Cognitive Neuroscience Research unit <br><br>
+					<strong>University of Amsterdam</strong>
+					<i>MSc Brain and Cognitive sciences (2016-2018)</i><br>
+					<strong>King's College London</strong>
+					<i>BSc Biochemistry (2013-2016)</i>
+				</p>
 			</div>
 		</div>
-	</div>
 
-	<!-- Load footer -->
-	<div id="footer-placeholder"></div>
+		<!-- Load footer -->
+		<div id="footer-placeholder"></div>
+	</div>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -82,7 +108,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/loadNav.js"></script>
+	<!-- <script src="assets/js/loadNav.js"></script> -->
 	<script src="assets/js/loadFooter.js"></script>
 	<script src="assets/js/fillBlankSpace.js"></script>
 </body>
